@@ -48,9 +48,12 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_2.setObjectName(_fromUtf8("horizontalLayoutWidget_2"))
         self.UniLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_2)
         self.UniLayout.setObjectName(_fromUtf8("UniLayout"))
+
+        #This section is for the text within the University text section
         self.UniTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_2)
         self.UniTextEdit.setObjectName(_fromUtf8("UniTextEdit"))
         self.UniLayout.addWidget(self.UniTextEdit)
+
         self.verticalLayoutWidget_3 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(20, 360, 181, 80))
         self.verticalLayoutWidget_3.setObjectName(_fromUtf8("verticalLayoutWidget_3"))
@@ -302,6 +305,7 @@ class Ui_AviateNEducate(object):
         self.verticalScrollBar.setOrientation(QtCore.Qt.Vertical)
         self.verticalScrollBar.setObjectName(_fromUtf8("verticalScrollBar"))
 
+
         AviateNEducate.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(AviateNEducate)
         self.statusbar.setObjectName(_fromUtf8("statusbar"))
@@ -354,6 +358,12 @@ class Ui_AviateNEducate(object):
 
         self.countryComboBox.activated[str].connect(self.loadmodules)
         self.UniComboBox.activated[str].connect(self.dispmodule)
+
+        #self.scrollArea = QtGui.QScrollArea(self)
+        #self.scrollArea.setWidgetResizable(True)
+        #self.scrollAreaWidgetContents = QtGui.QWidget(self.scrollArea)
+        #self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(1100, 10, 25, 1100))
+        #self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
 
 if __name__ == "__main__":
