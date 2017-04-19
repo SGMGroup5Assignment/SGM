@@ -236,6 +236,7 @@ class Ui_AviateNEducate(object):
         self.FundCheapLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget_12)
         self.FundCheapLayout.setObjectName(_fromUtf8("FundCheapLayout"))
         self.LCostRadioButton = QtGui.QRadioButton(self.verticalLayoutWidget_12)
+        self.LCostRadioButton.setChecked(True)
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
         font.setPointSize(10)
