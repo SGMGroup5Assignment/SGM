@@ -349,10 +349,41 @@ class Ui_AviateNEducate(object):
         else:
             self.UniComboBox.clear()
 
+    def zoomie(self, state):
+        if state == QtCore.Qt.Checked:
+            # self.setGeometry(10, 20, 2000, 2000)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Rockwell"))
+            font.setPointSize(24)
+            self.AviateNEducate_Title.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(17)
+            self.centralwidget.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(15)
+            self.AccomInfo.setFont(font)
+            self.CountryLabel.setFont(font)
+            self.ColourSelectLabel.setFont(font)
+            font.setPointSize(12)
+            self.Zoom.setFont(font)
+            self.UniInfo.setFont(font)
+            self.Funding.setFont(font)
+            self.ColourSelectLabel_2.setFont(font)
+            self.UniversityPicLabel.setFont(font)
+            font.setPointSize(12)
+            self.LCostRadioButton.setFont(font)
+            self.HCostRadioButton.setFont(font)
+            font.setPointSize(15)
+            self.Student2PicLabel.setFont(font)
+            self.Student3PicLabel.setFont(font)
+
     def home(self):
 
         self.countryComboBox.activated[str].connect(self.loadmodules)
         self.UniComboBox.activated[str].connect(self.dispmodule)
+        self.Zoom.stateChanged.connect(self.zoomie)
 
 
 if __name__ == "__main__":
