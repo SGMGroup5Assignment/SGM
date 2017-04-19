@@ -295,10 +295,13 @@ class Ui_AviateNEducate(object):
         self.Student3TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_13)
         self.Student3TextEdit.setObjectName(_fromUtf8("Student3TextEdit"))
         self.Student3ExpLayoutText.addWidget(self.Student3TextEdit)
+
+        #   --       Section for scrollbar     ---
         self.verticalScrollBar = QtGui.QScrollBar(self.centralwidget)
-        self.verticalScrollBar.setGeometry(QtCore.QRect(1100, 10, 21, 1101))
+        self.verticalScrollBar.setGeometry(QtCore.QRect(1100, 10, 25, 1100)) #x,y,w,h
         self.verticalScrollBar.setOrientation(QtCore.Qt.Vertical)
         self.verticalScrollBar.setObjectName(_fromUtf8("verticalScrollBar"))
+
         AviateNEducate.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(AviateNEducate)
         self.statusbar.setObjectName(_fromUtf8("statusbar"))
