@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'SGM2Group5.ui'
@@ -50,15 +50,16 @@ class Ui_AviateNEducate(object):
         self.UniLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_2)
         self.UniLayout.setObjectName(_fromUtf8("UniLayout"))
 
+        # This section will load a text file
         def __init__(self):
             self.loadfile()  # reads the file into a list
             self.initUI()  # calls the method initUI() on this instance
 
-        self.animal = []  # Create empty list
-        afile = open('University.txt', 'r')  # Open file for reading
-        for line in afile:  # iterate through file and add each item to the list
-            self.animal.append(str(line).rstrip('\n'))
-        afile.close()
+        #self.University = []  # Create empty list
+        #afile = open('University.txt', 'r')  # Open file for reading
+        #for line in afile:  # iterate through file and add each item to the list
+            #self.University.append(str(line).rstrip('\n'))
+        afile.close() #closes file
 
         self.UniTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_2)
         self.UniTextEdit.setObjectName(_fromUtf8("UniTextEdit"))
@@ -381,7 +382,7 @@ if __name__ == "__main__":
     ui.home()
     MainWindow.show()
     app.exec_()
-=======
+
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'SGM2Group5.ui'
@@ -536,7 +537,7 @@ class Ui_AviateNEducate(object):
         self.ColourSelectLabel.setFont(font)
         self.ColourSelectLabel.setObjectName(_fromUtf8("ColourSelectLabel"))
         self.SecondComboBox.addWidget(self.ColourSelectLabel)
-<<<<<<< HEAD
+
 
         # Colour selection box
         self.ColourComboBox = QtGui.QComboBox(self.verticalLayoutWidget_6)
@@ -547,11 +548,10 @@ class Ui_AviateNEducate(object):
         self.ColourComboBox.addItem("Yellow")
         self.ColourComboBox.addItem("Blue")
 
-=======
         self.ColourComboBox = QtGui.QComboBox(self.verticalLayoutWidget_6)
         self.ColourComboBox.setObjectName(_fromUtf8("ColourComboBox"))
         self.SecondComboBox.addWidget(self.ColourComboBox)
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
+        ab1219e8b474782772d85aaf6f381edb90b412d8
         self.verticalLayoutWidget_7 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_7.setGeometry(QtCore.QRect(390, 10, 187, 80))
         self.verticalLayoutWidget_7.setObjectName(_fromUtf8("verticalLayoutWidget_7"))
