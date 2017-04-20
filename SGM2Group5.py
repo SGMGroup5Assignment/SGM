@@ -427,15 +427,102 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
-    def high(self):
+    def costs(self, text):
+        if text == "Dublin Institute of Technology" :
+            self.HCostRadioButton.toggled.connect(self.highdub)
+            self.LCostRadioButton.toggled.connect(self.lowdub)
+        elif text == "Dublin City University":
+            self.HCostRadioButton.toggled.connect(self.highdub)
+            self.LCostRadioButton.toggled.connect(self.lowdub)
+        elif text == "University College Dublin":
+            self.HCostRadioButton.toggled.connect(self.highdub)
+            self.LCostRadioButton.toggled.connect(self.lowdub)
+        elif text == "Hochschule Darmstadt":
+            self.HCostRadioButton.toggled.connect(self.highhoch)
+            self.LCostRadioButton.toggled.connect(self.lowhoch)
+        elif text == "Freie Universität Berlin":
+            self.HCostRadioButton.toggled.connect(self.highber)
+            self.LCostRadioButton.toggled.connect(self.lowber)
+        elif text == "Universität zu KölnNetworking":
+            self.HCostRadioButton.toggled.connect(self.highkol)
+            self.LCostRadioButton.toggled.connect(self.lowkol)
+        elif text == "University of Paris":
+            self.HCostRadioButton.toggled.connect(self.highpar)
+            self.LCostRadioButton.toggled.connect(self.lowpar)
+        elif text == "University of Lyon":
+            self.HCostRadioButton.toggled.connect(self.highly)
+            self.LCostRadioButton.toggled.connect(self.lowly)
+        elif text == "University of Marseille":
+            self.HCostRadioButton.toggled.connect(self.highmar)
+            self.LCostRadioButton.toggled.connect(self.lowmar)
+
+    def lowmar(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Le petit prince,45 per night")
+
+    def highly(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        # if self.UniComboBox.itemText== "Dublin Institute of Technology":
-        self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
-        # else:
-        #    self.AccomTextEdit.insertPlainText("?")
+        self.AccomTextEdit.insertPlainText("La Rein, 10 per night")
 
-    def low(self):
+    def lowly(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("L'hotel de Lafyette, 25 per night")
+
+    def highly(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("La poisson, 10k per night")
+
+
+    def lowpar(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("La Croissant, 25k per night")
+
+    def highkol(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Les Miserables, 10 per night")
+
+    def highkol(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Auto, 25k per night")
+
+    def lowbkol(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Hund, like 5 euro")
+
+    def highber(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Brot, 20k per night")
+
+    def lowber(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Marmelade, like 5 euro")
+
+    def highhoch(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Geld, 15k per night")
+
+    def lowhoch(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Kase, like 5 euro")
+
+    def highdub(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
+
+    def lowdub(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
         self.AccomTextEdit.insertPlainText("Super cheap hotel, like 5 euro")
@@ -444,8 +531,9 @@ class Ui_AviateNEducate(object):
 
         self.countryComboBox.activated[str].connect(self.loadmodules)
         self.UniComboBox.activated[str].connect(self.dispmodule)
-        self.HCostRadioButton.toggled.connect(self.high)
-        self.LCostRadioButton.toggled.connect(self.low)
+        self.UniComboBox.activated[str].connect(self.costs)
+        #self.HCostRadioButton.toggled.connect(self.high)
+        #self.LCostRadioButton.toggled.connect(self.low)
         self.Zoom.stateChanged.connect(self.zoomie)
 
 
