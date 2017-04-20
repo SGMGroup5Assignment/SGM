@@ -400,20 +400,25 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
-    def high(self, state):
-        if state == QtCore.Qt.Checked:
-            if self.UniComboBox == "Dublin Institute of Technology" :
-                self.AccomTextEdit.setText("Shelbourne, 15k per night")
-            else:
-                self.AccomTextEdit.setText("Code kinda works?")
-        else:
-            self.AccomTextEdit.setText("?")
+    def high(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        # if self.UniComboBox.itemText== "Dublin Institute of Technology":
+        self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
+        # else:
+        #    self.AccomTextEdit.insertPlainText("?")
+
+    def low(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Super cheap hotel, like 5 euro")
 
     def home(self):
 
         self.countryComboBox.activated[str].connect(self.loadmodules)
         self.UniComboBox.activated[str].connect(self.dispmodule)
-        self.HCostRadioButton.stateChanged.connect(self.high)
+        self.HCostRadioButton.toggled.connect(self.high)
+        self.LCostRadioButton.toggled.connect(self.low)
         self.Zoom.stateChanged.connect(self.zoomie)
 
 
