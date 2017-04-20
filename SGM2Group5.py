@@ -152,9 +152,16 @@ class Ui_AviateNEducate(object):
         self.ColourSelectLabel.setFont(font)
         self.ColourSelectLabel.setObjectName(_fromUtf8("ColourSelectLabel"))
         self.SecondComboBox.addWidget(self.ColourSelectLabel)
+
+        # Colour selection box
         self.ColourComboBox = QtGui.QComboBox(self.verticalLayoutWidget_6)
         self.ColourComboBox.setObjectName(_fromUtf8("ColourComboBox"))
         self.SecondComboBox.addWidget(self.ColourComboBox)
+        self.ColourComboBox.addItem(" ")
+        self.ColourComboBox.addItem("Green")
+        self.ColourComboBox.addItem("Yellow")
+        self.ColourComboBox.addItem("Blue")
+
         self.verticalLayoutWidget_7 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_7.setGeometry(QtCore.QRect(390, 10, 187, 80))
         self.verticalLayoutWidget_7.setObjectName(_fromUtf8("verticalLayoutWidget_7"))
@@ -199,7 +206,7 @@ class Ui_AviateNEducate(object):
         self.CountryTextEdit = QtGui.QPlainTextEdit(self.verticalLayoutWidget_10)
         self.CountryTextEdit.setObjectName(_fromUtf8("CountryTextEdit"))
         self.CountryInfoLayout.addWidget(self.CountryTextEdit)
-
+#Uni lsyout box
         self.verticalLayoutWidget_11 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_11.setGeometry(QtCore.QRect(870, 120, 221, 61))
         self.verticalLayoutWidget_11.setObjectName(_fromUtf8("verticalLayoutWidget_11"))
@@ -209,7 +216,7 @@ class Ui_AviateNEducate(object):
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
         font.setPointSize(11)
-
+#Uni drop down box
         self.ColourSelectLabel_2.setFont(font)
         self.ColourSelectLabel_2.setObjectName(_fromUtf8("ColourSelectLabel_2"))
         self.UniLayoutBox.addWidget(self.ColourSelectLabel_2)
@@ -330,27 +337,139 @@ class Ui_AviateNEducate(object):
     def dispmodule(self, text):
         self.uniSelected.setText(text)
 
+#Uni drop down insertions
     def loadmodules(self, text):
         self.UniComboBox.clear()
         if text == "Ireland":
             self.UniComboBox.addItem("Dublin Institute of Technology")
             self.UniComboBox.addItem("Dublin City University")
             self.UniComboBox.addItem("University College Dublin")
+          #  self.UniComboBox.setStyleSheet("background-color: white")
+          #  self.centralwidget.setStyleSheet("background-color:#89f442 ")
+          #  self.CountryTextEdit.setStyleSheet("background-color: white")
+           # self.UniTextEdit.setStyleSheet("background-color: white")
+           # self.FundingTextEdit.setStyleSheet("background-color: white")
+          #  self.AccomTextEdit.setStyleSheet("background-color: white")
+          #  self.ColourComboBox.setStyleSheet("background-color: white")
+          #  self.SecondComboBox.setStyleSheet("background-color: white")
+
         elif text == "Germany":
             self.UniComboBox.addItem("Hochschule Darmstadt")
             self.UniComboBox.addItem("Freie Universität Berlin")
             self.UniComboBox.addItem("Universität zu KölnNetworking")
+          #  self.UniComboBox.setStyleSheet("background-color: white")
+          #  self.centralwidget.setStyleSheet("background-color:yellow ")
+         #   self.CountryTextEdit.setStyleSheet("background-color: white")
+          #  self.UniTextEdit.setStyleSheet("background-color: white")
+          #  self.FundingTextEdit.setStyleSheet("background-color: white")
+          #  self.AccomTextEdit.setStyleSheet("background-color: white")
+          #  self.ColourComboBox.setStyleSheet("background-color: white")
         elif text == "France":
             self.UniComboBox.addItem("University of Paris")
             self.UniComboBox.addItem("University of Lyon")
             self.UniComboBox.addItem("University of Marseille")
+           # self.UniComboBox.setStyleSheet("background-color: white")
+            #self.centralwidget.setStyleSheet("background-color:#42A1F4 ")
+            #self.CountryTextEdit.setStyleSheet("background-color: white")
+           # self.UniTextEdit.setStyleSheet("background-color: white")
+           # self.FundingTextEdit.setStyleSheet("background-color: white")
+           # self.AccomTextEdit.setStyleSheet("background-color: white")
+           # self.ColourComboBox.setStyleSheet("background-color: white")
         else:
             self.UniComboBox.clear()
+
+    def loadcolours(self, text):
+        if text == "Green":
+            self.ColourComboBox.setStyleSheet("background-color:#89f442")
+
+        elif text == "Yellow":
+            self.ColourComboBox.setStyleSheet("background-color:yellow ")
+
+        elif text == "Blue":
+            self.ColourComboBox.setStyleSheet("background-color:#42A1F4")
+        else:
+            self.ColourComboBox.clear()
+
+#Zoom Code
+    def zoomie(self, state):
+        if state == QtCore.Qt.Checked:
+            # self.setGeometry(10, 20, 2000, 2000)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Rockwell"))
+            font.setPointSize(24)
+            self.AviateNEducate_Title.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(17)
+            self.centralwidget.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(15)
+            self.AccomInfo.setFont(font)
+            self.CountryLabel.setFont(font)
+            self.ColourSelectLabel.setFont(font)
+            font.setPointSize(12)
+            self.Zoom.setFont(font)
+            self.UniInfo.setFont(font)
+            self.Funding.setFont(font)
+            self.ColourSelectLabel_2.setFont(font)
+            self.UniversityPicLabel.setFont(font)
+            font.setPointSize(12)
+            self.LCostRadioButton.setFont(font)
+            self.HCostRadioButton.setFont(font)
+            font.setPointSize(15)
+            self.Student2PicLabel.setFont(font)
+            self.Student3PicLabel.setFont(font)
+        else:
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Rockwell"))
+            font.setPointSize(24)
+            self.AviateNEducate_Title.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(14)
+            self.centralwidget.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(14)
+            self.AccomInfo.setFont(font)
+            self.CountryLabel.setFont(font)
+            self.ColourSelectLabel.setFont(font)
+            font.setPointSize(11)
+            self.Zoom.setFont(font)
+            self.UniInfo.setFont(font)
+            self.Funding.setFont(font)
+            self.ColourSelectLabel_2.setFont(font)
+            self.UniversityPicLabel.setFont(font)
+            font.setPointSize(10)
+            self.LCostRadioButton.setFont(font)
+            self.HCostRadioButton.setFont(font)
+            font.setPointSize(15)
+            self.Student2PicLabel.setFont(font)
+            self.Student3PicLabel.setFont(font)
+
+#Change text Code
+    def high(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        # if self.UniComboBox.itemText== "Dublin Institute of Technology":
+        self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
+        # else:
+        #    self.AccomTextEdit.insertPlainText("?")
+
+    def low(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Super cheap hotel, like 5 euro")
 
     def home(self):
 
         self.countryComboBox.activated[str].connect(self.loadmodules)
+        self.ColourComboBox.activated[str].connect(self.loadcolours)
         self.UniComboBox.activated[str].connect(self.dispmodule)
+        self.HCostRadioButton.toggled.connect(self.high)
+        self.LCostRadioButton.toggled.connect(self.low)
+        self.Zoom.stateChanged.connect(self.zoomie)
 
 
 if __name__ == "__main__":
