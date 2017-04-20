@@ -49,7 +49,16 @@ class Ui_AviateNEducate(object):
         self.UniLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_2)
         self.UniLayout.setObjectName(_fromUtf8("UniLayout"))
 
-        #This section is for the text within the University text section
+        def __init__(self):
+            self.loadfile()  # reads the file into a list
+            self.initUI()  # calls the method initUI() on this instance
+
+        self.animal = []  # Create empty list
+        afile = open('University.txt', 'r')  # Open file for reading
+        for line in afile:  # iterate through file and add each item to the list
+            self.animal.append(str(line).rstrip('\n'))
+        afile.close()
+
         self.UniTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_2)
         self.UniTextEdit.setObjectName(_fromUtf8("UniTextEdit"))
         self.UniLayout.addWidget(self.UniTextEdit)
@@ -359,11 +368,6 @@ class Ui_AviateNEducate(object):
         self.countryComboBox.activated[str].connect(self.loadmodules)
         self.UniComboBox.activated[str].connect(self.dispmodule)
 
-        #self.scrollArea = QtGui.QScrollArea(self)
-        #self.scrollArea.setWidgetResizable(True)
-        #self.scrollAreaWidgetContents = QtGui.QWidget(self.scrollArea)
-        #self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(1100, 10, 25, 1100))
-        #self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
 
 if __name__ == "__main__":
