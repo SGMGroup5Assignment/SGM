@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'SGM2Group5.ui'
 #
@@ -152,22 +151,9 @@ class Ui_AviateNEducate(object):
         self.ColourSelectLabel.setFont(font)
         self.ColourSelectLabel.setObjectName(_fromUtf8("ColourSelectLabel"))
         self.SecondComboBox.addWidget(self.ColourSelectLabel)
-<<<<<<< HEAD
-
-        # Colour selection box
         self.ColourComboBox = QtGui.QComboBox(self.verticalLayoutWidget_6)
         self.ColourComboBox.setObjectName(_fromUtf8("ColourComboBox"))
         self.SecondComboBox.addWidget(self.ColourComboBox)
-        self.ColourComboBox.addItem(" ")
-        self.ColourComboBox.addItem("Green")
-        self.ColourComboBox.addItem("Yellow")
-        self.ColourComboBox.addItem("Blue")
-
-=======
-        self.ColourComboBox = QtGui.QComboBox(self.verticalLayoutWidget_6)
-        self.ColourComboBox.setObjectName(_fromUtf8("ColourComboBox"))
-        self.SecondComboBox.addWidget(self.ColourComboBox)
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
         self.verticalLayoutWidget_7 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_7.setGeometry(QtCore.QRect(390, 10, 187, 80))
         self.verticalLayoutWidget_7.setObjectName(_fromUtf8("verticalLayoutWidget_7"))
@@ -212,11 +198,7 @@ class Ui_AviateNEducate(object):
         self.CountryTextEdit = QtGui.QPlainTextEdit(self.verticalLayoutWidget_10)
         self.CountryTextEdit.setObjectName(_fromUtf8("CountryTextEdit"))
         self.CountryInfoLayout.addWidget(self.CountryTextEdit)
-<<<<<<< HEAD
-#Uni lsyout box
-=======
 
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
         self.verticalLayoutWidget_11 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_11.setGeometry(QtCore.QRect(870, 120, 221, 61))
         self.verticalLayoutWidget_11.setObjectName(_fromUtf8("verticalLayoutWidget_11"))
@@ -226,11 +208,7 @@ class Ui_AviateNEducate(object):
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
         font.setPointSize(11)
-<<<<<<< HEAD
-#Uni drop down box
-=======
 
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
         self.ColourSelectLabel_2.setFont(font)
         self.ColourSelectLabel_2.setObjectName(_fromUtf8("ColourSelectLabel_2"))
         self.UniLayoutBox.addWidget(self.ColourSelectLabel_2)
@@ -258,6 +236,7 @@ class Ui_AviateNEducate(object):
         self.FundCheapLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget_12)
         self.FundCheapLayout.setObjectName(_fromUtf8("FundCheapLayout"))
         self.LCostRadioButton = QtGui.QRadioButton(self.verticalLayoutWidget_12)
+        self.LCostRadioButton.setChecked(True)
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
         font.setPointSize(10)
@@ -351,309 +330,27 @@ class Ui_AviateNEducate(object):
     def dispmodule(self, text):
         self.uniSelected.setText(text)
 
-<<<<<<< HEAD
-#Uni drop down insertions
-=======
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
     def loadmodules(self, text):
         self.UniComboBox.clear()
         if text == "Ireland":
             self.UniComboBox.addItem("Dublin Institute of Technology")
             self.UniComboBox.addItem("Dublin City University")
             self.UniComboBox.addItem("University College Dublin")
-<<<<<<< HEAD
-          #  self.UniComboBox.setStyleSheet("background-color: white")
-          #  self.centralwidget.setStyleSheet("background-color:#89f442 ")
-          #  self.CountryTextEdit.setStyleSheet("background-color: white")
-           # self.UniTextEdit.setStyleSheet("background-color: white")
-           # self.FundingTextEdit.setStyleSheet("background-color: white")
-          #  self.AccomTextEdit.setStyleSheet("background-color: white")
-          #  self.ColourComboBox.setStyleSheet("background-color: white")
-          #  self.SecondComboBox.setStyleSheet("background-color: white")
-=======
-            self.UniComboBox.setStyleSheet("background-color: white")
-            self.centralwidget.setStyleSheet("background-color:#89f442 ")
-            self.CountryTextEdit.setStyleSheet("background-color: white")
-            self.UniTextEdit.setStyleSheet("background-color: white")
-            self.FundingTextEdit.setStyleSheet("background-color: white")
-            self.AccomTextEdit.setStyleSheet("background-color: white")
-            self.ColourComboBox.setStyleSheet("background-color: white")
-            self.SecondComboBox.setStyleSheet("background-color: white")
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
-
         elif text == "Germany":
             self.UniComboBox.addItem("Hochschule Darmstadt")
-            self.UniComboBox.addItem("Freie Universität Berlin")
-            self.UniComboBox.addItem("Universität zu KölnNetworking")
-<<<<<<< HEAD
-          #  self.UniComboBox.setStyleSheet("background-color: white")
-          #  self.centralwidget.setStyleSheet("background-color:yellow ")
-         #   self.CountryTextEdit.setStyleSheet("background-color: white")
-          #  self.UniTextEdit.setStyleSheet("background-color: white")
-          #  self.FundingTextEdit.setStyleSheet("background-color: white")
-          #  self.AccomTextEdit.setStyleSheet("background-color: white")
-          #  self.ColourComboBox.setStyleSheet("background-color: white")
-=======
-            self.UniComboBox.setStyleSheet("background-color: white")
-            self.centralwidget.setStyleSheet("background-color:yellow ")
-            self.CountryTextEdit.setStyleSheet("background-color: white")
-            self.UniTextEdit.setStyleSheet("background-color: white")
-            self.FundingTextEdit.setStyleSheet("background-color: white")
-            self.AccomTextEdit.setStyleSheet("background-color: white")
-            self.ColourComboBox.setStyleSheet("background-color: white")
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
+            self.UniComboBox.addItem("Freie Universit�t Berlin")
+            self.UniComboBox.addItem("Universit�t zu K�lnNetworking")
         elif text == "France":
             self.UniComboBox.addItem("University of Paris")
             self.UniComboBox.addItem("University of Lyon")
             self.UniComboBox.addItem("University of Marseille")
-<<<<<<< HEAD
-           # self.UniComboBox.setStyleSheet("background-color: white")
-            #self.centralwidget.setStyleSheet("background-color:#42A1F4 ")
-            #self.CountryTextEdit.setStyleSheet("background-color: white")
-           # self.UniTextEdit.setStyleSheet("background-color: white")
-           # self.FundingTextEdit.setStyleSheet("background-color: white")
-           # self.AccomTextEdit.setStyleSheet("background-color: white")
-           # self.ColourComboBox.setStyleSheet("background-color: white")
         else:
             self.UniComboBox.clear()
-
-    def loadcolours(self, text):
-        if text == "Green":
-            self.ColourComboBox.setStyleSheet("background-color:#89f442")
-
-        elif text == "Yellow":
-            self.ColourComboBox.setStyleSheet("background-color:yellow ")
-
-        elif text == "Blue":
-            self.ColourComboBox.setStyleSheet("background-color:#42A1F4")
-        else:
-            self.ColourComboBox.clear()
-
-#Zoom Code
-    def zoomie(self, state):
-        if state == QtCore.Qt.Checked:
-            # self.setGeometry(10, 20, 2000, 2000)
-=======
-            self.UniComboBox.setStyleSheet("background-color: white")
-            self.centralwidget.setStyleSheet("background-color:#42A1F4 ")
-            self.CountryTextEdit.setStyleSheet("background-color: white")
-            self.UniTextEdit.setStyleSheet("background-color: white")
-            self.FundingTextEdit.setStyleSheet("background-color: white")
-            self.AccomTextEdit.setStyleSheet("background-color: white")
-            self.ColourComboBox.setStyleSheet("background-color: white")
-        else:
-            self.UniComboBox.clear()
-
-    #Checks the check box and increases the font size of the letters if clicked and reduced if clicked twice
-    def zoomie(self, state):
-        #Checks if clicked
-        if state == QtCore.Qt.Checked:
-            #Increses font
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
-            font = QtGui.QFont()
-            font.setFamily(_fromUtf8("Rockwell"))
-            font.setPointSize(24)
-            self.AviateNEducate_Title.setFont(font)
-            font = QtGui.QFont()
-            font.setFamily(_fromUtf8("Verdana"))
-            font.setPointSize(17)
-            self.centralwidget.setFont(font)
-            font = QtGui.QFont()
-            font.setFamily(_fromUtf8("Verdana"))
-            font.setPointSize(15)
-            self.AccomInfo.setFont(font)
-            self.CountryLabel.setFont(font)
-            self.ColourSelectLabel.setFont(font)
-            font.setPointSize(12)
-            self.Zoom.setFont(font)
-            self.UniInfo.setFont(font)
-            self.Funding.setFont(font)
-            self.ColourSelectLabel_2.setFont(font)
-            self.UniversityPicLabel.setFont(font)
-            font.setPointSize(12)
-            self.LCostRadioButton.setFont(font)
-            self.HCostRadioButton.setFont(font)
-            font.setPointSize(15)
-            self.Student2PicLabel.setFont(font)
-            self.Student3PicLabel.setFont(font)
-<<<<<<< HEAD
-=======
-        #Returns font to normal size
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
-        else:
-            font = QtGui.QFont()
-            font.setFamily(_fromUtf8("Rockwell"))
-            font.setPointSize(24)
-            self.AviateNEducate_Title.setFont(font)
-            font = QtGui.QFont()
-            font.setFamily(_fromUtf8("Verdana"))
-            font.setPointSize(14)
-            self.centralwidget.setFont(font)
-            font = QtGui.QFont()
-            font.setFamily(_fromUtf8("Verdana"))
-            font.setPointSize(14)
-            self.AccomInfo.setFont(font)
-            self.CountryLabel.setFont(font)
-            self.ColourSelectLabel.setFont(font)
-            font.setPointSize(11)
-            self.Zoom.setFont(font)
-            self.UniInfo.setFont(font)
-            self.Funding.setFont(font)
-            self.ColourSelectLabel_2.setFont(font)
-            self.UniversityPicLabel.setFont(font)
-            font.setPointSize(10)
-            self.LCostRadioButton.setFont(font)
-            self.HCostRadioButton.setFont(font)
-            font.setPointSize(15)
-            self.Student2PicLabel.setFont(font)
-            self.Student3PicLabel.setFont(font)
-<<<<<<< HEAD
-
-#Change text Code
-    def high(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        # if self.UniComboBox.itemText== "Dublin Institute of Technology":
-        self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
-        # else:
-        #    self.AccomTextEdit.insertPlainText("?")
-
-    def low(self):
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Super cheap hotel, like 5 euro")
-=======
-    #Gives hotels and their prices
-    def costs(self, text):
-        #Checks which college is chosen and calls the function depending on if the high or low radio button was toggled
-        if text == "Dublin Institute of Technology" :
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
-        elif text == "Dublin City University":
-            self.HCostRadioButton.toggled.connect(self.highdcu)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
-        elif text == "University College Dublin":
-            self.HCostRadioButton.toggled.connect(self.highucd)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
-        elif text == "Hochschule Darmstadt":
-            self.HCostRadioButton.toggled.connect(self.highhoch)
-            self.LCostRadioButton.toggled.connect(self.lowhoch)
-        elif text == "Freie Universität Berlin":
-            self.HCostRadioButton.toggled.connect(self.highber)
-            self.LCostRadioButton.toggled.connect(self.lowber)
-        elif text == "Universität zu KölnNetworking":
-            self.HCostRadioButton.toggled.connect(self.highkol)
-            self.LCostRadioButton.toggled.connect(self.lowkol)
-        elif text == "University of Paris":
-            self.HCostRadioButton.toggled.connect(self.highpar)
-            self.LCostRadioButton.toggled.connect(self.lowpar)
-        elif text == "University of Lyon":
-            self.HCostRadioButton.toggled.connect(self.highly)
-            self.LCostRadioButton.toggled.connect(self.lowly)
-        elif text == "University of Marseille":
-            self.HCostRadioButton.toggled.connect(self.highmar)
-            self.LCostRadioButton.toggled.connect(self.lowmar)
-
-    #accom for marseilles
-    def lowmar(self):
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Le petit prince,45 per night")
-
-    def highmar(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La Rein, 10 per night")
-
-    #accom for lyon
-    def lowly(self):
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("L'hotel de Lafyette, 25 per night")
-
-    def highly(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La poisson, 10k per night")
-
-    #accom for paris
-    def lowpar(self):
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La Croissant, 25k per night")
-
-    def highpar(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Les Miserables, 10 per night")
-
-    #accom for kolnNetworking
-    def highkol(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Auto, 25k per night")
-
-    def lowkol(self):
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Hund, like 5 euro")
-
-    #Accom for berlin
-    def highber(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Brot, 20k per night")
-
-    def lowber(self):
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Marmelade, like 5 euro")
-
-    #Accom for hochschule
-    def highhoch(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Geld, 15k per night")
-
-    def lowhoch(self):
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Kase, like 5 euro")
-
-    def highucd(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Ucd student accomadation, 700 per month")
-
-    def highdcu(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("DCU student accomadation, 700 per month")
-
-    def highdub(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
-
-    def lowdub(self):
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("House share, 450 per month")
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
 
     def home(self):
 
         self.countryComboBox.activated[str].connect(self.loadmodules)
-<<<<<<< HEAD
-        self.ColourComboBox.activated[str].connect(self.loadcolours)
         self.UniComboBox.activated[str].connect(self.dispmodule)
-        self.HCostRadioButton.toggled.connect(self.high)
-        self.LCostRadioButton.toggled.connect(self.low)
-=======
-        self.UniComboBox.activated[str].connect(self.dispmodule)
-        self.UniComboBox.activated[str].connect(self.costs)
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
-        self.Zoom.stateChanged.connect(self.zoomie)
 
 
 if __name__ == "__main__":
@@ -665,8 +362,4 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     ui.home()
     MainWindow.show()
-<<<<<<< HEAD
     app.exec_()
-=======
-    app.exec_()
->>>>>>> ab1219e8b474782772d85aaf6f381edb90b412d8
