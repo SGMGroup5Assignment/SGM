@@ -178,6 +178,10 @@ class Ui_AviateNEducate(object):
         self.ColourComboBox.addItem("Green")
         self.ColourComboBox.addItem("Yellow")
         self.ColourComboBox.addItem("Blue")
+        self.ColourComboBox.addItem("Orange")
+        self.ColourComboBox.addItem("Purple")
+        self.ColourComboBox.addItem("Pink")
+        self.ColourComboBox.addItem("Red")
 
         self.verticalLayoutWidget_7 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_7.setGeometry(QtCore.QRect(390, 10, 187, 80))
@@ -400,7 +404,7 @@ class Ui_AviateNEducate(object):
     def loadcolours(self, text):
         if text == "Green":
             self.ColourComboBox.setStyleSheet("background-color:white")
-            self.centralwidget.setStyleSheet("background-color:#89f442 ")
+            self.centralwidget.setStyleSheet("background-color:#b4ff8e ")
             self.CountryTextEdit.setStyleSheet("background-color: white")
             self.UniTextEdit.setStyleSheet("background-color: white")
             self.FundingTextEdit.setStyleSheet("background-color: white")
@@ -412,7 +416,7 @@ class Ui_AviateNEducate(object):
 
         elif text == "Yellow":
             self.ColourComboBox.setStyleSheet("background-color:white ")
-            self.centralwidget.setStyleSheet("background-color:yellow ")
+            self.centralwidget.setStyleSheet("background-color:#e8ff8e ")
             self.CountryTextEdit.setStyleSheet("background-color: white")
             self.UniTextEdit.setStyleSheet("background-color: white")
             self.FundingTextEdit.setStyleSheet("background-color: white")
@@ -423,7 +427,7 @@ class Ui_AviateNEducate(object):
 
         elif text == "Blue":
             self.ColourComboBox.setStyleSheet("background-color:white")
-            self.centralwidget.setStyleSheet("background-color:#42A1F4 ")
+            self.centralwidget.setStyleSheet("background-color:#8ec8ff ")
             self.CountryTextEdit.setStyleSheet("background-color: white")
             self.UniTextEdit.setStyleSheet("background-color: white")
             self.FundingTextEdit.setStyleSheet("background-color: white")
@@ -431,6 +435,51 @@ class Ui_AviateNEducate(object):
             self.ColourComboBox.setStyleSheet("background-color: white")
             self.UniComboBox.setStyleSheet("background-color: white")
             self.countryComboBox.setStyleSheet("background-color: white")
+
+        elif text == "Orange":
+            self.ColourComboBox.setStyleSheet("background-color:white")
+            self.centralwidget.setStyleSheet("background-color:#f7be6a ")
+            self.CountryTextEdit.setStyleSheet("background-color: white")
+            self.UniTextEdit.setStyleSheet("background-color: white")
+            self.FundingTextEdit.setStyleSheet("background-color: white")
+            self.AccomTextEdit.setStyleSheet("background-color: white")
+            self.ColourComboBox.setStyleSheet("background-color: white")
+            self.UniComboBox.setStyleSheet("background-color: white")
+            self.countryComboBox.setStyleSheet("background-color: white")
+
+        elif text == "Purple":
+            self.ColourComboBox.setStyleSheet("background-color:white")
+            self.centralwidget.setStyleSheet("background-color:#b79bff ")
+            self.CountryTextEdit.setStyleSheet("background-color: white")
+            self.UniTextEdit.setStyleSheet("background-color: white")
+            self.FundingTextEdit.setStyleSheet("background-color: white")
+            self.AccomTextEdit.setStyleSheet("background-color: white")
+            self.ColourComboBox.setStyleSheet("background-color: white")
+            self.UniComboBox.setStyleSheet("background-color: white")
+            self.countryComboBox.setStyleSheet("background-color: white")
+
+        elif text == "Pink":
+            self.ColourComboBox.setStyleSheet("background-color:white")
+            self.centralwidget.setStyleSheet("background-color:#ff9bec ")
+            self.CountryTextEdit.setStyleSheet("background-color: white")
+            self.UniTextEdit.setStyleSheet("background-color: white")
+            self.FundingTextEdit.setStyleSheet("background-color: white")
+            self.AccomTextEdit.setStyleSheet("background-color: white")
+            self.ColourComboBox.setStyleSheet("background-color: white")
+            self.UniComboBox.setStyleSheet("background-color: white")
+            self.countryComboBox.setStyleSheet("background-color: white")
+
+        elif text == "Red":
+            self.ColourComboBox.setStyleSheet("background-color:white")
+            self.centralwidget.setStyleSheet("background-color:#ff7a7a ")
+            self.CountryTextEdit.setStyleSheet("background-color: white")
+            self.UniTextEdit.setStyleSheet("background-color: white")
+            self.FundingTextEdit.setStyleSheet("background-color: white")
+            self.AccomTextEdit.setStyleSheet("background-color: white")
+            self.ColourComboBox.setStyleSheet("background-color: white")
+            self.UniComboBox.setStyleSheet("background-color: white")
+            self.countryComboBox.setStyleSheet("background-color: white")
+
         else:
             self.ColourComboBox.clear()
 
