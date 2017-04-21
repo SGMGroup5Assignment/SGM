@@ -32,6 +32,8 @@ except AttributeError:
 
             afile = open('University.txt', 'r')  # Open file for reading
 
+            #afile = open('University.txt', 'r')  # Open file for reading
+
         for line in afile:  # iterate through file and add each item to the list
             self.University.append(str(line).rstrip('\n'))
             afile.close()
@@ -61,6 +63,7 @@ class Ui_AviateNEducate(object):
         self.UniLayout.setObjectName(_fromUtf8("UniLayout"))
 
 
+        #Section for Uni Text
 
         self.UniTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_2)
         self.UniTextEdit.setObjectName(_fromUtf8("UniTextEdit"))
@@ -234,6 +237,8 @@ class Ui_AviateNEducate(object):
         self.ColourSelectLabel_2.setFont(font)
         self.ColourSelectLabel_2.setObjectName(_fromUtf8("ColourSelectLabel_2"))
         self.UniLayoutBox.addWidget(self.ColourSelectLabel_2)
+
+        #fsdfsdfsfd
         self.UniComboBox = QtGui.QComboBox(self.verticalLayoutWidget_11)
         self.UniComboBox.setObjectName(_fromUtf8("UniComboBox"))
         self.UniLayoutBox.addWidget(self.UniComboBox)
@@ -487,6 +492,11 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
+#This section displays the different university options
+    def accom(self):
+        self.UniTextEdit.clear()
+        self.UniTextEdit.insertPlainText("IT WORKS NOW RIGHT??")
+
 #Change text Code
     def high(self):
         self.AccomTextEdit.clear()
@@ -509,6 +519,8 @@ class Ui_AviateNEducate(object):
         self.HCostRadioButton.toggled.connect(self.high)
         self.LCostRadioButton.toggled.connect(self.low)
         self.Zoom.stateChanged.connect(self.zoomie)
+
+        self.UniComboBox.activated[str].connect(self.accom)
 
 
 if __name__ == "__main__":
