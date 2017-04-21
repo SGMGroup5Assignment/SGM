@@ -546,6 +546,19 @@ class Ui_AviateNEducate(object):
         self.UniTextEdit.clear()
         self.UniTextEdit.insertPlainText("IT WORKS NOW RIGHT??")
 
+        self.loadfile()  # reads the file into a list
+        self.initUI()  # calls the method initUI() on this instance
+        self.animal = []  # Create empty list
+
+        afile = open('University.txt', 'r')  # Open file for reading
+
+        afile = open('University.txt', 'r')  # Open file for reading
+
+    for line in afile:  # iterate through file and add each item to the list
+        self.University.append(str(line).rstrip('\n'))
+        afile.close()
+
+
 #Change text Code
     def high(self):
         self.AccomTextEdit.clear()
