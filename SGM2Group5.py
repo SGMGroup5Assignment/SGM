@@ -24,6 +24,17 @@ except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
 
+#Section to read in file
+        def __init__(self):
+            self.loadfile()  # reads the file into a list
+            self.initUI()  # calls the method initUI() on this instance
+            self.animal = []  # Create empty list
+
+            afile = open('University.txt', 'r')  # Open file for reading
+
+        for line in afile:  # iterate through file and add each item to the list
+            self.University.append(str(line).rstrip('\n'))
+            afile.close()
 
 class Ui_AviateNEducate(object):
     def setupUi(self, AviateNEducate):
@@ -48,6 +59,9 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_2.setObjectName(_fromUtf8("horizontalLayoutWidget_2"))
         self.UniLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_2)
         self.UniLayout.setObjectName(_fromUtf8("UniLayout"))
+
+
+
         self.UniTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_2)
         self.UniTextEdit.setObjectName(_fromUtf8("UniTextEdit"))
         self.UniLayout.addWidget(self.UniTextEdit)
