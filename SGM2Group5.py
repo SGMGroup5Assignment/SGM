@@ -150,8 +150,6 @@ class Ui_AviateNEducate(object):
         self.countryComboBox.addItem("English")
         self.countryComboBox.addItem("French")
         self.countryComboBox.addItem("German")
-        #self.countryComboBox.addItem("Germany")
-        #self.countryComboBox.addItem("France")
 
 
         self.verticalLayoutWidget_6 = QtGui.QWidget(self.centralwidget)
@@ -356,12 +354,15 @@ class Ui_AviateNEducate(object):
     def loadmodules(self, text):
         self.UniComboBox.clear()
         if text == "English":
+            self.UniComboBox.addItem("--------Ireland--------")
             self.UniComboBox.addItem("Dublin Institute of Technology")
             self.UniComboBox.addItem("Dublin City University")
             self.UniComboBox.addItem("University College Dublin")
+            self.UniComboBox.addItem("--------Germany--------")
             self.UniComboBox.addItem("Hochschule Darmstadt")
             self.UniComboBox.addItem("Freie Universität Berlin")
             self.UniComboBox.addItem("Universität zu KölnNetworking")
+            self.UniComboBox.addItem("--------France--------")
             self.UniComboBox.addItem("University of Paris")
             self.UniComboBox.addItem("University of Lyon")
             self.UniComboBox.addItem("University of Marseille")
@@ -378,12 +379,15 @@ class Ui_AviateNEducate(object):
             self.HCostRadioButton.setText(_translate("AviateNEducate", "High Cost", None))
 
         elif text == "German":
+            self.UniComboBox.addItem("--------Irland--------")
             self.UniComboBox.addItem("Dublin Institute of Technology")
             self.UniComboBox.addItem("Dublin City University")
             self.UniComboBox.addItem("University College Dublin")
+            self.UniComboBox.addItem("--------Deutschland--------")
             self.UniComboBox.addItem("Hochschule Darmstadt")
             self.UniComboBox.addItem("Freie Universität Berlin")
             self.UniComboBox.addItem("Universität zu KölnNetworking")
+            self.UniComboBox.addItem("--------Frankreich--------")
             self.UniComboBox.addItem("University of Paris")
             self.UniComboBox.addItem("University of Lyon")
             self.UniComboBox.addItem("University of Marseille")
@@ -399,13 +403,16 @@ class Ui_AviateNEducate(object):
             self.LCostRadioButton.setText(_translate("AviateNEducate", "Kostengünstig", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "Hohe Kosten", None))
           
-        elif text == "French":
+          elif text == "French":
+            self.UniComboBox.addItem("--------Irlande--------")
             self.UniComboBox.addItem("Dublin Institute of Technology")
             self.UniComboBox.addItem("Dublin City University")
             self.UniComboBox.addItem("University College Dublin")
+            self.UniComboBox.addItem("--------Allemagne--------")
             self.UniComboBox.addItem("Hochschule Darmstadt")
             self.UniComboBox.addItem("Freie Universität Berlin")
             self.UniComboBox.addItem("Universität zu KölnNetworking")
+            self.UniComboBox.addItem("--------France--------")
             self.UniComboBox.addItem("University of Paris")
             self.UniComboBox.addItem("University of Lyon")
             self.UniComboBox.addItem("University of Marseille")
