@@ -9,8 +9,8 @@
 from PyQt4 import QtCore, QtGui
 import random
 import gettext
-langtouse = gettext.translation('messages', localedir='locale', languages=['fr'])
-langtouse.install()
+fr = gettext.translation('fr', localedir='locale', languages=['fr'])
+fr.install()
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -154,19 +154,19 @@ class Ui_AviateNEducate(object):
         self.countryComboBox = QtGui.QComboBox(self.verticalLayoutWidget_2)
         self.countryComboBox.setObjectName(_fromUtf8("countryComboBox"))
         self.FirstComboBox.addWidget(self.countryComboBox)
-<<<<<<< HEAD
+
         self.countryComboBox.addItem(" ")
         self.countryComboBox.addItem(_("Home Page"))
         self.countryComboBox.addItem(_("Ireland"))
         self.countryComboBox.addItem(_("Germany"))
         self.countryComboBox.addItem(_("France"))
-=======
+
         self.countryComboBox.addItem("English")
         self.countryComboBox.addItem("French")
         self.countryComboBox.addItem("German")
         #self.countryComboBox.addItem("Germany")
         #self.countryComboBox.addItem("France")
->>>>>>> bf8ddad4d962f1092c32c448f1742cee2bb47a9d
+
 
 
         self.verticalLayoutWidget_6 = QtGui.QWidget(self.centralwidget)
