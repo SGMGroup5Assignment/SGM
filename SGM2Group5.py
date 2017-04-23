@@ -320,10 +320,7 @@ class Ui_AviateNEducate(object):
         self.Student3TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_13)
         self.Student3TextEdit.setObjectName(_fromUtf8("Student3TextEdit"))
         self.Student3ExpLayoutText.addWidget(self.Student3TextEdit)
-        self.verticalScrollBar = QtGui.QScrollBar(self.centralwidget)
-        self.verticalScrollBar.setGeometry(QtCore.QRect(1100, 10, 21, 1101))
-        self.verticalScrollBar.setOrientation(QtCore.Qt.Vertical)
-        self.verticalScrollBar.setObjectName(_fromUtf8("verticalScrollBar"))
+
         AviateNEducate.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(AviateNEducate)
         self.statusbar.setObjectName(_fromUtf8("statusbar"))
@@ -407,6 +404,7 @@ class Ui_AviateNEducate(object):
             self.ColourComboBox.setStyleSheet("background-color: white")
             self.UniComboBox.setStyleSheet("background-color: white")
             self.countryComboBox.setStyleSheet("background-color: white")
+            self.StudnetInfo.setStyleSheet("background-color: white")
 
 
         elif text == "Yellow":
@@ -419,6 +417,9 @@ class Ui_AviateNEducate(object):
             self.ColourComboBox.setStyleSheet("background-color: white")
             self.UniComboBox.setStyleSheet("background-color: white")
             self.countryComboBox.setStyleSheet("background-color: white")
+            self.Student1TextEdit.setStyleSheet("background-color: white")
+            self.Student2TextEdit.setStyleSheet("background-color: white")
+            self.Student3TextEdit.setStyleSheet("background-color: white")
 
         elif text == "Blue":
             self.ColourComboBox.setStyleSheet("background-color:white")
@@ -430,6 +431,9 @@ class Ui_AviateNEducate(object):
             self.ColourComboBox.setStyleSheet("background-color: white")
             self.UniComboBox.setStyleSheet("background-color: white")
             self.countryComboBox.setStyleSheet("background-color: white")
+            self.Student1TextEdit.setStyleSheet("background-color: white")
+            self.Student2TextEdit.setStyleSheet("background-color: white")
+            self.Student3TextEdit.setStyleSheet("background-color: white")
 
         elif text == "Orange":
             self.ColourComboBox.setStyleSheet("background-color:white")
@@ -441,6 +445,9 @@ class Ui_AviateNEducate(object):
             self.ColourComboBox.setStyleSheet("background-color: white")
             self.UniComboBox.setStyleSheet("background-color: white")
             self.countryComboBox.setStyleSheet("background-color: white")
+            self.Student1TextEdit.setStyleSheet("background-color: white")
+            self.Student2TextEdit.setStyleSheet("background-color: white")
+            self.Student3TextEdit.setStyleSheet("background-color: white")
 
         elif text == "Purple":
             self.ColourComboBox.setStyleSheet("background-color:white")
@@ -452,6 +459,9 @@ class Ui_AviateNEducate(object):
             self.ColourComboBox.setStyleSheet("background-color: white")
             self.UniComboBox.setStyleSheet("background-color: white")
             self.countryComboBox.setStyleSheet("background-color: white")
+            self.Student1TextEdit.setStyleSheet("background-color: white")
+            self.Student2TextEdit.setStyleSheet("background-color: white")
+            self.Student3TextEdit.setStyleSheet("background-color: white")
 
         elif text == "Pink":
             self.ColourComboBox.setStyleSheet("background-color:white")
@@ -463,6 +473,9 @@ class Ui_AviateNEducate(object):
             self.ColourComboBox.setStyleSheet("background-color: white")
             self.UniComboBox.setStyleSheet("background-color: white")
             self.countryComboBox.setStyleSheet("background-color: white")
+            self.Student1TextEdit.setStyleSheet("background-color: white")
+            self.Student2TextEdit.setStyleSheet("background-color: white")
+            self.Student3TextEdit.setStyleSheet("background-color: white")
 
         elif text == "Red":
             self.ColourComboBox.setStyleSheet("background-color:white")
@@ -474,6 +487,9 @@ class Ui_AviateNEducate(object):
             self.ColourComboBox.setStyleSheet("background-color: white")
             self.UniComboBox.setStyleSheet("background-color: white")
             self.countryComboBox.setStyleSheet("background-color: white")
+            self.Student1TextEdit.setStyleSheet("background-color: white")
+            self.Student2TextEdit.setStyleSheet("background-color: white")
+            self.Student3TextEdit.setStyleSheet("background-color: white")
 
         else:
             self.ColourComboBox.clear()
