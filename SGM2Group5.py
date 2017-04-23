@@ -154,11 +154,19 @@ class Ui_AviateNEducate(object):
         self.countryComboBox = QtGui.QComboBox(self.verticalLayoutWidget_2)
         self.countryComboBox.setObjectName(_fromUtf8("countryComboBox"))
         self.FirstComboBox.addWidget(self.countryComboBox)
+<<<<<<< HEAD
         self.countryComboBox.addItem(" ")
         self.countryComboBox.addItem(_("Home Page"))
         self.countryComboBox.addItem(_("Ireland"))
         self.countryComboBox.addItem(_("Germany"))
         self.countryComboBox.addItem(_("France"))
+=======
+        self.countryComboBox.addItem("English")
+        self.countryComboBox.addItem("French")
+        self.countryComboBox.addItem("German")
+        #self.countryComboBox.addItem("Germany")
+        #self.countryComboBox.addItem("France")
+>>>>>>> bf8ddad4d962f1092c32c448f1742cee2bb47a9d
 
 
         self.verticalLayoutWidget_6 = QtGui.QWidget(self.centralwidget)
@@ -231,7 +239,7 @@ class Ui_AviateNEducate(object):
         self.CountryTextEdit = QtGui.QPlainTextEdit(self.verticalLayoutWidget_10)
         self.CountryTextEdit.setObjectName(_fromUtf8("CountryTextEdit"))
         self.CountryInfoLayout.addWidget(self.CountryTextEdit)
-#Uni lsyout box
+        #Uni layout box
         self.verticalLayoutWidget_11 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_11.setGeometry(QtCore.QRect(870, 120, 221, 61))
         self.verticalLayoutWidget_11.setObjectName(_fromUtf8("verticalLayoutWidget_11"))
@@ -241,7 +249,7 @@ class Ui_AviateNEducate(object):
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
         font.setPointSize(11)
-#Uni drop down box
+        #Uni drop down box
         self.ColourSelectLabel_2.setFont(font)
         self.ColourSelectLabel_2.setObjectName(_fromUtf8("ColourSelectLabel_2"))
         self.UniLayoutBox.addWidget(self.ColourSelectLabel_2)
@@ -346,7 +354,7 @@ class Ui_AviateNEducate(object):
         self.StudnetInfo.setText(_translate("AviateNEducate", "Student Experience", None))
         self.Student1PicLabel.setText(_translate("AviateNEducate", "TextLabel", None))
         self.CountryInfo.setText(_translate("AviateNEducate", "Information on the Country", None))
-        self.CountryLabel.setText(_translate("AviateNEducate", "Select Country:", None))
+        self.CountryLabel.setText(_translate("AviateNEducate", "Select Language:", None))
         self.ColourSelectLabel.setText(_translate("AviateNEducate", "Select Colour:", None))
         self.Zoom.setText(_translate("AviateNEducate", "Enlarge Window", None))
         self.UniInfo.setText(_translate("AviateNEducate", "University Options", None))
@@ -361,44 +369,75 @@ class Ui_AviateNEducate(object):
     def dispmodule(self, text):
         self.uniSelected.setText(text)
 
-#Uni drop down insertions
+    #Uni drop down insertions
     def loadmodules(self, text):
         self.UniComboBox.clear()
-        if text == "Ireland":
+        if text == "English":
             self.UniComboBox.addItem("Dublin Institute of Technology")
             self.UniComboBox.addItem("Dublin City University")
             self.UniComboBox.addItem("University College Dublin")
-          #  self.UniComboBox.setStyleSheet("background-color: white")
-          #  self.centralwidget.setStyleSheet("background-color:#89f442 ")
-          #  self.CountryTextEdit.setStyleSheet("background-color: white")
-           # self.UniTextEdit.setStyleSheet("background-color: white")
-           # self.FundingTextEdit.setStyleSheet("background-color: white")
-          #  self.AccomTextEdit.setStyleSheet("background-color: white")
-          #  self.ColourComboBox.setStyleSheet("background-color: white")
-          #  self.SecondComboBox.setStyleSheet("background-color: white")
-
-        elif text == "Germany":
             self.UniComboBox.addItem("Hochschule Darmstadt")
             self.UniComboBox.addItem("Freie Universität Berlin")
             self.UniComboBox.addItem("Universität zu KölnNetworking")
-          #  self.UniComboBox.setStyleSheet("background-color: white")
-          #  self.centralwidget.setStyleSheet("background-color:yellow ")
-         #   self.CountryTextEdit.setStyleSheet("background-color: white")
-          #  self.UniTextEdit.setStyleSheet("background-color: white")
-          #  self.FundingTextEdit.setStyleSheet("background-color: white")
-          #  self.AccomTextEdit.setStyleSheet("background-color: white")
-          #  self.ColourComboBox.setStyleSheet("background-color: white")
-        elif text == "France":
             self.UniComboBox.addItem("University of Paris")
             self.UniComboBox.addItem("University of Lyon")
             self.UniComboBox.addItem("University of Marseille")
-           # self.UniComboBox.setStyleSheet("background-color: white")
-            #self.centralwidget.setStyleSheet("background-color:#42A1F4 ")
-            #self.CountryTextEdit.setStyleSheet("background-color: white")
-           # self.UniTextEdit.setStyleSheet("background-color: white")
-           # self.FundingTextEdit.setStyleSheet("background-color: white")
-           # self.AccomTextEdit.setStyleSheet("background-color: white")
-           # self.ColourComboBox.setStyleSheet("background-color: white")
+            self.AccomInfo.setText(_translate("AviateNEducate", "Accommodation ", None))
+            self.StudnetInfo.setText(_translate("AviateNEducate", "Student Experience", None))
+            self.CountryInfo.setText(_translate("AviateNEducate", "Information on the Country", None))
+            self.CountryLabel.setText(_translate("AviateNEducate", "Select Language:", None))
+            self.ColourSelectLabel.setText(_translate("AviateNEducate", "Select Colour:", None))
+            self.Zoom.setText(_translate("AviateNEducate", "Enlarge Window", None))
+            self.UniInfo.setText(_translate("AviateNEducate", "University Options", None))
+            self.Funding.setText(_translate("AviateNEducate", "Funding", None))
+            self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Select University:", None))
+            self.LCostRadioButton.setText(_translate("AviateNEducate", "Low Cost", None))
+            self.HCostRadioButton.setText(_translate("AviateNEducate", "High Cost", None))
+
+        elif text == "German":
+            self.UniComboBox.addItem("Dublin Institute of Technology")
+            self.UniComboBox.addItem("Dublin City University")
+            self.UniComboBox.addItem("University College Dublin")
+            self.UniComboBox.addItem("Hochschule Darmstadt")
+            self.UniComboBox.addItem("Freie Universität Berlin")
+            self.UniComboBox.addItem("Universität zu KölnNetworking")
+            self.UniComboBox.addItem("University of Paris")
+            self.UniComboBox.addItem("University of Lyon")
+            self.UniComboBox.addItem("University of Marseille")
+            self.AccomInfo.setText(_translate("AviateNEducate", "Unterkunft ", None))
+            self.StudnetInfo.setText(_translate("AviateNEducate", "Studentenerfahrung", None))
+            self.CountryInfo.setText(_translate("AviateNEducate", "Informationen über das Land", None))
+            self.CountryLabel.setText(_translate("AviateNEducate", "Sprache auswählen:", None))
+            self.ColourSelectLabel.setText(_translate("AviateNEducate", "Farbe auswählen:", None))
+            self.Zoom.setText(_translate("AviateNEducate", "Fenster vergrößern", None))
+            self.UniInfo.setText(_translate("AviateNEducate", "Universitätsoptionen", None))
+            self.Funding.setText(_translate("AviateNEducate", "Finanzierung", None))
+            self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Universität wählen:", None))
+            self.LCostRadioButton.setText(_translate("AviateNEducate", "Kostengünstig", None))
+            self.HCostRadioButton.setText(_translate("AviateNEducate", "Hohe Kosten", None))
+          
+        elif text == "French":
+            self.UniComboBox.addItem("Dublin Institute of Technology")
+            self.UniComboBox.addItem("Dublin City University")
+            self.UniComboBox.addItem("University College Dublin")
+            self.UniComboBox.addItem("Hochschule Darmstadt")
+            self.UniComboBox.addItem("Freie Universität Berlin")
+            self.UniComboBox.addItem("Universität zu KölnNetworking")
+            self.UniComboBox.addItem("University of Paris")
+            self.UniComboBox.addItem("University of Lyon")
+            self.UniComboBox.addItem("University of Marseille")
+            self.AccomInfo.setText(_translate("AviateNEducate", "Hébergement ", None))
+            self.StudnetInfo.setText(_translate("AviateNEducate", "Expérience étudiante", None))
+            self.CountryInfo.setText(_translate("AviateNEducate", "Informations sur le pays", None))
+            self.CountryLabel.setText(_translate("AviateNEducate", "Choisir la langue:", None))
+            self.ColourSelectLabel.setText(_translate("AviateNEducate", "Sélectionnez la couleur:", None))
+            self.Zoom.setText(_translate("AviateNEducate", "Agrandir la fenêtre", None))
+            self.UniInfo.setText(_translate("AviateNEducate", "Options universitaires", None))
+            self.Funding.setText(_translate("AviateNEducate", "Financement", None))
+            self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Sélectionnez Université:", None))
+            self.LCostRadioButton.setText(_translate("AviateNEducate", "À bas prix", None))
+            self.HCostRadioButton.setText(_translate("AviateNEducate", "Coût élevé", None))
+        
         else:
             self.UniComboBox.clear()
 
