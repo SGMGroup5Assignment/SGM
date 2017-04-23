@@ -550,13 +550,11 @@ class Ui_AviateNEducate(object):
         self.initUI()  # calls the method initUI() on this instance
         self.animal = []  # Create empty list
 
-        afile = open('University.txt', 'r')  # Open file for reading
+        #afile = open('University.txt', 'r')  # Open file for reading
 
-        afile = open('University.txt', 'r')  # Open file for reading
-
-    for line in afile:  # iterate through file and add each item to the list
-        self.University.append(str(line).rstrip('\n'))
-        afile.close()
+    #for line in afile:  # iterate through file and add each item to the list
+        #self.University.append(str(line).rstrip('\n'))
+        #afile.close()
 
 
 #Change text Code
