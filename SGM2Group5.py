@@ -7,6 +7,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore, QtGui
+import random
+import gettext
+fr = gettext.translation('fr', localedir='locale', languages=['fr'])
+fr.install()
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -31,6 +35,8 @@ except AttributeError:
             self.animal = []  # Create empty list
 
             afile = open('University.txt', 'r')  # Open file for reading
+
+            #afile = open('University.txt', 'r')  # Open file for reading
 
         for line in afile:  # iterate through file and add each item to the list
             self.University.append(str(line).rstrip('\n'))
@@ -61,6 +67,7 @@ class Ui_AviateNEducate(object):
         self.UniLayout.setObjectName(_fromUtf8("UniLayout"))
 
 
+        #Section for Uni Text
 
         self.UniTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_2)
         self.UniTextEdit.setObjectName(_fromUtf8("UniTextEdit"))
@@ -147,9 +154,17 @@ class Ui_AviateNEducate(object):
         self.countryComboBox = QtGui.QComboBox(self.verticalLayoutWidget_2)
         self.countryComboBox.setObjectName(_fromUtf8("countryComboBox"))
         self.FirstComboBox.addWidget(self.countryComboBox)
+
+        self.countryComboBox.addItem(" ")
+        self.countryComboBox.addItem(_("Home Page"))
+        self.countryComboBox.addItem(_("Ireland"))
+        self.countryComboBox.addItem(_("Germany"))
+        self.countryComboBox.addItem(_("France"))
+
         self.countryComboBox.addItem("English")
         self.countryComboBox.addItem("French")
         self.countryComboBox.addItem("German")
+
 
 
         self.verticalLayoutWidget_6 = QtGui.QWidget(self.centralwidget)
@@ -236,6 +251,8 @@ class Ui_AviateNEducate(object):
         self.ColourSelectLabel_2.setFont(font)
         self.ColourSelectLabel_2.setObjectName(_fromUtf8("ColourSelectLabel_2"))
         self.UniLayoutBox.addWidget(self.ColourSelectLabel_2)
+
+        #Uni Combo Section
         self.UniComboBox = QtGui.QComboBox(self.verticalLayoutWidget_11)
         self.UniComboBox.setObjectName(_fromUtf8("UniComboBox"))
         self.UniLayoutBox.addWidget(self.UniComboBox)
@@ -590,6 +607,27 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
+#This section displays the different university options
+    def accom(self):
+        self.UniTextEdit.clear()
+        self.UniTextEdit.insertPlainText(_("IT WORKS NOW RIGHT??")) #CATHERINECOMEBACKHERE
+
+        f = open('University.txt','r')
+        file_contents = f.read()
+        #file_contents = self.loadfile()  # reads the file into a list
+        #self.UniTextEdit.SetText("file_contents")
+
+        #self.loadfile()  # reads the file into a list
+        #self.initUI()  # calls the method initUI() on this instance
+        #self.animal = []  # Create empty list
+        f.close()
+        #afile = open('University.txt', 'r')  # Open file for reading
+
+    #for line in afile:  # iterate through file and add each item to the list
+        #self.University.append(str(line).rstrip('\n'))
+        #afile.close()
+
+
 #Change text Code
     def high(self):
         self.AccomTextEdit.clear()
@@ -612,6 +650,8 @@ class Ui_AviateNEducate(object):
         self.HCostRadioButton.toggled.connect(self.high)
         self.LCostRadioButton.toggled.connect(self.low)
         self.Zoom.stateChanged.connect(self.zoomie)
+
+        self.UniComboBox.activated[str].connect(self.accom)
 
 
 if __name__ == "__main__":
