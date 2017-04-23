@@ -7,6 +7,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore, QtGui
+import random
+import gettext
+langtouse = gettext.translation('messages', localedir='locale', languages=['fr'])
+langtouse.install()
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -151,10 +155,10 @@ class Ui_AviateNEducate(object):
         self.countryComboBox.setObjectName(_fromUtf8("countryComboBox"))
         self.FirstComboBox.addWidget(self.countryComboBox)
         self.countryComboBox.addItem(" ")
-        self.countryComboBox.addItem("Home Page")
-        self.countryComboBox.addItem("Ireland")
-        self.countryComboBox.addItem("Germany")
-        self.countryComboBox.addItem("France")
+        self.countryComboBox.addItem(_("Home Page"))
+        self.countryComboBox.addItem(_("Ireland"))
+        self.countryComboBox.addItem(_("Germany"))
+        self.countryComboBox.addItem(_("France"))
 
 
         self.verticalLayoutWidget_6 = QtGui.QWidget(self.centralwidget)
@@ -242,7 +246,7 @@ class Ui_AviateNEducate(object):
         self.ColourSelectLabel_2.setObjectName(_fromUtf8("ColourSelectLabel_2"))
         self.UniLayoutBox.addWidget(self.ColourSelectLabel_2)
 
-        #fsdfsdfsfd
+        #Uni Combo Section
         self.UniComboBox = QtGui.QComboBox(self.verticalLayoutWidget_11)
         self.UniComboBox.setObjectName(_fromUtf8("UniComboBox"))
         self.UniLayoutBox.addWidget(self.UniComboBox)
@@ -560,12 +564,17 @@ class Ui_AviateNEducate(object):
 #This section displays the different university options
     def accom(self):
         self.UniTextEdit.clear()
-        self.UniTextEdit.insertPlainText("IT WORKS NOW RIGHT??")
+        self.UniTextEdit.insertPlainText(_("IT WORKS NOW RIGHT??")) #CATHERINECOMEBACKHERE
 
-        self.loadfile()  # reads the file into a list
-        self.initUI()  # calls the method initUI() on this instance
-        self.animal = []  # Create empty list
+        f = open('University.txt','r')
+        file_contents = f.read()
+        #file_contents = self.loadfile()  # reads the file into a list
+        #self.UniTextEdit.SetText("file_contents")
 
+        #self.loadfile()  # reads the file into a list
+        #self.initUI()  # calls the method initUI() on this instance
+        #self.animal = []  # Create empty list
+        f.close()
         #afile = open('University.txt', 'r')  # Open file for reading
 
     #for line in afile:  # iterate through file and add each item to the list
