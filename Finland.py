@@ -661,7 +661,8 @@ class Ui_AviateNEducate(object):
             # This section displays the different university options
 
     def accom(self, text):
-        if text == "Yliopisto":
+        if (text == "French") and (text == "Yliopisto" ):
+            #if text == "Yliopisto":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_("Yliopisto has a distinctive approach to teaching and learning and graduates are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation."))
         elif text == "Suomen yliopisto":
@@ -670,7 +671,7 @@ class Ui_AviateNEducate(object):
         elif text == "Suomen korkeakoulu":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_(
-                " Suomen korkeakoulu is Finland’s largest university and leads as the university of first choice for  school-leavers. Undergraduate students embark on a journey of academic and personal discovery through Suomen korkeakoulu Horizons, a modular, credit-based curriculum. "))
+                    " Suomen korkeakoulu is Finland’s largest university and leads as the university of first choice for  school-leavers. Undergraduate students embark on a journey of academic and personal discovery through Suomen korkeakoulu Horizons, a modular, credit-based curriculum. "))
 
     # This section displays different funding available
     def funding(self, text):
@@ -776,7 +777,10 @@ class Ui_AviateNEducate(object):
         self.UniComboBox.activated[str].connect(self.dispmodule)
         self.Zoom.stateChanged.connect(self.zoomie)
         self.UniComboBox.activated[str].connect(self.costs)
+
         self.UniComboBox.activated[str].connect(self.accom)
+        self.countryComboBox.activated[str].connect(self.accom)
+
         self.countryComboBox.activated[str].connect(self.country)
         self.UniComboBox.activated[str].connect(self.funding)
 

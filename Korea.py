@@ -52,6 +52,7 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(560, 200, 311, 151))
         self.horizontalLayoutWidget_2.setObjectName(_fromUtf8("horizontalLayoutWidget_2"))
 
+
         # Section for Uni Text
         self.UniLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_2)
         self.UniLayout.setObjectName(_fromUtf8("UniLayout"))
