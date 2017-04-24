@@ -213,6 +213,7 @@ class Ui_AviateNEducate(object):
         self.verticalLayoutWidget_10.setObjectName(_fromUtf8("verticalLayoutWidget_10"))
         self.CountryInfoLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget_10)
         self.CountryInfoLayout.setObjectName(_fromUtf8("CountryInfoLayout"))
+
         self.CountryTextEdit = QtGui.QPlainTextEdit(self.verticalLayoutWidget_10)
         self.CountryTextEdit.setObjectName(_fromUtf8("CountryTextEdit"))
         self.CountryInfoLayout.addWidget(self.CountryTextEdit)
@@ -706,6 +707,19 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
+#This section displays different country welcomes
+    def country(self, text):
+        if text == "French":
+            self.CountryTextEdit.clear()
+            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+        elif text == "German":
+            self.CountryTextEdit.clear()
+            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+        elif text == "English":
+            self.CountryTextEdit.clear()
+            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+
+
 #This section displays the different university options
     def accom(self,text):
         if text == "Dublin Institute of Technology":
@@ -850,6 +864,7 @@ class Ui_AviateNEducate(object):
         self.Zoom.stateChanged.connect(self.zoomie)
         self.UniComboBox.activated[str].connect(self.costs)
         self.UniComboBox.activated[str].connect(self.accom)
+        self.countryComboBox.activated[str].connect(self.country)
 
 
 if __name__ == "__main__":
