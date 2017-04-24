@@ -367,69 +367,97 @@ class Ui_AviateNEducate(object):
     def dispmodule(self, text):
         self.uniSelected.setText(text)
 
-def loadpictures(self,image):
-    if text == "Dublin Institute of Technology";
-        self.image = QtGui.QLabel (self.centralwidget)
-        self.image.setGeometry(QtCore.QRect(50,225,400,300))
-        self.image.setText(_fromUtf8(""))
-        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.image.setObjectName(_fromUtf8("DIT"))
+    #Information and pictures for each university
+    def loaduni(self,image):
+        if text == "Dublin Institute of Technology";
+            self.image = QtGui.QLabel (self.centralwidget)
+            self.image.setGeometry(QtCore.QRect(50,225,400,300))
+            self.image.setText(_fromUtf8(""))
+            self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.image.setObjectName(_fromUtf8("DIT"))
     
-    if text == "Dublin City University";
-        self.image = QtGui.QLabel (self.centralwidget)
-        self.image.setGeometry(QtCore.QRect(50,225,400,300))
-        self.image.setText(_fromUtf8(""))
-        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DCU.jpg")))
-        self.image.setObjectName(_fromUtf8("DCU"))
+        if text == "Dublin City University";
+            self.image = QtGui.QLabel (self.centralwidget)
+            self.image.setGeometry(QtCore.QRect(50,225,400,300))
+            self.image.setText(_fromUtf8(""))
+            self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DCU.jpg")))
+            self.image.setObjectName(_fromUtf8("DCU"))
 
-    if text == "University College Dublin";
-        self.image = QtGui.QLabel (self.centralwidget)
-        self.image.setGeometry(QtCore.QRect(50,225,400,300))
-        self.image.setText(_fromUtf8(""))
-        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("UCD.jpg")))
-        self.image.setObjectName(_fromUtf8("UCD"))
+        if text == "University College Dublin";
+            self.image = QtGui.QLabel (self.centralwidget)
+            self.image.setGeometry(QtCore.QRect(50,225,400,300))
+            self.image.setText(_fromUtf8(""))
+            self.image.setPixmap(QtGui.QPixmap(_fromUtf8("UCD.jpg")))
+            self.image.setObjectName(_fromUtf8("UCD"))
     
-    if text == "Hochschule Darmstadt";
-        self.image = QtGui.QLabel (self.centralwidget)
-        self.image.setGeometry(QtCore.QRect(50,225,400,300))
-        self.image.setText(_fromUtf8(""))
-        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.image.setObjectName(_fromUtf8("DIT"))
+        if text == "Hochschule Darmstadt";
+            self.image = QtGui.QLabel (self.centralwidget)
+            self.image.setGeometry(QtCore.QRect(50,225,400,300))
+            self.image.setText(_fromUtf8(""))
+            self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.image.setObjectName(_fromUtf8("DIT"))
 
-    if text == "Freie Universität Berlin";
-        self.image = QtGui.QLabel (self.centralwidget)
-        self.image.setGeometry(QtCore.QRect(50,225,400,300))
-        self.image.setText(_fromUtf8(""))
-        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.image.setObjectName(_fromUtf8("DIT"))
+        if text == "Freie Universität Berlin";
+            self.image = QtGui.QLabel (self.centralwidget)
+            self.image.setGeometry(QtCore.QRect(50,225,400,300))
+            self.image.setText(_fromUtf8(""))
+            self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.image.setObjectName(_fromUtf8("DIT"))
     
-    if text == "Universität zu KölnNetworking";
-        self.image = QtGui.QLabel (self.centralwidget)
-        self.image.setGeometry(QtCore.QRect(50,225,400,300))
-        self.image.setText(_fromUtf8(""))
-        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.image.setObjectName(_fromUtf8("DIT"))
+        if text == "Universität zu KölnNetworking";
+            self.image = QtGui.QLabel (self.centralwidget)
+            self.image.setGeometry(QtCore.QRect(50,225,400,300))
+            self.image.setText(_fromUtf8(""))
+            self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.image.setObjectName(_fromUtf8("DIT"))
 
-    if text == "University of Paris";
-        self.image = QtGui.QLabel (self.centralwidget)
-        self.image.setGeometry(QtCore.QRect(50,225,400,300))
-        self.image.setText(_fromUtf8(""))
-        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.image.setObjectName(_fromUtf8("DIT"))
+        if text == "University of Paris";
+            self.image = QtGui.QLabel (self.centralwidget)
+            self.image.setGeometry(QtCore.QRect(50,225,400,300))
+            self.image.setText(_fromUtf8(""))
+            self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.image.setObjectName(_fromUtf8("DIT"))
     
-    if text == "University of Lyon";
-        self.image = QtGui.QLabel (self.centralwidget)
-        self.image.setGeometry(QtCore.QRect(50,225,400,300))
-        self.image.setText(_fromUtf8(""))
-        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.image.setObjectName(_fromUtf8("DIT"))
-
-    if text == "University of Marseille";
-        self.image = QtGui.QLabel (self.centralwidget)
-        self.image.setGeometry(QtCore.QRect(50,225,400,300))
-        self.image.setText(_fromUtf8(""))
-        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.image.setObjectName(_fromUtf8("DIT"))
+        if text == "University of Lyon";
+            self.image = QtGui.QLabel (self.centralwidget)
+            self.image.setGeometry(QtCore.QRect(50,225,400,300))
+            self.image.setText(_fromUtf8(""))
+            self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.image.setObjectName(_fromUtf8("DIT"))
+            
+        if text == "University of Marseille";
+            self.image = QtGui.QLabel (self.centralwidget)
+            self.image.setGeometry(QtCore.QRect(50,225,400,300))
+            self.image.setText(_fromUtf8(""))
+            self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.image.setObjectName(_fromUtf8("DIT"))
+                
+    #Pictures for each differnt language
+    def loadpictures(self, text):
+    if text == "English":
+        self.CountryPicLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_6)
+        self.CountryPicLayout.setObjectName(_fromUtf8("CountryPicLayout"))
+        self.CountryPicLabel = QtGui.QLabel(self.horizontalLayoutWidget_6)
+        self.CountryPicLabel.setObjectName(_fromUtf8("CountryPicLabel"))
+        self.Student1ExpLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_7)
+        self.Student1ExpLayout.setObjectName(_fromUtf8("Student1ExpLayout"))
+        self.Student1PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_7)
+        self.Student1PicLabel.setObjectName(_fromUtf8("Student1PicLabel"))
+        
+        self.UniversityPicLabel = QtGui.QLabel(self.horizontalLayoutWidget_8)
+        self.UniversityPicLabel.setObjectName(_fromUtf8("UniversityPicLabel"))
+        
+        self.Student2PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_9)
+        self.Student2PicLabel.setObjectName(_fromUtf8("Student2PicLabel"))
+        self.Student2ExpLayout.addWidget(self.Student2PicLabel)
+        
+        self.Student3PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_10)
+        self.Student3PicLabel.setObjectName(_fromUtf8("Student3PicLabel"))
+        self.Student3ExpLayout.addWidget(self.Student3PicLabel)
+    
+    if text == "German":
+    
+    if text == "French":
 
     #Uni drop down insertions
     def loadmodules(self, text):
@@ -711,7 +739,7 @@ def loadpictures(self,image):
     def home(self):
 
         self.countryComboBox.activated[str].connect(self.loadmodules)
-        self.UniComboBox.activated[str].connect(self.loadpictures)
+        self.UniComboBox.activated[str].connect(self.loaduni)
         self.ColourComboBox.activated[str].connect(self.loadcolours)
         self.UniComboBox.activated[str].connect(self.dispmodule)
         self.HCostRadioButton.toggled.connect(self.high)
