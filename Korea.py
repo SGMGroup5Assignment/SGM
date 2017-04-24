@@ -49,18 +49,18 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_2 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(560, 200, 311, 151))
         self.horizontalLayoutWidget_2.setObjectName(_fromUtf8("horizontalLayoutWidget_2"))
+        
+        #Section for Uni Text
         self.UniLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_2)
         self.UniLayout.setObjectName(_fromUtf8("UniLayout"))
-
-
-        #Section for Uni Text
-
         self.UniTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_2)
         self.UniTextEdit.setObjectName(_fromUtf8("UniTextEdit"))
         self.UniLayout.addWidget(self.UniTextEdit)
         self.verticalLayoutWidget_3 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(20, 360, 181, 80))
         self.verticalLayoutWidget_3.setObjectName(_fromUtf8("verticalLayoutWidget_3"))
+        
+        #Accomodation Section
         self.SecondMenuLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget_3)
         self.SecondMenuLayout.setObjectName(_fromUtf8("SecondMenuLayout"))
         self.AccomInfo = QtGui.QLabel(self.verticalLayoutWidget_3)
@@ -72,6 +72,8 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_6 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_6.setGeometry(QtCore.QRect(20, 200, 211, 151))
         self.horizontalLayoutWidget_6.setObjectName(_fromUtf8("horizontalLayoutWidget_6"))
+        
+        #Country Section
         self.CountryPicLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_6)
         self.CountryPicLayout.setObjectName(_fromUtf8("CountryPicLayout"))
         self.CountryPicLabel = QtGui.QLabel(self.horizontalLayoutWidget_6)
@@ -80,6 +82,8 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_3 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_3.setGeometry(QtCore.QRect(560, 450, 531, 151))
         self.horizontalLayoutWidget_3.setObjectName(_fromUtf8("horizontalLayoutWidget_3"))
+        
+        #Funding Section
         self.FundingLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_3)
         self.FundingLayout.setObjectName(_fromUtf8("FundingLayout"))
         self.FundingTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_3)
@@ -88,6 +92,8 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_4 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_4.setGeometry(QtCore.QRect(20, 450, 531, 151))
         self.horizontalLayoutWidget_4.setObjectName(_fromUtf8("horizontalLayoutWidget_4"))
+        
+        #Accom Section
         self.AccomLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_4)
         self.AccomLayout.setObjectName(_fromUtf8("AccomLayout"))
         self.AccomTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_4)
