@@ -39,13 +39,18 @@ class Ui_AviateNEducate(object):
         self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
         self.TitleLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget)
         self.TitleLayout.setObjectName(_fromUtf8("TitleLayout"))
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 9ed4a781d9d061202ec330f38c9bcad80a777bef
         self.AviateNEducate_Title = QtGui.QLabel(self.verticalLayoutWidget)
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Iskoola Pota"))
         font.setPointSize(24)
         self.AviateNEducate_Title.setFont(font)
         self.AviateNEducate_Title.setObjectName(_fromUtf8("AviateNEducate_Title"))
-        self.TitleLayout.addWidget(self.AviateNEducate_Title)
+        #self.TitleLayout.addWidget(self.AviateNEducate_Title)
         self.horizontalLayoutWidget_2 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(560, 200, 311, 151))
         self.horizontalLayoutWidget_2.setObjectName(_fromUtf8("horizontalLayoutWidget_2"))
@@ -457,70 +462,12 @@ class Ui_AviateNEducate(object):
             self.Student3PicLabel.setObjectName(_fromUtf8("p27"))
 
     #Pictures for each differnt language
-    def loadpictures(self, text):
+    #def loadpictures(self, text):
 
-    if text == "English":
-    
-    
-    if text == "German":
-
-
-    if text == "French":
-    
-        if text == "English":
+        #if text == "English":
+        #if text == "German":
+        #if text == "French":
         
-        #self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
-        #self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
-        #self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        #self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-            self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-            self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
-        
-        #self.CountryPicLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_6)
-        #self.CountryPicLayout.setObjectName(_fromUtf8("CountryPicLayout"))
-        #self.CountryPicLabel = QtGui.QLabel(self.horizontalLayoutWidget_6)
-        #self.CountryPicLabel.setObjectName(_fromUtf8("CountryPicLabel"))
-        #self.Student1ExpLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_7)
-        #self.Student1ExpLayout.setObjectName(_fromUtf8("Student1ExpLayout"))
-        #self.Student1PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_7)
-        #self.Student1PicLabel.setObjectName(_fromUtf8("Student1PicLabel"))
-        #self.UniversityPicLabel = QtGui.QLabel(self.horizontalLayoutWidget_8)
-        #self.UniversityPicLabel.setObjectName(_fromUtf8("UniversityPicLabel"))
-        #self.Student2PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_9)
-        #self.Student2PicLabel.setObjectName(_fromUtf8("Student2PicLabel"))
-        #self.Student2ExpLayout.addWidget(self.Student2PicLabel)
-        #self.Student3PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_10)
-        #self.Student3PicLabel.setObjectName(_fromUtf8("Student3PicLabel"))
-        #self.Student3ExpLayout.addWidget(self.Student3PicLabel)
-    
-        if text == "German":
-        #self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Germany.jpg")))
-        #self.CountryPicLabel.setObjectName(_fromUtf8("Germany"))
-        #self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        #self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-            self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-            self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
-
-
-        if text == "French":
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("France.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("France"))
-            #self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-            #self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-            self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-            self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
 
     #Uni drop down insertions
     def loadmodules(self, text):
