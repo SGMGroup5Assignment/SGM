@@ -678,7 +678,7 @@ class Ui_AviateNEducate(object):
     def funding(self, text):
         if text == "Yliopisto":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
+            self.FundingTextEdit.insertPlainText(_("Researchers can apply for funding for their research from different sources and funding programs depending on their experience and career development. The scientist in charge of an externally funded project is usually a postdoctoral researcher. For example, in research projects funded by the Academy of Finland, scientists in charge are professors or researchers with docentships. Below you can find a list of funding opportunities according to the career development phase. For more information on different funding opportunities, see the links below or the material related to funding organisation on our website."))
         elif text == "Suomen yliopisto":
             self.FundingTextEdit.clear()
             self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))

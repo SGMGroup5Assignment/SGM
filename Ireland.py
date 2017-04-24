@@ -684,13 +684,13 @@ class Ui_AviateNEducate(object):
     def funding(self, text):
         if text == "Dublin Institute Technology":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
+            self.FundingTextEdit.insertPlainText(_(" DIT recognises that some students may face financial difficulties during their time at college and a number of assistance schemes are in place to support such students. These schemes are funded by the Department of Education and Science under the National Development Plan with assistance from the European Social Fund. These funds cannot be used for the purposes of registration or tuition fees. The funding is available to full time registered DIT students*. This scheme is designed to help those in severe financial difficulties due to unforeseen circumstances or students who are disadvantaged and require additional financial support to continue their third-level studies."))
         elif text == "Dublin City University":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("The Student Assistance Fund is operated by Student Support & Development and funding is received from the Irish Government with assistance from the European Social Fund. It is aimed at tackling educational disadvantage by providing financial support to those who may require additional financial support to enable them to fully benefit from their third-level education."))
         elif text == "University College Dublin":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("Students are generally automatically assessed for “free” fees for undergraduate programmes. However if you are not a current school leaver or have – for example - a non-EU place of birth but have EU nationality you may need to provide us with additional documentation (please read this page carefully for the criteria for “free fees” and the documentation that you might need to provide)."))
 
     def costs(self, text):
 

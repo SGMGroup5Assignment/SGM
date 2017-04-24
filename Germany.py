@@ -681,13 +681,13 @@ class Ui_AviateNEducate(object):
     def funding(self, text):
         if text == "Hochschule Darmstadt":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
+            self.FundingTextEdit.insertPlainText(_("The group visits are meant to give your students and faculty an idea what teaching and studying at h_da is like – and how easy-going life in Darmstadt is. Students will be welcomed at h_da departments relevant for their fields of study and be able to participate in lectures and project work. They will get to know our professors and potential fellow students. And there will be an excursion and fun program."))
         elif text == "Freie Universität Berlin":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("Your living costs mainly depend, of course, on your personal requirements and habits. You should count on spending a minimum of 600 to 700 Euro (rental fees, grocery, leisure time etc.). In order to obtain an entry visa or a residence permit for study purposes, you must prove that this monthly amount is at your disposal, independent of any job."))
         elif text == "Universität zu KölnNetworking":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("A.R.T.E.S. international wants to increase the international visibility of doctoral models and individual projects at the Faculty of Arts and Humanities and to facilitate the international networking of doctoral students at an early stage. To this end, the a.r.t.e.s. Graduate School provides funding for research stays, (active) conference participation and summer schools abroad – available to all doctoral students at the faculty. For research stays, the maximum funding period is three months; for conference participation, it is five days; and for summer schools, it is 14 days. "))
 
     def costs(self, text):
 
