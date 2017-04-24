@@ -750,6 +750,37 @@ class Ui_AviateNEducate(object):
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_("University of Marseille"))
 
+    # This section displays different funding available
+    def funding(self,text):
+        if text == "Dublin Institute of Technology":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
+        elif text == "Dublin City University":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))
+        elif text == "University College Dublin":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
+        elif text == "Hochschule Darmstadt":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("Hochschule Darmstadt has lots of options"))
+        elif text == "Freie Universität Berlin":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("Freie Universität Berlin has lots of options"))
+        elif text == "Universität zu KölnNetworking":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("Universität zu KölnNetworking has lots of options"))
+        elif text == "University of Paris":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("University of Paris has lots of options"))
+        elif text == "University of Lyon":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("University of Lyon has lots of options"))
+        elif text == "University of Marseille":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("University of Marseille has lots of options"))
+
+
     def costs(self, text):
 
         if text == "Dublin Institute of Technology":
@@ -865,6 +896,7 @@ class Ui_AviateNEducate(object):
         self.UniComboBox.activated[str].connect(self.costs)
         self.UniComboBox.activated[str].connect(self.accom)
         self.countryComboBox.activated[str].connect(self.country)
+        self.UniComboBox.activated[str].connect(self.funding)
 
 
 if __name__ == "__main__":
