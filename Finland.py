@@ -663,16 +663,14 @@ class Ui_AviateNEducate(object):
     def accom(self, text):
         if text == "Yliopisto":
             self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_(
-                "DIT has a distinctive approach to teaching and learning and graduates are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation. "))
+            self.UniTextEdit.insertPlainText(_("Yliopisto has a distinctive approach to teaching and learning and graduates are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation."))
         elif text == "Suomen yliopisto":
             self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_(
-                " Ireland Dublin City University is a young university, situated on an 85 acre campus three miles north of the River Liffey in the city centre and just a 15-minute drive from Dublin airport. With the city just a 10-minute bus drive away, students of DCU have the best of both worlds; the social and cultural benefits of city life, but with the security and vibrancy of a university campus built very much for today."))
+            self.UniTextEdit.insertPlainText(_("Suomen yliopisto The Freie Universität Berlin is a research university located in Berlin and one of the most prominent universities in Germany. It is internationally known for its research in the humanities and social sciences, as well as in the field of natural and life sciences. "))
         elif text == "Suomen korkeakoulu":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_(
-                " UCD is Ireland’s largest university and leads as the university of first choice for Irish school-leavers. Undergraduate students embark on a journey of academic and personal discovery through UCD Horizons, a modular, credit-based curriculum. "))
+                " Suomen korkeakoulu is Ireland’s largest university and leads as the university of first choice for Irish school-leavers. Undergraduate students embark on a journey of academic and personal discovery through UCD Horizons, a modular, credit-based curriculum. "))
 
     # This section displays different funding available
     def funding(self, text):
