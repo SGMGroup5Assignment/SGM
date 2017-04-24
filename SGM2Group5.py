@@ -459,7 +459,9 @@ class Ui_AviateNEducate(object):
             self.ColourComboBox.setStyleSheet("background-color: white")
             self.UniComboBox.setStyleSheet("background-color: white")
             self.countryComboBox.setStyleSheet("background-color: white")
-            self.StudnetInfo.setStyleSheet("background-color: white")
+            self.Student1TextEdit.setStyleSheet("background-color: white")
+            self.Student2TextEdit.setStyleSheet("background-color: white")
+            self.Student3TextEdit.setStyleSheet("background-color: white")
 
 
         elif text == "Yellow":
