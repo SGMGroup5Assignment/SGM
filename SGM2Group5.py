@@ -51,7 +51,7 @@ class Ui_AviateNEducate(object):
         self.verticalLayoutWidget = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(20, 10, 311, 85))
         self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
-        self.TitleLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget)
+        self.TitleLayout = QtGui.QLabel(self.verticalLayoutWidget)
         self.TitleLayout.setObjectName(_fromUtf8("TitleLayout"))
         self.TitleLayout.setPixmap(QtGui.QPixmap(_fromUtf8("logo_SGM2.png")))
         self.TitleLayout.setObjectName(_fromUtf8("Logo"))
@@ -369,111 +369,119 @@ class Ui_AviateNEducate(object):
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("p1"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manone.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("p2"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("p3"))
     
         if text == "Dublin City University":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DCU.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DCU"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("mantwo.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("p4"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanthree.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("p5"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manthree.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("p6"))
 
         if text == "University College Dublin":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("UCD.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("UCD"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanfour.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("p7"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manfour.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("p8"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("p9"))
     
         if text == "Hochschule Darmstadt":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Germany.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("Germany"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("p10"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("p11"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanthree.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("p12"))
 
         if text == "Freie Universität Berlin":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Germany.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("Germany"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanfour.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("p13"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manone.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("p14"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("mantwo.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("p15"))
     
         if text == "Universität zu KölnNetworking":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Germany.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("Germany"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manthree.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("p16"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manfour.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("p17"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("p18"))
 
         if text == "University of Paris":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("France.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("France"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("p19"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanthree.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("p20"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manfour.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("p21"))
     
         if text == "University of Lyon":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("France.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("France"))
-            
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanfour.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("p22"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manone.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("p23"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("mantwo.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("p24"))
+        
         if text == "University of Marseille":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("France.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("France"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manthree.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("p25"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanfour.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("p26"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("p27"))
 
     #Pictures for each differnt language
     def loadpictures(self, text):
     if text == "English":
-        
-        #self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
-        #self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
-        #self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        #self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
-        
-        #self.CountryPicLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_6)
-        #self.CountryPicLayout.setObjectName(_fromUtf8("CountryPicLayout"))
-        #self.CountryPicLabel = QtGui.QLabel(self.horizontalLayoutWidget_6)
-        #self.CountryPicLabel.setObjectName(_fromUtf8("CountryPicLabel"))
-        #self.Student1ExpLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_7)
-        #self.Student1ExpLayout.setObjectName(_fromUtf8("Student1ExpLayout"))
-        #self.Student1PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_7)
-        #self.Student1PicLabel.setObjectName(_fromUtf8("Student1PicLabel"))
-        #self.UniversityPicLabel = QtGui.QLabel(self.horizontalLayoutWidget_8)
-        #self.UniversityPicLabel.setObjectName(_fromUtf8("UniversityPicLabel"))
-        #self.Student2PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_9)
-        #self.Student2PicLabel.setObjectName(_fromUtf8("Student2PicLabel"))
-        #self.Student2ExpLayout.addWidget(self.Student2PicLabel)
-        #self.Student3PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_10)
-        #self.Student3PicLabel.setObjectName(_fromUtf8("Student3PicLabel"))
-        #self.Student3ExpLayout.addWidget(self.Student3PicLabel)
+    
     
     if text == "German":
-        #self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Germany.jpg")))
-        #self.CountryPicLabel.setObjectName(_fromUtf8("Germany"))
-        #self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        #self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
 
 
     if text == "French":
-        self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("France.jpg")))
-        self.CountryPicLabel.setObjectName(_fromUtf8("France"))
-        #self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        #self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
+    
 
     #Uni drop down insertions
     def loadmodules(self, text):
