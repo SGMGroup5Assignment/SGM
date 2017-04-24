@@ -655,13 +655,16 @@ class Ui_AviateNEducate(object):
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+            self.CountryTextEdit.insertPlainText(_("Bienvenue en France!"
+                                                           "La France, en Europe occidentale, englobe les villes médiévales, les villages alpins et les plages méditerranéennes. Paris, sa capitale, est célèbre pour ses maisons de mode, les musées d'art classiques, y compris le Louvre et des monuments comme la Tour Eiffel. Le pays est également réputé pour ses vins et sa cuisine sophistiquée. Les anciens dessins de grottes de Lascaux, le théâtre romain lyonnais et le vaste palais de Versailles témoignent de sa riche histoire."))
         elif text == "German":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+            self.CountryTextEdit.insertPlainText(_(
+                    "Willkommen in Frankreich!Frankreich, Westeuropa, umfasst mittelalterliche Städte, Bergdörfer und die Strände des Mittelmeers. Paris, die Hauptstadt, ist bekannt für seine Modehäuser, traditionelle Kunst Museen, darunter das Louvre und Sehenswürdigkeiten wie der Eiffelturm. Das Land ist auch bekannt für seine Weine und feine Küche. Die alten Zeichnungen von Lascaux, Lyon römisches Theater und das große Schloss von Versailles zu seiner reichen Geschichte zeugen."))
         elif text == "English":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+            self.CountryTextEdit.insertPlainText(_(
+                        "Welcome to France!France, in Western Europe, encompasses medieval towns, alpine villages and Mediterranean beaches. Paris, its capital, is famous for its fashion houses, classical art museums, including the Louvre and monuments such as the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. The old drawings of Lascaux caves, the Roman theater in Lyon and the vast palace of Versailles testify to its rich history."))
 
 
             # This section displays the different university options
@@ -695,44 +698,44 @@ class Ui_AviateNEducate(object):
     def costs(self, text):
 
         if text == "University of Paris":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highpar)
+            self.LCostRadioButton.toggled.connect(self.lowpar)
         elif text == "University of Lyon":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highly)
+            self.LCostRadioButton.toggled.connect(self.lowly)
         elif text == "University of Marseille":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highmar)
+            self.LCostRadioButton.toggled.connect(self.lowmar)
 
     def lowmar(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Le petit prince,45 per night")
+        self.AccomTextEdit.insertPlainText("Le petit prince,    45")
 
     def highmar(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La Rein, 10 per night")
+        self.AccomTextEdit.insertPlainText("La Rein, 10,000")
 
     def lowly(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("L'hotel de Lafyette, 25 per night")
+        self.AccomTextEdit.insertPlainText("L'hotel de Lafyette, 25")
 
     def highly(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La poisson, 10k per night")
+        self.AccomTextEdit.insertPlainText("La poisson, 15,000")
 
     def lowpar(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La Croissant, 25k per night")
+        self.AccomTextEdit.insertPlainText("La Croissant, 25")
 
     def highpar(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Les Miserables, 10 per night")
+        self.AccomTextEdit.insertPlainText("Les Miserables, 50,00")
 
     def highkol(self):
         self.AccomTextEdit.clear()

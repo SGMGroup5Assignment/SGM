@@ -655,13 +655,17 @@ class Ui_AviateNEducate(object):
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+            self.CountryTextEdit.insertPlainText(_("Bienvenue en Allemagne! "
+                                                   "L'Allemagne est un pays dEurope occidentale avec un paysage de forêts, de rivières,Les chaînes de montagnes et des plages en mer du Nord. Il a plus de deux millénaires dhistoire.Berlin, la capitale, abrite des arts et des scènes nocturnes, le BrandebourgGate et de nombreuses attractions de la Seconde Guerre mondiale. Munich est connue pour sonOktoberfest salles et de la bière, y compris le Hofbräuhaus du 16ème siècle.Francfort avec ses gratte-ciel abrite la Banque centrale européenne."))
         elif text == "German":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+            self.CountryTextEdit.insertPlainText(_("Willkommen in Deutschland!"
+                                                   "Deutschland ist ein westeuropäisches Land mit einer Landschaft von Wäldern, Flüssen, Bergketten und Nordseestränden. Es hat über 2 Jahrtausende der Geschichte. Berlin, seine Hauptstadt, beherbergt Kunst- und Nachtlebenszenen, das Brandenburger Tor und viele Sehenswürdigkeiten im Zweiten Weltkrieg. München ist bekannt für seine Oktoberfest- und Bierhallen, darunter das Hofbräuhaus aus dem 16. Jahrhundert. Frankfurt mit seinen Wolkenkratzern beherbergt die Europäische Zentralbank."))
         elif text == "English":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+            self.CountryTextEdit.insertPlainText(_(
+                "Welcome to Germany!Germany is a Western European country with a landscape of forests, rivers, Mountain chains and northern boarders. It has over 2 thousand years of history. Berlin, its capital, houses art and nightlife scenes, the Brandenburg Gate and many sights in the Second World War. Munich is known for its Oktoberfest and beer halls, including the Hofbräuhaus from the 16th century.Frankfurt, with its skyscrapers, houses the European Central Bank"))
+
 
 
             # This section displays the different university options
@@ -692,14 +696,14 @@ class Ui_AviateNEducate(object):
     def costs(self, text):
 
         if text == "Hochschule Darmstadt":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highhoch)
+            self.LCostRadioButton.toggled.connect(self.lowhoch)
         elif text == "Freie Universität Berlin":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highber)
+            self.LCostRadioButton.toggled.connect(self.lowber)
         elif text == "Universität zu KölnNetworking":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highkol)
+            self.LCostRadioButton.toggled.connect(self.lowkol)
 
     def lowmar(self):
         self.AccomTextEdit.clear()

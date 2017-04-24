@@ -645,20 +645,24 @@ class Ui_AviateNEducate(object):
             self.Student3TextEdit.insertPlainText(_("Welcome to Ireland!"))
 
             # This section displays different country welcomes
-
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+            self.CountryTextEdit.insertPlainText(_(
+                "Bienvenue en Finlande! La Finlande est une nation d'Europe du Nord bordant la Suède, la Norvège et la Russie. Sa capitale, à Helsinki, occupe une péninsule et les îles environnantes de la mer Baltique. Helsinki abrite la forteresse de la mer du XVIIIe siècle Suomenlinna, le quartier de design à la mode et divers musées. Les aurores boréales peuvent être vues dans la province de Laponie Arctique, une vaste région sauvage avec des parcs nationaux et des stations de ski"))
         elif text == "German":
-            self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+                self.CountryTextEdit.clear()
+                self.CountryTextEdit.insertPlainText(_(
+                    "Willkommen in Finnland! Finnland ist eine nordeuropäische Nation, die an Schweden, Norwegen und Russland grenzt. Die Hauptstadt Helsinki nimmt eine Halbinsel und umliegende Inseln in der Ostsee ein. Helsinki beherbergt die See-Festung Suomenlinna aus dem 18. Jahrhundert, das modische Design-Viertel und diverse Museen. Die Nordlichter sind von der arktischen Lappland-Provinz des Landes zu sehen, eine weite Wildnis mit Nationalparks und Skigebiete."))
         elif text == "English":
-            self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+                self.CountryTextEdit.clear()
+                self.CountryTextEdit.insertPlainText(_(
+                    "Welcome to Finland! Finland is a Northern European nation bordering Sweden, Norway and Russia. Its capital, Helsinki, occupies a peninsula and surrounding islands in the Baltic Sea. Helsinki is home to the 18th-century sea fortress Suomenlinna, the fashionable Design District and diverse museums. The Northern Lights can be seen from the country's Arctic Lapland province, a vast wilderness with national parks and ski resorts"))
 
 
-            # This section displays the different university options
+
+
+                    # This section displays the different university options
 
     def accom(self, text):
         if text == "Yliopisto":

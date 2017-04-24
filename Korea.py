@@ -649,16 +649,20 @@ class Ui_AviateNEducate(object):
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+            self.CountryTextEdit.insertPlainText(_(
+                    "Bienvenue en Corée du Sud, une nation d'Asie de l'Est sur la moitié sud de la péninsule coréenne, partage l'une des frontières les plus fortement militarisées au monde avec la Corée du Nord. Il est également connu pour sa campagne verdoyante et vallonnée parsemée de cerisiers et de temples bouddhistes centenaires, plus ses villages de pêcheurs côtiers, ses îles sous-tropicales et ses villes de haute technologie comme Séoul, la capitale.."))
         elif text == "German":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+            self.CountryTextEdit.insertPlainText(_(
+                "Willkommen in Südkorea, eine ostasiatische Nation auf der südlichen Hälfte der koreanischen Halbinsel, teilt eine der am stärksten militarisierten Grenzen der Welt mit Nordkorea. Es ist gleichermaßen bekannt für seine grüne, hügelige Landschaft mit Kirschbäumen und jahrhundertealten buddhistischen Tempeln, sowie seine Küstenfischdörfer, subtropische Inseln und High-Tech-Städte wie Seoul, die Hauptstadt."))
         elif text == "English":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+            self.CountryTextEdit.insertPlainText(_(
+                "Welcome to South Korea, an East Asian nation on the southern half of the Korean Peninsula, shares one of the world’s most heavily militarized borders with North Korea. It’s equally known for its green, hilly countryside dotted with cherry trees and centuries-old Buddhist temples, plus its coastal fishing villages, sub-tropical islands and high-tech cities such as Seoul, the capital."))
 
 
-#This section displays the different university options
+
+            #This section displays the different university options
     def accom(self,text):
         if text == "고려 대학교":
             self.UniTextEdit.clear()
@@ -779,7 +783,7 @@ class Ui_AviateNEducate(object):
 
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Super cheap hotel, like 5 euro")
+        self.AccomTextEdit.insertPlainText("Lotte,  £10,000")
 
     def home(self):
 
