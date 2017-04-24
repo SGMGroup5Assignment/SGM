@@ -368,7 +368,6 @@ class Ui_AviateNEducate(object):
         self.uniSelected.setText(text)
 
 def loadpictures(self,image):
-    
     if text == "Dublin Institute of Technology";
         self.image = QtGui.QLabel (self.centralwidget)
         self.image.setGeometry(QtCore.QRect(50,225,400,300))
@@ -712,6 +711,7 @@ def loadpictures(self,image):
     def home(self):
 
         self.countryComboBox.activated[str].connect(self.loadmodules)
+        self.UniComboBox.activated[str].connect(self.loadpictures)
         self.ColourComboBox.activated[str].connect(self.loadcolours)
         self.UniComboBox.activated[str].connect(self.dispmodule)
         self.HCostRadioButton.toggled.connect(self.high)
