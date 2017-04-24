@@ -645,20 +645,24 @@ class Ui_AviateNEducate(object):
             self.Student3TextEdit.insertPlainText(_("Welcome to Ireland!"))
 
             # This section displays different country welcomes
-
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+            self.CountryTextEdit.insertPlainText(_(
+                "Bienvenue en Finlande! La Finlande est une nation d'Europe du Nord bordant la Suède, la Norvège et la Russie. Sa capitale, à Helsinki, occupe une péninsule et les îles environnantes de la mer Baltique. Helsinki abrite la forteresse de la mer du XVIIIe siècle Suomenlinna, le quartier de design à la mode et divers musées. Les aurores boréales peuvent être vues dans la province de Laponie Arctique, une vaste région sauvage avec des parcs nationaux et des stations de ski"))
         elif text == "German":
-            self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+                self.CountryTextEdit.clear()
+                self.CountryTextEdit.insertPlainText(_(
+                    "Willkommen in Finnland! Finnland ist eine nordeuropäische Nation, die an Schweden, Norwegen und Russland grenzt. Die Hauptstadt Helsinki nimmt eine Halbinsel und umliegende Inseln in der Ostsee ein. Helsinki beherbergt die See-Festung Suomenlinna aus dem 18. Jahrhundert, das modische Design-Viertel und diverse Museen. Die Nordlichter sind von der arktischen Lappland-Provinz des Landes zu sehen, eine weite Wildnis mit Nationalparks und Skigebiete."))
         elif text == "English":
-            self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+                self.CountryTextEdit.clear()
+                self.CountryTextEdit.insertPlainText(_(
+                    "Welcome to Finland! Finland is a Northern European nation bordering Sweden, Norway and Russia. Its capital, Helsinki, occupies a peninsula and surrounding islands in the Baltic Sea. Helsinki is home to the 18th-century sea fortress Suomenlinna, the fashionable Design District and diverse museums. The Northern Lights can be seen from the country's Arctic Lapland province, a vast wilderness with national parks and ski resorts"))
 
 
-            # This section displays the different university options
+
+
+                    # This section displays the different university options
 
     def accom(self, text):
         if (text == "French") and (text == "Yliopisto" ):
@@ -677,13 +681,13 @@ class Ui_AviateNEducate(object):
     def funding(self, text):
         if text == "Yliopisto":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
+            self.FundingTextEdit.insertPlainText(_("Researchers can apply for funding for their research from different sources and funding programs depending on their experience and career development. The scientist in charge of an externally funded project is usually a postdoctoral researcher. For example, in research projects funded by the Academy of Finland, scientists in charge are professors or researchers with docentships. Below you can find a list of funding opportunities according to the career development phase. For more information on different funding opportunities, see the links below or the material related to funding organisation on our website."))
         elif text == "Suomen yliopisto":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("Partner universities do not guarantee the funding possibilities for the students’ studies and mobility. Thus, students have to seek for the external funding possibilities. To assist students, the programme developed the document containing finding options in each of the partner countries. Students also can refer to the partners universities to get an additional information in this regard."))
         elif text == "Suomen korkeakoulu":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("The University finances doctoral training with grants and doctoral student positions. ‘Doctoral student position’ refers to a fixed-term employment relationship with the University, in which the doctoral student is paid a monthly salary in accordance with the national salary system of Finnish universities (YPJ system). The grant is a scholarship paid to the student’s bank account, and it is often taxable income. The University’s doctoral student positions and grants are awarded only to students who have pursued doctoral studies for less than four years on a full-time basis. Furthermore, the University cannot award a grant to a doctoral student who has previously been employed at the University. The faculties provide a yearly application period for these positions – usually in the autumn. For further information, please follow the announcements of your department and/or faculty."))
 
     def costs(self, text):
 

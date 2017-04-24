@@ -353,7 +353,7 @@ class Ui_AviateNEducate(object):
 
     # Information and pictures for each university
     def loaduni(self, text):
-        if text == "고려 대학교":
+        if text == "Dublin Institute Technology":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
@@ -365,7 +365,7 @@ class Ui_AviateNEducate(object):
             self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p3"))
 
-        if text == "한국의 대학":
+        if text == "Dublin City University":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DCU.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DCU"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
@@ -377,7 +377,7 @@ class Ui_AviateNEducate(object):
             self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manthree.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p6"))
 
-        if text == "대학교":
+        if text == "University College Dublin":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("UCD.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("UCD"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
@@ -655,13 +655,17 @@ class Ui_AviateNEducate(object):
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+            self.CountryTextEdit.insertPlainText(_(
+                "Bienvenue en Irlande! La République d'Irlande occupe la plus grande partie de l'île d'Irlande, Au large des côtes d'Angleterre et du Pays de Galles. Sa capitale, Dublin, est le lieu de naissance des écrivains Comme Oscar Wilde, et la maison de la bière Guinness. Le livre de Kells du 9ème siècle et d'autres Des manuscrits illustrés sont présentés dans la Trinity College Library de Dublin. Baptisé le Emerald Isle pour son paysage luxuriant, le pays est parsemé de châteaux comme le médiéval Château de Cahir."))
         elif text == "German":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+            self.CountryTextEdit.insertPlainText(_(
+                " Willkommen in Irland! Die Republik Irland besetzt die meisten der Insel Irland, Vor der Küste von England und Wales. Seine Hauptstadt, Dublin, ist der Geburtsort der Schriftsteller Wie Oscar Wilde, und die Heimat von Guinness Bier. Das Buch aus dem 9. Jahrhundert von Kells und anderen Illustrierte Manuskripte sind in der Dubliner Trinity College Library zu sehen. Hat die Emerald Isle für seine üppige Landschaft, ist das Land mit Schlössern wie mittelalterlich punktiert Schloss Cahir"))
         elif text == "English":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"
+                                                   "The Republic of Ireland occupies most of the island of Ireland, off the coast of England and Wales. Its capital, Dublin, is the birthplace of writers like Oscar Wilde, and home of Guinness beer. The 9th-century Book of Kells and other illustrated manuscripts are on show in Dublin’s Trinity College Library. Dubbed the Emerald Isle for its lush landscape, the country is dotted with castles like medieval Cahir Castle."))
+
 
 
             # This section displays the different university options
@@ -684,13 +688,13 @@ class Ui_AviateNEducate(object):
     def funding(self, text):
         if text == "Dublin Institute Technology":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
+            self.FundingTextEdit.insertPlainText(_(" DIT recognises that some students may face financial difficulties during their time at college and a number of assistance schemes are in place to support such students. These schemes are funded by the Department of Education and Science under the National Development Plan with assistance from the European Social Fund. These funds cannot be used for the purposes of registration or tuition fees. The funding is available to full time registered DIT students*. This scheme is designed to help those in severe financial difficulties due to unforeseen circumstances or students who are disadvantaged and require additional financial support to continue their third-level studies."))
         elif text == "Dublin City University":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("The Student Assistance Fund is operated by Student Support & Development and funding is received from the Irish Government with assistance from the European Social Fund. It is aimed at tackling educational disadvantage by providing financial support to those who may require additional financial support to enable them to fully benefit from their third-level education."))
         elif text == "University College Dublin":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("Students are generally automatically assessed for “free” fees for undergraduate programmes. However if you are not a current school leaver or have – for example - a non-EU place of birth but have EU nationality you may need to provide us with additional documentation (please read this page carefully for the criteria for “free fees” and the documentation that you might need to provide)."))
 
     def costs(self, text):
 
@@ -770,10 +774,9 @@ class Ui_AviateNEducate(object):
         self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
 
     def lowdub(self):
-
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Super cheap hotel, like 5 euro")
+        self.AccomTextEdit.insertPlainText("Student accomadatio is generally availible")
 
     def home(self):
 

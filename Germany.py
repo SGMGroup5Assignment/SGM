@@ -353,7 +353,7 @@ class Ui_AviateNEducate(object):
 
     # Information and pictures for each university
     def loaduni(self, text):
-        if text == "고려 대학교":
+        if text == "Hochschule Darmstadt":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
@@ -365,7 +365,7 @@ class Ui_AviateNEducate(object):
             self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p3"))
 
-        if text == "한국의 대학":
+        if text == "Freie Universität Berlin":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DCU.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DCU"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
@@ -377,7 +377,7 @@ class Ui_AviateNEducate(object):
             self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manthree.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p6"))
 
-        if text == "대학교":
+        if text == "Universität zu KölnNetworking":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("UCD.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("UCD"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
@@ -655,13 +655,17 @@ class Ui_AviateNEducate(object):
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+            self.CountryTextEdit.insertPlainText(_("Bienvenue en Allemagne! "
+                                                   "L'Allemagne est un pays dEurope occidentale avec un paysage de forêts, de rivières,Les chaînes de montagnes et des plages en mer du Nord. Il a plus de deux millénaires dhistoire.Berlin, la capitale, abrite des arts et des scènes nocturnes, le BrandebourgGate et de nombreuses attractions de la Seconde Guerre mondiale. Munich est connue pour sonOktoberfest salles et de la bière, y compris le Hofbräuhaus du 16ème siècle.Francfort avec ses gratte-ciel abrite la Banque centrale européenne."))
         elif text == "German":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+            self.CountryTextEdit.insertPlainText(_("Willkommen in Deutschland!"
+                                                   "Deutschland ist ein westeuropäisches Land mit einer Landschaft von Wäldern, Flüssen, Bergketten und Nordseestränden. Es hat über 2 Jahrtausende der Geschichte. Berlin, seine Hauptstadt, beherbergt Kunst- und Nachtlebenszenen, das Brandenburger Tor und viele Sehenswürdigkeiten im Zweiten Weltkrieg. München ist bekannt für seine Oktoberfest- und Bierhallen, darunter das Hofbräuhaus aus dem 16. Jahrhundert. Frankfurt mit seinen Wolkenkratzern beherbergt die Europäische Zentralbank."))
         elif text == "English":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+            self.CountryTextEdit.insertPlainText(_(
+                "Welcome to Germany!Germany is a Western European country with a landscape of forests, rivers, Mountain chains and northern boarders. It has over 2 thousand years of history. Berlin, its capital, houses art and nightlife scenes, the Brandenburg Gate and many sights in the Second World War. Munich is known for its Oktoberfest and beer halls, including the Hofbräuhaus from the 16th century.Frankfurt, with its skyscrapers, houses the European Central Bank"))
+
 
 
             # This section displays the different university options
@@ -681,25 +685,25 @@ class Ui_AviateNEducate(object):
     def funding(self, text):
         if text == "Hochschule Darmstadt":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
+            self.FundingTextEdit.insertPlainText(_("The group visits are meant to give your students and faculty an idea what teaching and studying at h_da is like – and how easy-going life in Darmstadt is. Students will be welcomed at h_da departments relevant for their fields of study and be able to participate in lectures and project work. They will get to know our professors and potential fellow students. And there will be an excursion and fun program."))
         elif text == "Freie Universität Berlin":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("Your living costs mainly depend, of course, on your personal requirements and habits. You should count on spending a minimum of 600 to 700 Euro (rental fees, grocery, leisure time etc.). In order to obtain an entry visa or a residence permit for study purposes, you must prove that this monthly amount is at your disposal, independent of any job."))
         elif text == "Universität zu KölnNetworking":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("A.R.T.E.S. international wants to increase the international visibility of doctoral models and individual projects at the Faculty of Arts and Humanities and to facilitate the international networking of doctoral students at an early stage. To this end, the a.r.t.e.s. Graduate School provides funding for research stays, (active) conference participation and summer schools abroad – available to all doctoral students at the faculty. For research stays, the maximum funding period is three months; for conference participation, it is five days; and for summer schools, it is 14 days. "))
 
     def costs(self, text):
 
         if text == "Hochschule Darmstadt":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highhoch)
+            self.LCostRadioButton.toggled.connect(self.lowhoch)
         elif text == "Freie Universität Berlin":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highber)
+            self.LCostRadioButton.toggled.connect(self.lowber)
         elif text == "Universität zu KölnNetworking":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highkol)
+            self.LCostRadioButton.toggled.connect(self.lowkol)
 
     def lowmar(self):
         self.AccomTextEdit.clear()
