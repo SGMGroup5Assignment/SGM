@@ -707,6 +707,40 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
+#This section is about student life 1,2 and 3
+    def stud1(self, text):
+        if text == "French":
+            self.Student1TextEdit.clear()
+            self.Student1TextEdit.insertPlainText(_("Welcome to France!"))
+        elif text == "German":
+            self.Student1TextEdit.clear()
+            self.Student1TextEdit.insertPlainText(_("Welcome to Germany!"))
+        elif text == "English":
+            self.Student1TextEdit.clear()
+            self.Student1TextEdit.insertPlainText(_("Welcome to Ireland!"))
+
+    def stud2(self, text):
+        if text == "French":
+            self.Student2TextEdit.clear()
+            self.Student2TextEdit.insertPlainText(_("Welcome to France!"))
+        elif text == "German":
+            self.Student2TextEdit.clear()
+            self.Student2TextEdit.insertPlainText(_("Welcome to Germany!"))
+        elif text == "English":
+            self.Student2TextEdit.clear()
+            self.Student2TextEdit.insertPlainText(_("Welcome to Ireland!"))
+
+    def stud3(self, text):
+        if text == "French":
+            self.Student3TextEdit.clear()
+            self.Student3TextEdit.insertPlainText(_("Welcome to France!"))
+        elif text == "German":
+            self.Student3TextEdit.clear()
+            self.Student3TextEdit.insertPlainText(_("Welcome to Germany!"))
+        elif text == "English":
+            self.Student3TextEdit.clear()
+            self.Student3TextEdit.insertPlainText(_("Welcome to Ireland!"))
+
 #This section displays different country welcomes
     def country(self, text):
         if text == "French":
@@ -897,6 +931,11 @@ class Ui_AviateNEducate(object):
         self.UniComboBox.activated[str].connect(self.accom)
         self.countryComboBox.activated[str].connect(self.country)
         self.UniComboBox.activated[str].connect(self.funding)
+
+        #Link the three student life accounts
+        self.countryComboBox.activated[str].connect(self.stud1)
+        self.countryComboBox.activated[str].connect(self.stud2)
+        self.countryComboBox.activated[str].connect(self.stud3)
 
 
 if __name__ == "__main__":
