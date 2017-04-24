@@ -690,13 +690,13 @@ class Ui_AviateNEducate(object):
     def funding(self, text):
         if text == "고려 대학교":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
+            self.FundingTextEdit.insertPlainText(_("If you are fortunate enough to catch the interest of the federal government in your study abroad plans, you may be eligible for a federally funded scholarship to study in Korea as it has such a high level of political importance to the US. These are often generous, competitive, and come with education-for-work agreements in which the government will pay for your education now if you commit to working for them later, in some cases. Or, as is the case of the Critical Language Scholarship, you commit yourself to a particular course of study and stick to it."))
         elif text == "한국의 대학":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("The general availability, ease of accessibility and amount of funding (per stay and applicant) differs widely depends on the intended duration of study or research and the highest academic qualification of the applicant. Similar to other countries, scholarship applications for a short-term exchange (around six months) have the highest chance of success."))
         elif text == "대학교":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("Through the National Institute for International Education Development (NIIED), the Korean Ministry of Education, Science and Technology offers one of the biggest and best known scholarships programs in Korea, the Korean Government Scholarship Program (KGSP). Over 200 international students receive financial support every year. Two programs exist, one for undergraduate students and one for graduate students."))
 
     def costs(self, text):
         if text == "고려 대학교":

@@ -684,13 +684,13 @@ class Ui_AviateNEducate(object):
     def funding(self, text):
         if text == "University of Paris":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
+            self.FundingTextEdit.insertPlainText(_("This grant program is designed to support University of Chicago faculty and their collaborators who wish to undertake research or organize scholarly activities at the Center in Paris. Projects need not be exclusively based in Paris, though they must have a significant component and/or final presence in Paris and should in some way take advantage of the resources or facilities of the Center. Proposals are solicited for the following types of projects"))
         elif text == "University of Lyon":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("This funding involves an agreement between three partners around a common research project: a corporation, a student and a research laboratory. The PhD student is recruited and employed by the company, on a fixed-term or permanent contract."))
         elif text == "University of Marseille":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("The Eiffel Excellence Scholarship Programme was established in January 1999 by the French Ministry of Foreign Affairs and International Development to enable French higher education establishments to attract top foreign students to enrol in their master’s, engineering diploma and PhD courses. The Eiffel scholarships are prestigious merit scholarships for master’s level and PhD's level students"))
 
     def costs(self, text):
 
