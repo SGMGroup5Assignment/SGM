@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'SGM2Group5.ui'
@@ -955,3 +957,4 @@ if __name__ == "__main__":
     MainWindow.setWindowIcon(QtGui.QIcon('planeicon.png'))
     MainWindow.show()
     app.exec_()
+>>>>>>> 8ed74cb43bf15f60aff9f4b9453b781704764eb3
