@@ -28,20 +28,6 @@ except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
 
-#Section to read in file
-        def __init__(self):
-            self.loadfile()  # reads the file into a list
-            self.initUI()  # calls the method initUI() on this instance
-            self.animal = []  # Create empty list
-
-            afile = open('University.txt', 'r')  # Open file for reading
-
-            #afile = open('University.txt', 'r')  # Open file for reading
-
-        for line in afile:  # iterate through file and add each item to the list
-            self.University.append(str(line).rstrip('\n'))
-            afile.close()
-
 class Ui_AviateNEducate(object):
     def setupUi(self, AviateNEducate):
         AviateNEducate.setObjectName(_fromUtf8("AviateNEducate"))
@@ -116,7 +102,7 @@ class Ui_AviateNEducate(object):
         font = QtGui.QFont()
         font.setPointSize(14)
         self.StudnetInfo.setFont(font)
-        self.StudnetInfo.setObjectName(_fromUtf8("StudnetInfo"))
+        self.StudnetInfo.setObjectName(_fromUtf8("StudentInfo"))
         self.ThirdMenuLayout.addWidget(self.StudnetInfo)
         self.horizontalLayoutWidget_7 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_7.setGeometry(QtCore.QRect(60, 710, 321, 191))
@@ -418,18 +404,18 @@ class Ui_AviateNEducate(object):
 
     #Pictures for each differnt language
     def loadpictures(self, text):
-    if text == "English":
+        if text == "English":
         
         #self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
         #self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
         #self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
         #self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
         
         #self.CountryPicLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_6)
         #self.CountryPicLayout.setObjectName(_fromUtf8("CountryPicLayout"))
@@ -448,30 +434,30 @@ class Ui_AviateNEducate(object):
         #self.Student3PicLabel.setObjectName(_fromUtf8("Student3PicLabel"))
         #self.Student3ExpLayout.addWidget(self.Student3PicLabel)
     
-    if text == "German":
+        if text == "German":
         #self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Germany.jpg")))
         #self.CountryPicLabel.setObjectName(_fromUtf8("Germany"))
         #self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
         #self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
 
 
-    if text == "French":
-        self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("France.jpg")))
-        self.CountryPicLabel.setObjectName(_fromUtf8("France"))
-        #self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        #self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
-        self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
+        if text == "French":
+            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("France.jpg")))
+            self.CountryPicLabel.setObjectName(_fromUtf8("France"))
+            #self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            #self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("DIT"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("DIT"))
 
     #Uni drop down insertions
     def loadmodules(self, text):
@@ -526,7 +512,7 @@ class Ui_AviateNEducate(object):
             self.LCostRadioButton.setText(_translate("AviateNEducate", "Kostengünstig", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "Hohe Kosten", None))
           
-          elif text == "French":
+        elif text == "French":
             self.UniComboBox.addItem("--------Irlande--------")
             self.UniComboBox.addItem("Dublin Institute of Technology")
             self.UniComboBox.addItem("Dublin City University")
@@ -716,36 +702,135 @@ class Ui_AviateNEducate(object):
             self.Student3PicLabel.setFont(font)
 
 #This section displays the different university options
-    def accom(self):
-        self.UniTextEdit.clear()
-        self.UniTextEdit.insertPlainText(_("IT WORKS NOW RIGHT??")) #CATHERINECOMEBACKHERE
+    def accom(self,text):
+        if text == "Dublin Institute of Technology":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_("The Dublin Institute of Technology is class"))
+        elif text == "Dublin City University":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_("The Dublin City University YAS"))
+        elif text == "University College Dublin":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_("The University College Dublin HMMM"))
+        elif text == "Hochschule Darmstadt":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_("Hochschule Darmstadt GERMAYN"))
+        elif text == "Freie Universität Berlin":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_("Freie Universität Berlin YUP"))
+        elif text == "Universität zu KölnNetworking":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_("Universität zu KölnNetworking"))
+        elif text == "University of Paris":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_("University of Paris"))
+        elif text == "University of Lyon":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_("University of Lyon"))
+        elif text == "University of Marseille":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_("University of Marseille"))
 
-        f = open('University.txt','r')
-        file_contents = f.read()
-        #file_contents = self.loadfile()  # reads the file into a list
-        #self.UniTextEdit.SetText("file_contents")
+    def costs(self, text):
 
-        #self.loadfile()  # reads the file into a list
-        #self.initUI()  # calls the method initUI() on this instance
-        #self.animal = []  # Create empty list
-        f.close()
-        #afile = open('University.txt', 'r')  # Open file for reading
+        if text == "Dublin Institute of Technology":
+                self.HCostRadioButton.toggled.connect(self.highdub)
+                self.LCostRadioButton.toggled.connect(self.lowdub)
+        elif text == "Dublin City University":
+                self.HCostRadioButton.toggled.connect(self.highdub)
+                self.LCostRadioButton.toggled.connect(self.lowdub)
+        elif text == "University College Dublin":
+                self.HCostRadioButton.toggled.connect(self.highdub)
+                self.LCostRadioButton.toggled.connect(self.lowdub)
+        elif text == "Hochschule Darmstadt":
+                self.HCostRadioButton.toggled.connect(self.highhoch)
+                self.LCostRadioButton.toggled.connect(self.lowhoch)
+        elif text == "Freie Universität Berlin":
+                self.HCostRadioButton.toggled.connect(self.highber)
+                self.LCostRadioButton.toggled.connect(self.lowber)
+        elif text == "Universität zu KölnNetworking":
+                self.HCostRadioButton.toggled.connect(self.highkol)
+                self.LCostRadioButton.toggled.connect(self.lowkol)
+        elif text == "University of Paris":
+                self.HCostRadioButton.toggled.connect(self.highpar)
+                self.LCostRadioButton.toggled.connect(self.lowpar)
+        elif text == "University of Lyon":
+                self.HCostRadioButton.toggled.connect(self.highly)
+                self.LCostRadioButton.toggled.connect(self.lowly)
+        elif text == "University of Marseille":
+                self.HCostRadioButton.toggled.connect(self.highmar)
+                self.LCostRadioButton.toggled.connect(self.lowmar)
 
-    #for line in afile:  # iterate through file and add each item to the list
-        #self.University.append(str(line).rstrip('\n'))
-        #afile.close()
 
 
-#Change text Code
-    def high(self):
+    def lowmar(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Le petit prince,45 per night")
+
+    def highmar(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        # if self.UniComboBox.itemText== "Dublin Institute of Technology":
-        self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
-        # else:
-        #    self.AccomTextEdit.insertPlainText("?")
+        self.AccomTextEdit.insertPlainText("La Rein, 10 per night")
 
-    def low(self):
+    def lowly(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("L'hotel de Lafyette, 25 per night")
+
+    def highly(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("La poisson, 10k per night")
+
+    def lowpar(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("La Croissant, 25k per night")
+
+    def highpar(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Les Miserables, 10 per night")
+
+    def highkol(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Auto, 25k per night")
+
+    def lowbkol(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Hund, like 5 euro")
+
+    def highber(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Brot, 20k per night")
+
+
+    def lowber(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Marmelade, like 5 euro")
+
+    def highhoch(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Geld, 15k per night")
+
+    def lowhoch(self):
+        self.AccomTextEdit.clear()
+        self.HCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Das Kase, like 5 euro")
+
+    def highdub(self):
+        self.AccomTextEdit.clear()
+        self.LCostRadioButton.setChecked(False)
+        self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
+
+    def lowdub(self):
+
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
         self.AccomTextEdit.insertPlainText("Super cheap hotel, like 5 euro")
@@ -757,10 +842,8 @@ class Ui_AviateNEducate(object):
         self.countryComboBox.activated[str].connect(self.loadpictures)
         self.ColourComboBox.activated[str].connect(self.loadcolours)
         self.UniComboBox.activated[str].connect(self.dispmodule)
-        self.HCostRadioButton.toggled.connect(self.high)
-        self.LCostRadioButton.toggled.connect(self.low)
         self.Zoom.stateChanged.connect(self.zoomie)
-
+        self.UniComboBox.activated[str].connect(self.costs)
         self.UniComboBox.activated[str].connect(self.accom)
 
 
