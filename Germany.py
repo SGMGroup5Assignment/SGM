@@ -33,7 +33,8 @@ except AttributeError:
 class Ui_AviateNEducate(object):
     def setupUi(self, AviateNEducate):
         AviateNEducate.setObjectName(_fromUtf8("AviateNEducate"))
-        AviateNEducate.resize(1129, 1000)
+        AviateNEducate.resize(1129, 965)  # Width Height
+        AviateNEducate.move(400, 5)
         self.centralwidget = QtGui.QWidget(AviateNEducate)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.verticalLayoutWidget = QtGui.QWidget(self.centralwidget)
@@ -115,11 +116,13 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_7 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_7.setGeometry(QtCore.QRect(60, 710, 321, 191))
         self.horizontalLayoutWidget_7.setObjectName(_fromUtf8("horizontalLayoutWidget_7"))
+
         self.Student1ExpLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_7)
         self.Student1ExpLayout.setObjectName(_fromUtf8("Student1ExpLayout"))
         self.Student1PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_7)
         self.Student1PicLabel.setObjectName(_fromUtf8("Student1PicLabel"))
         self.Student1ExpLayout.addWidget(self.Student1PicLabel)
+
         self.verticalLayoutWidget_5 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_5.setGeometry(QtCore.QRect(20, 110, 531, 80))
         self.verticalLayoutWidget_5.setObjectName(_fromUtf8("verticalLayoutWidget_5"))
@@ -282,43 +285,35 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_9 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_9.setGeometry(QtCore.QRect(410, 710, 301, 191))
         self.horizontalLayoutWidget_9.setObjectName(_fromUtf8("horizontalLayoutWidget_9"))
+
         self.Student2ExpLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_9)
         self.Student2ExpLayout.setObjectName(_fromUtf8("Student2ExpLayout"))
         self.Student2PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_9)
         self.Student2PicLabel.setObjectName(_fromUtf8("Student2PicLabel"))
         self.Student2ExpLayout.addWidget(self.Student2PicLabel)
+
         self.horizontalLayoutWidget_10 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_10.setGeometry(QtCore.QRect(740, 710, 311, 191))
         self.horizontalLayoutWidget_10.setObjectName(_fromUtf8("horizontalLayoutWidget_10"))
+
         self.Student3ExpLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_10)
         self.Student3ExpLayout.setObjectName(_fromUtf8("Student3ExpLayout"))
         self.Student3PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_10)
         self.Student3PicLabel.setObjectName(_fromUtf8("Student3PicLabel"))
         self.Student3ExpLayout.addWidget(self.Student3PicLabel)
+
         self.horizontalLayoutWidget_11 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_11.setGeometry(QtCore.QRect(60, 920, 321, 191))
         self.horizontalLayoutWidget_11.setObjectName(_fromUtf8("horizontalLayoutWidget_11"))
-        self.Student1ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_11)
-        self.Student1ExpLayoutText.setObjectName(_fromUtf8("Student1ExpLayoutText"))
-        self.Student1TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_11)
-        self.Student1TextEdit.setObjectName(_fromUtf8("Student1TextEdit"))
-        self.Student1ExpLayoutText.addWidget(self.Student1TextEdit)
+
         self.horizontalLayoutWidget_12 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_12.setGeometry(QtCore.QRect(410, 920, 301, 191))
         self.horizontalLayoutWidget_12.setObjectName(_fromUtf8("horizontalLayoutWidget_12"))
         self.Student2ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_12)
-        self.Student2ExpLayoutText.setObjectName(_fromUtf8("Student2ExpLayoutText"))
-        self.Student2TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_12)
-        self.Student2TextEdit.setObjectName(_fromUtf8("Student2TextEdit"))
-        self.Student2ExpLayoutText.addWidget(self.Student2TextEdit)
+
         self.horizontalLayoutWidget_13 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_13.setGeometry(QtCore.QRect(740, 920, 311, 191))
         self.horizontalLayoutWidget_13.setObjectName(_fromUtf8("horizontalLayoutWidget_13"))
-        self.Student3ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_13)
-        self.Student3ExpLayoutText.setObjectName(_fromUtf8("Student3ExpLayoutText"))
-        self.Student3TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_13)
-        self.Student3TextEdit.setObjectName(_fromUtf8("Student3TextEdit"))
-        self.Student3ExpLayoutText.addWidget(self.Student3TextEdit)
 
         AviateNEducate.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(AviateNEducate)
@@ -655,13 +650,17 @@ class Ui_AviateNEducate(object):
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+            self.CountryTextEdit.insertPlainText(_("Bienvenue en Allemagne! "
+                                                   "L'Allemagne est un pays dEurope occidentale avec un paysage de forêts, de rivières,Les chaînes de montagnes et des plages en mer du Nord. Il a plus de deux millénaires dhistoire.Berlin, la capitale, abrite des arts et des scènes nocturnes, le BrandebourgGate et de nombreuses attractions de la Seconde Guerre mondiale. Munich est connue pour sonOktoberfest salles et de la bière, y compris le Hofbräuhaus du 16ème siècle.Francfort avec ses gratte-ciel abrite la Banque centrale européenne."))
         elif text == "German":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+            self.CountryTextEdit.insertPlainText(_("Willkommen in Deutschland!"
+                                                   "Deutschland ist ein westeuropäisches Land mit einer Landschaft von Wäldern, Flüssen, Bergketten und Nordseestränden. Es hat über 2 Jahrtausende der Geschichte. Berlin, seine Hauptstadt, beherbergt Kunst- und Nachtlebenszenen, das Brandenburger Tor und viele Sehenswürdigkeiten im Zweiten Weltkrieg. München ist bekannt für seine Oktoberfest- und Bierhallen, darunter das Hofbräuhaus aus dem 16. Jahrhundert. Frankfurt mit seinen Wolkenkratzern beherbergt die Europäische Zentralbank."))
         elif text == "English":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+            self.CountryTextEdit.insertPlainText(_(
+                "Welcome to Germany!Germany is a Western European country with a landscape of forests, rivers, Mountain chains and northern boarders. It has over 2 thousand years of history. Berlin, its capital, houses art and nightlife scenes, the Brandenburg Gate and many sights in the Second World War. Munich is known for its Oktoberfest and beer halls, including the Hofbräuhaus from the 16th century.Frankfurt, with its skyscrapers, houses the European Central Bank"))
+
 
 
             # This section displays the different university options
@@ -692,14 +691,14 @@ class Ui_AviateNEducate(object):
     def costs(self, text):
 
         if text == "Hochschule Darmstadt":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highhoch)
+            self.LCostRadioButton.toggled.connect(self.lowhoch)
         elif text == "Freie Universität Berlin":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highber)
+            self.LCostRadioButton.toggled.connect(self.lowber)
         elif text == "Universität zu KölnNetworking":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highkol)
+            self.LCostRadioButton.toggled.connect(self.lowkol)
 
     def lowmar(self):
         self.AccomTextEdit.clear()

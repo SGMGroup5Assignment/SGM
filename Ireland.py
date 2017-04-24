@@ -33,7 +33,8 @@ except AttributeError:
 class Ui_AviateNEducate(object):
     def setupUi(self, AviateNEducate):
         AviateNEducate.setObjectName(_fromUtf8("AviateNEducate"))
-        AviateNEducate.resize(1129, 1000)
+        AviateNEducate.resize(1129, 965)  # Width Height
+        AviateNEducate.move(400, 5)
         self.centralwidget = QtGui.QWidget(AviateNEducate)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.verticalLayoutWidget = QtGui.QWidget(self.centralwidget)
@@ -298,27 +299,14 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_11 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_11.setGeometry(QtCore.QRect(60, 920, 321, 191))
         self.horizontalLayoutWidget_11.setObjectName(_fromUtf8("horizontalLayoutWidget_11"))
-        self.Student1ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_11)
-        self.Student1ExpLayoutText.setObjectName(_fromUtf8("Student1ExpLayoutText"))
-        self.Student1TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_11)
-        self.Student1TextEdit.setObjectName(_fromUtf8("Student1TextEdit"))
-        self.Student1ExpLayoutText.addWidget(self.Student1TextEdit)
+
         self.horizontalLayoutWidget_12 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_12.setGeometry(QtCore.QRect(410, 920, 301, 191))
         self.horizontalLayoutWidget_12.setObjectName(_fromUtf8("horizontalLayoutWidget_12"))
-        self.Student2ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_12)
-        self.Student2ExpLayoutText.setObjectName(_fromUtf8("Student2ExpLayoutText"))
-        self.Student2TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_12)
-        self.Student2TextEdit.setObjectName(_fromUtf8("Student2TextEdit"))
-        self.Student2ExpLayoutText.addWidget(self.Student2TextEdit)
+
         self.horizontalLayoutWidget_13 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_13.setGeometry(QtCore.QRect(740, 920, 311, 191))
         self.horizontalLayoutWidget_13.setObjectName(_fromUtf8("horizontalLayoutWidget_13"))
-        self.Student3ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_13)
-        self.Student3ExpLayoutText.setObjectName(_fromUtf8("Student3ExpLayoutText"))
-        self.Student3TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_13)
-        self.Student3TextEdit.setObjectName(_fromUtf8("Student3TextEdit"))
-        self.Student3ExpLayoutText.addWidget(self.Student3TextEdit)
 
         AviateNEducate.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(AviateNEducate)
@@ -655,13 +643,17 @@ class Ui_AviateNEducate(object):
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+            self.CountryTextEdit.insertPlainText(_(
+                "Bienvenue en Irlande! La République d'Irlande occupe la plus grande partie de l'île d'Irlande, Au large des côtes d'Angleterre et du Pays de Galles. Sa capitale, Dublin, est le lieu de naissance des écrivains Comme Oscar Wilde, et la maison de la bière Guinness. Le livre de Kells du 9ème siècle et d'autres Des manuscrits illustrés sont présentés dans la Trinity College Library de Dublin. Baptisé le Emerald Isle pour son paysage luxuriant, le pays est parsemé de châteaux comme le médiéval Château de Cahir."))
         elif text == "German":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+            self.CountryTextEdit.insertPlainText(_(
+                " Willkommen in Irland! Die Republik Irland besetzt die meisten der Insel Irland, Vor der Küste von England und Wales. Seine Hauptstadt, Dublin, ist der Geburtsort der Schriftsteller Wie Oscar Wilde, und die Heimat von Guinness Bier. Das Buch aus dem 9. Jahrhundert von Kells und anderen Illustrierte Manuskripte sind in der Dubliner Trinity College Library zu sehen. Hat die Emerald Isle für seine üppige Landschaft, ist das Land mit Schlössern wie mittelalterlich punktiert Schloss Cahir"))
         elif text == "English":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"
+                                                   "The Republic of Ireland occupies most of the island of Ireland, off the coast of England and Wales. Its capital, Dublin, is the birthplace of writers like Oscar Wilde, and home of Guinness beer. The 9th-century Book of Kells and other illustrated manuscripts are on show in Dublin’s Trinity College Library. Dubbed the Emerald Isle for its lush landscape, the country is dotted with castles like medieval Cahir Castle."))
+
 
 
             # This section displays the different university options
@@ -770,10 +762,9 @@ class Ui_AviateNEducate(object):
         self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
 
     def lowdub(self):
-
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Super cheap hotel, like 5 euro")
+        self.AccomTextEdit.insertPlainText("Student accomadatio is generally availible")
 
     def home(self):
 

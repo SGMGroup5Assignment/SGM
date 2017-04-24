@@ -33,7 +33,8 @@ except AttributeError:
 class Ui_AviateNEducate(object):
     def setupUi(self, AviateNEducate):
         AviateNEducate.setObjectName(_fromUtf8("AviateNEducate"))
-        AviateNEducate.resize(1129, 1000)
+        AviateNEducate.resize(1129, 965)  # Width Height
+        AviateNEducate.move(400, 5)
         self.centralwidget = QtGui.QWidget(AviateNEducate)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.verticalLayoutWidget = QtGui.QWidget(self.centralwidget)
@@ -298,27 +299,14 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_11 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_11.setGeometry(QtCore.QRect(60, 920, 321, 191))
         self.horizontalLayoutWidget_11.setObjectName(_fromUtf8("horizontalLayoutWidget_11"))
-        self.Student1ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_11)
-        self.Student1ExpLayoutText.setObjectName(_fromUtf8("Student1ExpLayoutText"))
-        self.Student1TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_11)
-        self.Student1TextEdit.setObjectName(_fromUtf8("Student1TextEdit"))
-        self.Student1ExpLayoutText.addWidget(self.Student1TextEdit)
+
         self.horizontalLayoutWidget_12 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_12.setGeometry(QtCore.QRect(410, 920, 301, 191))
         self.horizontalLayoutWidget_12.setObjectName(_fromUtf8("horizontalLayoutWidget_12"))
-        self.Student2ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_12)
-        self.Student2ExpLayoutText.setObjectName(_fromUtf8("Student2ExpLayoutText"))
-        self.Student2TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_12)
-        self.Student2TextEdit.setObjectName(_fromUtf8("Student2TextEdit"))
-        self.Student2ExpLayoutText.addWidget(self.Student2TextEdit)
+
         self.horizontalLayoutWidget_13 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_13.setGeometry(QtCore.QRect(740, 920, 311, 191))
         self.horizontalLayoutWidget_13.setObjectName(_fromUtf8("horizontalLayoutWidget_13"))
-        self.Student3ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_13)
-        self.Student3ExpLayoutText.setObjectName(_fromUtf8("Student3ExpLayoutText"))
-        self.Student3TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_13)
-        self.Student3TextEdit.setObjectName(_fromUtf8("Student3TextEdit"))
-        self.Student3ExpLayoutText.addWidget(self.Student3TextEdit)
 
         AviateNEducate.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(AviateNEducate)
@@ -655,13 +643,16 @@ class Ui_AviateNEducate(object):
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+            self.CountryTextEdit.insertPlainText(_("Bienvenue en France!"
+                                                           "La France, en Europe occidentale, englobe les villes médiévales, les villages alpins et les plages méditerranéennes. Paris, sa capitale, est célèbre pour ses maisons de mode, les musées d'art classiques, y compris le Louvre et des monuments comme la Tour Eiffel. Le pays est également réputé pour ses vins et sa cuisine sophistiquée. Les anciens dessins de grottes de Lascaux, le théâtre romain lyonnais et le vaste palais de Versailles témoignent de sa riche histoire."))
         elif text == "German":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+            self.CountryTextEdit.insertPlainText(_(
+                    "Willkommen in Frankreich!Frankreich, Westeuropa, umfasst mittelalterliche Städte, Bergdörfer und die Strände des Mittelmeers. Paris, die Hauptstadt, ist bekannt für seine Modehäuser, traditionelle Kunst Museen, darunter das Louvre und Sehenswürdigkeiten wie der Eiffelturm. Das Land ist auch bekannt für seine Weine und feine Küche. Die alten Zeichnungen von Lascaux, Lyon römisches Theater und das große Schloss von Versailles zu seiner reichen Geschichte zeugen."))
         elif text == "English":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+            self.CountryTextEdit.insertPlainText(_(
+                        "Welcome to France!France, in Western Europe, encompasses medieval towns, alpine villages and Mediterranean beaches. Paris, its capital, is famous for its fashion houses, classical art museums, including the Louvre and monuments such as the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. The old drawings of Lascaux caves, the Roman theater in Lyon and the vast palace of Versailles testify to its rich history."))
 
 
             # This section displays the different university options
@@ -670,15 +661,15 @@ class Ui_AviateNEducate(object):
         if text == "University of Paris":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_(
-                "DIT has a distinctive approach to teaching and learning and graduates are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation. "))
+                "University of Paris are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation. "))
         elif text == "University of Lyon":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_(
-                " Ireland Dublin City University is a young university, situated on an 85 acre campus three miles north of the River Liffey in the city centre and just a 15-minute drive from Dublin airport. With the city just a 10-minute bus drive away, students of DCU have the best of both worlds; the social and cultural benefits of city life, but with the security and vibrancy of a university campus built very much for today."))
+                " University of Lyon is situated on an 85 acre campus and with the city just a 10-minute bus drive away, students of University of Lyon have the best of both worlds; the social and cultural benefits of city life, but with the security and vibrancy of a university campus built very much for today."))
         elif text == "University of Marseille":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_(
-                " UCD is Ireland’s largest university and leads as the university of first choice for Irish school-leavers. Undergraduate students embark on a journey of academic and personal discovery through UCD Horizons, a modular, credit-based curriculum. "))
+                " University of Marseille is class like "))
 
     # This section displays different funding available
     def funding(self, text):
@@ -695,44 +686,44 @@ class Ui_AviateNEducate(object):
     def costs(self, text):
 
         if text == "University of Paris":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highpar)
+            self.LCostRadioButton.toggled.connect(self.lowpar)
         elif text == "University of Lyon":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highly)
+            self.LCostRadioButton.toggled.connect(self.lowly)
         elif text == "University of Marseille":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
+            self.HCostRadioButton.toggled.connect(self.highmar)
+            self.LCostRadioButton.toggled.connect(self.lowmar)
 
     def lowmar(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Le petit prince,45 per night")
+        self.AccomTextEdit.insertPlainText("Le petit prince,    45")
 
     def highmar(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La Rein, 10 per night")
+        self.AccomTextEdit.insertPlainText("La Rein, 10,000")
 
     def lowly(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("L'hotel de Lafyette, 25 per night")
+        self.AccomTextEdit.insertPlainText("L'hotel de Lafyette, 25")
 
     def highly(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La poisson, 10k per night")
+        self.AccomTextEdit.insertPlainText("La poisson, 15,000")
 
     def lowpar(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La Croissant, 25k per night")
+        self.AccomTextEdit.insertPlainText("La Croissant, 25")
 
     def highpar(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Les Miserables, 10 per night")
+        self.AccomTextEdit.insertPlainText("Les Miserables, 50,00")
 
     def highkol(self):
         self.AccomTextEdit.clear()

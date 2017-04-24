@@ -33,7 +33,8 @@ except AttributeError:
 class Ui_AviateNEducate(object):
     def setupUi(self, AviateNEducate):
         AviateNEducate.setObjectName(_fromUtf8("AviateNEducate"))
-        AviateNEducate.resize(1129, 1000)
+        AviateNEducate.resize(1129, 965)  # Width Height
+        AviateNEducate.move(400, 5)
         self.centralwidget = QtGui.QWidget(AviateNEducate)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.verticalLayoutWidget = QtGui.QWidget(self.centralwidget)
@@ -298,27 +299,14 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_11 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_11.setGeometry(QtCore.QRect(60, 920, 321, 191))
         self.horizontalLayoutWidget_11.setObjectName(_fromUtf8("horizontalLayoutWidget_11"))
-        self.Student1ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_11)
-        self.Student1ExpLayoutText.setObjectName(_fromUtf8("Student1ExpLayoutText"))
-        self.Student1TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_11)
-        self.Student1TextEdit.setObjectName(_fromUtf8("Student1TextEdit"))
-        self.Student1ExpLayoutText.addWidget(self.Student1TextEdit)
+
         self.horizontalLayoutWidget_12 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_12.setGeometry(QtCore.QRect(410, 920, 301, 191))
         self.horizontalLayoutWidget_12.setObjectName(_fromUtf8("horizontalLayoutWidget_12"))
-        self.Student2ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_12)
-        self.Student2ExpLayoutText.setObjectName(_fromUtf8("Student2ExpLayoutText"))
-        self.Student2TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_12)
-        self.Student2TextEdit.setObjectName(_fromUtf8("Student2TextEdit"))
-        self.Student2ExpLayoutText.addWidget(self.Student2TextEdit)
+
         self.horizontalLayoutWidget_13 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_13.setGeometry(QtCore.QRect(740, 920, 311, 191))
         self.horizontalLayoutWidget_13.setObjectName(_fromUtf8("horizontalLayoutWidget_13"))
-        self.Student3ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_13)
-        self.Student3ExpLayoutText.setObjectName(_fromUtf8("Student3ExpLayoutText"))
-        self.Student3TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_13)
-        self.Student3TextEdit.setObjectName(_fromUtf8("Student3TextEdit"))
-        self.Student3ExpLayoutText.addWidget(self.Student3TextEdit)
 
         AviateNEducate.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(AviateNEducate)
@@ -645,32 +633,37 @@ class Ui_AviateNEducate(object):
             self.Student3TextEdit.insertPlainText(_("Welcome to Ireland!"))
 
             # This section displays different country welcomes
-
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+            self.CountryTextEdit.insertPlainText(_(
+                "Bienvenue en Finlande! La Finlande est une nation d'Europe du Nord bordant la Suède, la Norvège et la Russie. Sa capitale, à Helsinki, occupe une péninsule et les îles environnantes de la mer Baltique. Helsinki abrite la forteresse de la mer du XVIIIe siècle Suomenlinna, le quartier de design à la mode et divers musées. Les aurores boréales peuvent être vues dans la province de Laponie Arctique, une vaste région sauvage avec des parcs nationaux et des stations de ski"))
         elif text == "German":
-            self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+                self.CountryTextEdit.clear()
+                self.CountryTextEdit.insertPlainText(_(
+                    "Willkommen in Finnland! Finnland ist eine nordeuropäische Nation, die an Schweden, Norwegen und Russland grenzt. Die Hauptstadt Helsinki nimmt eine Halbinsel und umliegende Inseln in der Ostsee ein. Helsinki beherbergt die See-Festung Suomenlinna aus dem 18. Jahrhundert, das modische Design-Viertel und diverse Museen. Die Nordlichter sind von der arktischen Lappland-Provinz des Landes zu sehen, eine weite Wildnis mit Nationalparks und Skigebiete."))
         elif text == "English":
-            self.CountryTextEdit.clear()
-            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+                self.CountryTextEdit.clear()
+                self.CountryTextEdit.insertPlainText(_(
+                    "Welcome to Finland! Finland is a Northern European nation bordering Sweden, Norway and Russia. Its capital, Helsinki, occupies a peninsula and surrounding islands in the Baltic Sea. Helsinki is home to the 18th-century sea fortress Suomenlinna, the fashionable Design District and diverse museums. The Northern Lights can be seen from the country's Arctic Lapland province, a vast wilderness with national parks and ski resorts"))
 
 
-            # This section displays the different university options
+
+
+                    # This section displays the different university options
 
     def accom(self, text):
-        if text == "Yliopisto":
+        if (text == "French") and (text == "Yliopisto" ):
+            #if text == "Yliopisto":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_("Yliopisto has a distinctive approach to teaching and learning and graduates are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation."))
         elif text == "Suomen yliopisto":
             self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("Suomen yliopisto The Freie Universität Berlin is a research university located in Berlin and one of the most prominent universities in Germany. It is internationally known for its research in the humanities and social sciences, as well as in the field of natural and life sciences. "))
+            self.UniTextEdit.insertPlainText(_("Suomen yliopisto is one of the most prominent universities in Finland. It is internationally known for its research in the humanities and social sciences, as well as in the field of natural and life sciences. "))
         elif text == "Suomen korkeakoulu":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_(
-                " Suomen korkeakoulu is Ireland’s largest university and leads as the university of first choice for Irish school-leavers. Undergraduate students embark on a journey of academic and personal discovery through UCD Horizons, a modular, credit-based curriculum. "))
+                    " Suomen korkeakoulu is Finland’s largest university and leads as the university of first choice for  school-leavers. Undergraduate students embark on a journey of academic and personal discovery through Suomen korkeakoulu Horizons, a modular, credit-based curriculum. "))
 
     # This section displays different funding available
     def funding(self, text):
@@ -776,7 +769,10 @@ class Ui_AviateNEducate(object):
         self.UniComboBox.activated[str].connect(self.dispmodule)
         self.Zoom.stateChanged.connect(self.zoomie)
         self.UniComboBox.activated[str].connect(self.costs)
+
         self.UniComboBox.activated[str].connect(self.accom)
+        self.countryComboBox.activated[str].connect(self.accom)
+
         self.countryComboBox.activated[str].connect(self.country)
         self.UniComboBox.activated[str].connect(self.funding)
 
