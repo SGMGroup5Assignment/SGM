@@ -679,10 +679,10 @@ class Ui_AviateNEducate(object):
             self.FundingTextEdit.insertPlainText(_("Researchers can apply for funding for their research from different sources and funding programs depending on their experience and career development. The scientist in charge of an externally funded project is usually a postdoctoral researcher. For example, in research projects funded by the Academy of Finland, scientists in charge are professors or researchers with docentships. Below you can find a list of funding opportunities according to the career development phase. For more information on different funding opportunities, see the links below or the material related to funding organisation on our website."))
         elif text == "Suomen yliopisto":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("Partner universities do not guarantee the funding possibilities for the students’ studies and mobility. Thus, students have to seek for the external funding possibilities. To assist students, the programme developed the document containing finding options in each of the partner countries. Students also can refer to the partners universities to get an additional information in this regard."))
         elif text == "Suomen korkeakoulu":
             self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
+            self.FundingTextEdit.insertPlainText(_("The University finances doctoral training with grants and doctoral student positions. ‘Doctoral student position’ refers to a fixed-term employment relationship with the University, in which the doctoral student is paid a monthly salary in accordance with the national salary system of Finnish universities (YPJ system). The grant is a scholarship paid to the student’s bank account, and it is often taxable income. The University’s doctoral student positions and grants are awarded only to students who have pursued doctoral studies for less than four years on a full-time basis. Furthermore, the University cannot award a grant to a doctoral student who has previously been employed at the University. The faculties provide a yearly application period for these positions – usually in the autumn. For further information, please follow the announcements of your department and/or faculty."))
 
     def costs(self, text):
 
