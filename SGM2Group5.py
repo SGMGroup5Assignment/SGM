@@ -150,16 +150,16 @@ class Ui_AviateNEducate(object):
         self.CountryLabel.setObjectName(_fromUtf8("CountryLabel"))
         self.FirstComboBox.addWidget(self.CountryLabel)
 
-        # Country selection box
+        # Language selection box
         self.countryComboBox = QtGui.QComboBox(self.verticalLayoutWidget_2)
         self.countryComboBox.setObjectName(_fromUtf8("countryComboBox"))
         self.FirstComboBox.addWidget(self.countryComboBox)
 
-        self.countryComboBox.addItem(" ")
-        self.countryComboBox.addItem(_("Home Page"))
-        self.countryComboBox.addItem(_("Ireland"))
-        self.countryComboBox.addItem(_("Germany"))
-        self.countryComboBox.addItem(_("France"))
+        #self.countryComboBox.addItem(" ")
+        #self.countryComboBox.addItem(_("Home Page"))
+        #self.countryComboBox.addItem(_("Ireland"))
+        #self.countryComboBox.addItem(_("Germany"))
+        #self.countryComboBox.addItem(_("France"))
 
         self.countryComboBox.addItem("English")
         self.countryComboBox.addItem("French")
