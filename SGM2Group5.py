@@ -367,6 +367,71 @@ class Ui_AviateNEducate(object):
     def dispmodule(self, text):
         self.uniSelected.setText(text)
 
+def loadpictures(self,image):
+    
+    if text == "Dublin Institute of Technology";
+        self.image = QtGui.QLabel (self.centralwidget)
+        self.image.setGeometry(QtCore.QRect(50,225,400,300))
+        self.image.setText(_fromUtf8(""))
+        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+        self.image.setObjectName(_fromUtf8("DIT"))
+    
+    if text == "Dublin City University";
+        self.image = QtGui.QLabel (self.centralwidget)
+        self.image.setGeometry(QtCore.QRect(50,225,400,300))
+        self.image.setText(_fromUtf8(""))
+        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DCU.jpg")))
+        self.image.setObjectName(_fromUtf8("DCU"))
+
+    if text == "University College Dublin";
+        self.image = QtGui.QLabel (self.centralwidget)
+        self.image.setGeometry(QtCore.QRect(50,225,400,300))
+        self.image.setText(_fromUtf8(""))
+        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("UCD.jpg")))
+        self.image.setObjectName(_fromUtf8("UCD"))
+    
+    if text == "Hochschule Darmstadt";
+        self.image = QtGui.QLabel (self.centralwidget)
+        self.image.setGeometry(QtCore.QRect(50,225,400,300))
+        self.image.setText(_fromUtf8(""))
+        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+        self.image.setObjectName(_fromUtf8("DIT"))
+
+    if text == "Freie Universität Berlin";
+        self.image = QtGui.QLabel (self.centralwidget)
+        self.image.setGeometry(QtCore.QRect(50,225,400,300))
+        self.image.setText(_fromUtf8(""))
+        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+        self.image.setObjectName(_fromUtf8("DIT"))
+    
+    if text == "Universität zu KölnNetworking";
+        self.image = QtGui.QLabel (self.centralwidget)
+        self.image.setGeometry(QtCore.QRect(50,225,400,300))
+        self.image.setText(_fromUtf8(""))
+        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+        self.image.setObjectName(_fromUtf8("DIT"))
+
+    if text == "University of Paris";
+        self.image = QtGui.QLabel (self.centralwidget)
+        self.image.setGeometry(QtCore.QRect(50,225,400,300))
+        self.image.setText(_fromUtf8(""))
+        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+        self.image.setObjectName(_fromUtf8("DIT"))
+    
+    if text == "University of Lyon";
+        self.image = QtGui.QLabel (self.centralwidget)
+        self.image.setGeometry(QtCore.QRect(50,225,400,300))
+        self.image.setText(_fromUtf8(""))
+        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+        self.image.setObjectName(_fromUtf8("DIT"))
+
+    if text == "University of Marseille";
+        self.image = QtGui.QLabel (self.centralwidget)
+        self.image.setGeometry(QtCore.QRect(50,225,400,300))
+        self.image.setText(_fromUtf8(""))
+        self.image.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+        self.image.setObjectName(_fromUtf8("DIT"))
+
     #Uni drop down insertions
     def loadmodules(self, text):
         self.UniComboBox.clear()
