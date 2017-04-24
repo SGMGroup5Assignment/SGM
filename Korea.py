@@ -355,7 +355,7 @@ class Ui_AviateNEducate(object):
 
     #Information and pictures for each university
     def loaduni(self,text):
-        if text == "Dublin Institute of Technology":
+        if text == "고려 대학교":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
@@ -367,7 +367,7 @@ class Ui_AviateNEducate(object):
             self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p3"))
     
-        if text == "Dublin City University":
+        if text == "한국의 대학":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DCU.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DCU"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
@@ -379,7 +379,7 @@ class Ui_AviateNEducate(object):
             self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manthree.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p6"))
 
-        if text == "University College Dublin":
+        if text == "대학교":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("UCD.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("UCD"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
@@ -391,79 +391,7 @@ class Ui_AviateNEducate(object):
             self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p9"))
     
-        if text == "Hochschule Darmstadt":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Darmstadt.jpg")))
-            self.UniversityPicLabel.setObjectName(_fromUtf8("Darmstadt"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Germany.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("Germany"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
-            self.Student1PicLabel.setObjectName(_fromUtf8("p10"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
-            self.Student2PicLabel.setObjectName(_fromUtf8("p11"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanthree.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("p12"))
-
-        if text == "Freie Universität Berlin":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Berlin.jpg")))
-            self.UniversityPicLabel.setObjectName(_fromUtf8("Berlin"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Germany.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("Germany"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanfour.jpg")))
-            self.Student1PicLabel.setObjectName(_fromUtf8("p13"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manone.jpg")))
-            self.Student2PicLabel.setObjectName(_fromUtf8("p14"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("mantwo.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("p15"))
-    
-        if text == "Universität zu KölnNetworking":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Koln.jpg")))
-            self.UniversityPicLabel.setObjectName(_fromUtf8("Koln"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Germany.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("Germany"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manthree.jpg")))
-            self.Student1PicLabel.setObjectName(_fromUtf8("p16"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manfour.jpg")))
-            self.Student2PicLabel.setObjectName(_fromUtf8("p17"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("p18"))
-
-        if text == "University of Paris":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Paris.jpg")))
-            self.UniversityPicLabel.setObjectName(_fromUtf8("Paris"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("France.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("France"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
-            self.Student1PicLabel.setObjectName(_fromUtf8("p19"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanthree.jpg")))
-            self.Student2PicLabel.setObjectName(_fromUtf8("p20"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manfour.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("p21"))
-    
-        if text == "University of Lyon":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Lyon.jpg")))
-            self.UniversityPicLabel.setObjectName(_fromUtf8("Lyon"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("France.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("France"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanfour.jpg")))
-            self.Student1PicLabel.setObjectName(_fromUtf8("p22"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manone.jpg")))
-            self.Student2PicLabel.setObjectName(_fromUtf8("p23"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("mantwo.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("p24"))
-        
-        if text == "University of Marseille":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Marseille.jpg")))
-            self.UniversityPicLabel.setObjectName(_fromUtf8("Marseille"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("France.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("France"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manthree.jpg")))
-            self.Student1PicLabel.setObjectName(_fromUtf8("p25"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanfour.jpg")))
-            self.Student2PicLabel.setObjectName(_fromUtf8("p26"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("p27"))
-
-    #Pictures for each differnt language
+            #Pictures for each differnt language
     #def loadpictures(self, text):
 
         #if text == "English":
@@ -475,18 +403,10 @@ class Ui_AviateNEducate(object):
     def loadmodules(self, text):
         self.UniComboBox.clear()
         if text == "English":
-            self.UniComboBox.addItem("--------Ireland--------")
-            self.UniComboBox.addItem("Dublin Institute of Technology")
-            self.UniComboBox.addItem("Dublin City University")
-            self.UniComboBox.addItem("University College Dublin")
-            self.UniComboBox.addItem("--------Germany--------")
-            self.UniComboBox.addItem("Hochschule Darmstadt")
-            self.UniComboBox.addItem("Freie Universität Berlin")
-            self.UniComboBox.addItem("Universität zu KölnNetworking")
-            self.UniComboBox.addItem("--------France--------")
-            self.UniComboBox.addItem("University of Paris")
-            self.UniComboBox.addItem("University of Lyon")
-            self.UniComboBox.addItem("University of Marseille")
+            self.UniComboBox.addItem("--------Korea--------")
+            self.UniComboBox.addItem("고려 대학교")
+            self.UniComboBox.addItem("한국의 대학")
+            self.UniComboBox.addItem("대학교")
             self.AccomInfo.setText(_translate("AviateNEducate", "Accommodation ", None))
             self.StudnetInfo.setText(_translate("AviateNEducate", "Student Experience", None))
             self.CountryInfo.setText(_translate("AviateNEducate", "Information on the Country", None))
@@ -500,18 +420,10 @@ class Ui_AviateNEducate(object):
             self.HCostRadioButton.setText(_translate("AviateNEducate", "High Cost", None))
 
         elif text == "German":
-            self.UniComboBox.addItem("--------Irland--------")
-            self.UniComboBox.addItem("Dublin Institute of Technology")
-            self.UniComboBox.addItem("Dublin City University")
-            self.UniComboBox.addItem("University College Dublin")
-            self.UniComboBox.addItem("--------Deutschland--------")
-            self.UniComboBox.addItem("Hochschule Darmstadt")
-            self.UniComboBox.addItem("Freie Universität Berlin")
-            self.UniComboBox.addItem("Universität zu KölnNetworking")
-            self.UniComboBox.addItem("--------Frankreich--------")
-            self.UniComboBox.addItem("University of Paris")
-            self.UniComboBox.addItem("University of Lyon")
-            self.UniComboBox.addItem("University of Marseille")
+            self.UniComboBox.addItem("--------Korea--------")
+            self.UniComboBox.addItem("고려 대학교")
+            self.UniComboBox.addItem("한국의 대학")
+            self.UniComboBox.addItem("대학교")
             self.AccomInfo.setText(_translate("AviateNEducate", "Unterkunft ", None))
             self.StudnetInfo.setText(_translate("AviateNEducate", "Studentenerfahrung", None))
             self.CountryInfo.setText(_translate("AviateNEducate", "Informationen über das Land", None))
@@ -524,19 +436,11 @@ class Ui_AviateNEducate(object):
             self.LCostRadioButton.setText(_translate("AviateNEducate", "Kostengünstig", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "Hohe Kosten", None))
           
-        elif text == "French":
-            self.UniComboBox.addItem("--------Irlande--------")
-            self.UniComboBox.addItem("Dublin Institute of Technology")
-            self.UniComboBox.addItem("Dublin City University")
-            self.UniComboBox.addItem("University College Dublin")
-            self.UniComboBox.addItem("--------Allemagne--------")
-            self.UniComboBox.addItem("Hochschule Darmstadt")
-            self.UniComboBox.addItem("Freie Universität Berlin")
-            self.UniComboBox.addItem("Universität zu KölnNetworking")
-            self.UniComboBox.addItem("--------France--------")
-            self.UniComboBox.addItem("University of Paris")
-            self.UniComboBox.addItem("University of Lyon")
-            self.UniComboBox.addItem("University of Marseille")
+          elif text == "French":
+            self.UniComboBox.addItem("--------Corée--------")
+            self.UniComboBox.addItem("고려 대학교")
+            self.UniComboBox.addItem("한국의 대학")
+            self.UniComboBox.addItem("대학교")
             self.AccomInfo.setText(_translate("AviateNEducate", "Hébergement ", None))
             self.StudnetInfo.setText(_translate("AviateNEducate", "Expérience étudiante", None))
             self.CountryInfo.setText(_translate("AviateNEducate", "Informations sur le pays", None))
@@ -762,96 +666,41 @@ class Ui_AviateNEducate(object):
 
 #This section displays the different university options
     def accom(self,text):
-        if text == "Dublin Institute of Technology":
+        if text == "고려 대학교":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_("DIT has a distinctive approach to teaching and learning and graduates are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation. "))
-        elif text == "Dublin City University":
+        elif text == "한국의 대학":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_(" Ireland Dublin City University is a young university, situated on an 85 acre campus three miles north of the River Liffey in the city centre and just a 15-minute drive from Dublin airport. With the city just a 10-minute bus drive away, students of DCU have the best of both worlds; the social and cultural benefits of city life, but with the security and vibrancy of a university campus built very much for today."))
-        elif text == "University College Dublin":
+        elif text == "대학교":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_(" UCD is Ireland’s largest university and leads as the university of first choice for Irish school-leavers. Undergraduate students embark on a journey of academic and personal discovery through UCD Horizons, a modular, credit-based curriculum. "))
-        elif text == "Hochschule Darmstadt":
-            self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("Hochschule Darmstadt GERMAYN"))
-        elif text == "Freie Universität Berlin":
-            self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("Freie Universität Berlin YUP"))
-        elif text == "Universität zu KölnNetworking":
-            self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("Universität zu KölnNetworking"))
-        elif text == "University of Paris":
-            self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("University of Paris"))
-        elif text == "University of Lyon":
-            self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("University of Lyon"))
-        elif text == "University of Marseille":
-            self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("University of Marseille"))
+
 
     # This section displays different funding available
     def funding(self,text):
-        if text == "Dublin Institute of Technology":
+        if text == "고려 대학교":
             self.FundingTextEdit.clear()
             self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
-        elif text == "Dublin City University":
+        elif text == "한국의 대학":
             self.FundingTextEdit.clear()
             self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))
-        elif text == "University College Dublin":
+        elif text == "대학교":
             self.FundingTextEdit.clear()
             self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
-        elif text == "Hochschule Darmstadt":
-            self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("Hochschule Darmstadt has lots of options"))
-        elif text == "Freie Universität Berlin":
-            self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("Freie Universität Berlin has lots of options"))
-        elif text == "Universität zu KölnNetworking":
-            self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("Universität zu KölnNetworking has lots of options"))
-        elif text == "University of Paris":
-            self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("University of Paris has lots of options"))
-        elif text == "University of Lyon":
-            self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("University of Lyon has lots of options"))
-        elif text == "University of Marseille":
-            self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("University of Marseille has lots of options"))
-
 
     def costs(self, text):
 
-        if text == "Dublin Institute of Technology":
+        if text == "고려 대학교":
                 self.HCostRadioButton.toggled.connect(self.highdub)
                 self.LCostRadioButton.toggled.connect(self.lowdub)
-        elif text == "Dublin City University":
+        elif text == "한국의 대학":
                 self.HCostRadioButton.toggled.connect(self.highdub)
                 self.LCostRadioButton.toggled.connect(self.lowdub)
-        elif text == "University College Dublin":
+        elif text == "대학교":
                 self.HCostRadioButton.toggled.connect(self.highdub)
                 self.LCostRadioButton.toggled.connect(self.lowdub)
-        elif text == "Hochschule Darmstadt":
-                self.HCostRadioButton.toggled.connect(self.highhoch)
-                self.LCostRadioButton.toggled.connect(self.lowhoch)
-        elif text == "Freie Universität Berlin":
-                self.HCostRadioButton.toggled.connect(self.highber)
-                self.LCostRadioButton.toggled.connect(self.lowber)
-        elif text == "Universität zu KölnNetworking":
-                self.HCostRadioButton.toggled.connect(self.highkol)
-                self.LCostRadioButton.toggled.connect(self.lowkol)
-        elif text == "University of Paris":
-                self.HCostRadioButton.toggled.connect(self.highpar)
-                self.LCostRadioButton.toggled.connect(self.lowpar)
-        elif text == "University of Lyon":
-                self.HCostRadioButton.toggled.connect(self.highly)
-                self.LCostRadioButton.toggled.connect(self.lowly)
-        elif text == "University of Marseille":
-                self.HCostRadioButton.toggled.connect(self.highmar)
-                self.LCostRadioButton.toggled.connect(self.lowmar)
-
-
+        
 
     def lowmar(self):
         self.AccomTextEdit.clear()
