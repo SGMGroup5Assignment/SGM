@@ -39,18 +39,13 @@ class Ui_AviateNEducate(object):
         self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
         self.TitleLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget)
         self.TitleLayout.setObjectName(_fromUtf8("TitleLayout"))
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 9ed4a781d9d061202ec330f38c9bcad80a777bef
         self.AviateNEducate_Title = QtGui.QLabel(self.verticalLayoutWidget)
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Iskoola Pota"))
         font.setPointSize(24)
         self.AviateNEducate_Title.setFont(font)
         self.AviateNEducate_Title.setObjectName(_fromUtf8("AviateNEducate_Title"))
-        #self.TitleLayout.addWidget(self.AviateNEducate_Title)
+        self.TitleLayout.addWidget(self.AviateNEducate_Title)
         self.horizontalLayoutWidget_2 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(560, 200, 311, 151))
         self.horizontalLayoutWidget_2.setObjectName(_fromUtf8("horizontalLayoutWidget_2"))
@@ -849,7 +844,7 @@ class Ui_AviateNEducate(object):
 
         self.countryComboBox.activated[str].connect(self.loadmodules)
         self.UniComboBox.activated[str].connect(self.loaduni)
-        self.countryComboBox.activated[str].connect(self.loadpictures)
+        #self.countryComboBox.activated[str].connect(self.loadpictures)
         self.ColourComboBox.activated[str].connect(self.loadcolours)
         self.UniComboBox.activated[str].connect(self.dispmodule)
         self.Zoom.stateChanged.connect(self.zoomie)
