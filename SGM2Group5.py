@@ -39,6 +39,8 @@ class Ui_AviateNEducate(object):
         self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
         self.TitleLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget)
         self.TitleLayout.setObjectName(_fromUtf8("TitleLayout"))
+        self.TitleLayout.setPixmap(QtGui.QPixmap(_fromUtf8("logo_SGM2.png")))
+        self.TitleLayout.setObjectName(_fromUtf8("Logo"))
         self.AviateNEducate_Title = QtGui.QLabel(self.verticalLayoutWidget)
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Iskoola Pota"))
