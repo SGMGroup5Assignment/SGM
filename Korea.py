@@ -9,6 +9,7 @@
 from PyQt4 import QtCore, QtGui
 import random
 import gettext
+
 fr = gettext.translation('fr', localedir='locale', languages=['fr'])
 fr.install()
 
@@ -27,6 +28,7 @@ try:
 except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
+
 
 class Ui_AviateNEducate(object):
     def setupUi(self, AviateNEducate):
@@ -49,8 +51,8 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_2 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(560, 200, 311, 151))
         self.horizontalLayoutWidget_2.setObjectName(_fromUtf8("horizontalLayoutWidget_2"))
-        
-        #Section for Uni Text
+
+        # Section for Uni Text
         self.UniLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_2)
         self.UniLayout.setObjectName(_fromUtf8("UniLayout"))
         self.UniTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_2)
@@ -59,8 +61,8 @@ class Ui_AviateNEducate(object):
         self.verticalLayoutWidget_3 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(20, 360, 181, 80))
         self.verticalLayoutWidget_3.setObjectName(_fromUtf8("verticalLayoutWidget_3"))
-        
-        #Accomodation Section
+
+        # Accomodation Section
         self.SecondMenuLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget_3)
         self.SecondMenuLayout.setObjectName(_fromUtf8("SecondMenuLayout"))
         self.AccomInfo = QtGui.QLabel(self.verticalLayoutWidget_3)
@@ -72,8 +74,8 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_6 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_6.setGeometry(QtCore.QRect(20, 200, 211, 151))
         self.horizontalLayoutWidget_6.setObjectName(_fromUtf8("horizontalLayoutWidget_6"))
-        
-        #Country Section
+
+        # Country Section
         self.CountryPicLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_6)
         self.CountryPicLayout.setObjectName(_fromUtf8("CountryPicLayout"))
         self.CountryPicLabel = QtGui.QLabel(self.horizontalLayoutWidget_6)
@@ -82,8 +84,8 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_3 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_3.setGeometry(QtCore.QRect(560, 450, 531, 151))
         self.horizontalLayoutWidget_3.setObjectName(_fromUtf8("horizontalLayoutWidget_3"))
-        
-        #Funding Section
+
+        # Funding Section
         self.FundingLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_3)
         self.FundingLayout.setObjectName(_fromUtf8("FundingLayout"))
         self.FundingTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_3)
@@ -92,8 +94,8 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_4 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_4.setGeometry(QtCore.QRect(20, 450, 531, 151))
         self.horizontalLayoutWidget_4.setObjectName(_fromUtf8("horizontalLayoutWidget_4"))
-        
-        #Accom Section
+
+        # Accom Section
         self.AccomLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_4)
         self.AccomLayout.setObjectName(_fromUtf8("AccomLayout"))
         self.AccomTextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_4)
@@ -149,8 +151,6 @@ class Ui_AviateNEducate(object):
         self.countryComboBox.addItem("English")
         self.countryComboBox.addItem("French")
         self.countryComboBox.addItem("German")
-
-
 
         self.verticalLayoutWidget_6 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_6.setGeometry(QtCore.QRect(870, 10, 221, 61))
@@ -223,7 +223,7 @@ class Ui_AviateNEducate(object):
         self.CountryTextEdit = QtGui.QPlainTextEdit(self.verticalLayoutWidget_10)
         self.CountryTextEdit.setObjectName(_fromUtf8("CountryTextEdit"))
         self.CountryInfoLayout.addWidget(self.CountryTextEdit)
-        #Uni layout box
+        # Uni layout box
         self.verticalLayoutWidget_11 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_11.setGeometry(QtCore.QRect(870, 120, 221, 61))
         self.verticalLayoutWidget_11.setObjectName(_fromUtf8("verticalLayoutWidget_11"))
@@ -233,12 +233,12 @@ class Ui_AviateNEducate(object):
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
         font.setPointSize(11)
-        #Uni drop down box
+        # Uni drop down box
         self.ColourSelectLabel_2.setFont(font)
         self.ColourSelectLabel_2.setObjectName(_fromUtf8("ColourSelectLabel_2"))
         self.UniLayoutBox.addWidget(self.ColourSelectLabel_2)
 
-        #Uni Combo Section
+        # Uni Combo Section
         self.UniComboBox = QtGui.QComboBox(self.verticalLayoutWidget_11)
         self.UniComboBox.setObjectName(_fromUtf8("UniComboBox"))
         self.UniLayoutBox.addWidget(self.UniComboBox)
@@ -246,8 +246,6 @@ class Ui_AviateNEducate(object):
         self.uniSelected = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_2)
         self.uniSelected.setGeometry(QtCore.QRect(560, 200, 311, 151))
         self.uniSelected.setObjectName(_fromUtf8("uniSelected"))
-
-
 
         self.horizontalLayoutWidget_8 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_8.setGeometry(QtCore.QRect(880, 200, 211, 151))
@@ -353,8 +351,13 @@ class Ui_AviateNEducate(object):
     def dispmodule(self, text):
         self.uniSelected.setText(text)
 
+<<<<<<< HEAD
     #Information and pictures for each university
     def loaduni(self,text):
+=======
+    # Information and pictures for each university
+    def loaduni(self, text):
+>>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
         if text == "고려 대학교":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
@@ -366,7 +369,11 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setObjectName(_fromUtf8("p2"))
             self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p3"))
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
         if text == "한국의 대학":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DCU.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DCU"))
@@ -390,16 +397,21 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setObjectName(_fromUtf8("p8"))
             self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p9"))
+<<<<<<< HEAD
     
             #Pictures for each differnt language
     #def loadpictures(self, text):
+=======
 
-        #if text == "English":
-        #if text == "German":
-        #if text == "French":
-        
+            # Pictures for each differnt language
+            # def loadpictures(self, text):
+>>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
 
-    #Uni drop down insertions
+            # if text == "English":
+            # if text == "German":
+            # if text == "French":
+
+    # Uni drop down insertions
     def loadmodules(self, text):
         self.UniComboBox.clear()
         if text == "English":
@@ -435,8 +447,13 @@ class Ui_AviateNEducate(object):
             self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Universität wählen:", None))
             self.LCostRadioButton.setText(_translate("AviateNEducate", "Kostengünstig", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "Hohe Kosten", None))
+<<<<<<< HEAD
           
           elif text == "French":
+=======
+
+        elif text == "French":
+>>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
             self.UniComboBox.addItem("--------Corée--------")
             self.UniComboBox.addItem("고려 대학교")
             self.UniComboBox.addItem("한국의 대학")
@@ -452,7 +469,7 @@ class Ui_AviateNEducate(object):
             self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Sélectionnez Université:", None))
             self.LCostRadioButton.setText(_translate("AviateNEducate", "À bas prix", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "Coût élevé", None))
-        
+
         else:
             self.UniComboBox.clear()
 
@@ -559,7 +576,8 @@ class Ui_AviateNEducate(object):
         else:
             self.ColourComboBox.clear()
 
-#Zoom Code
+            # Zoom Code
+
     def zoomie(self, state):
         if state == QtCore.Qt.Checked:
             # self.setGeometry(10, 20, 2000, 2000)
@@ -617,7 +635,8 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
-#This section is about student life 1,2 and 3
+            # This section is about student life 1,2 and 3
+
     def stud1(self, text):
         if text == "French":
             self.Student1TextEdit.clear()
@@ -651,7 +670,8 @@ class Ui_AviateNEducate(object):
             self.Student3TextEdit.clear()
             self.Student3TextEdit.insertPlainText(_("Welcome to Ireland!"))
 
-#This section displays different country welcomes
+            # This section displays different country welcomes
+
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
@@ -664,6 +684,7 @@ class Ui_AviateNEducate(object):
             self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
 
 
+<<<<<<< HEAD
 #This section displays the different university options
     def accom(self,text):
         if text == "고려 대학교":
@@ -679,6 +700,26 @@ class Ui_AviateNEducate(object):
 
     # This section displays different funding available
     def funding(self,text):
+=======
+            # This section displays the different university options
+
+    def accom(self, text):
+        if text == "고려 대학교":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_(
+                "DIT has a distinctive approach to teaching and learning and graduates are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation. "))
+        elif text == "한국의 대학":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_(
+                " Ireland Dublin City University is a young university, situated on an 85 acre campus three miles north of the River Liffey in the city centre and just a 15-minute drive from Dublin airport. With the city just a 10-minute bus drive away, students of DCU have the best of both worlds; the social and cultural benefits of city life, but with the security and vibrancy of a university campus built very much for today."))
+        elif text == "대학교":
+            self.UniTextEdit.clear()
+            self.UniTextEdit.insertPlainText(_(
+                " UCD is Ireland’s largest university and leads as the university of first choice for Irish school-leavers. Undergraduate students embark on a journey of academic and personal discovery through UCD Horizons, a modular, credit-based curriculum. "))
+
+    # This section displays different funding available
+    def funding(self, text):
+>>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
         if text == "고려 대학교":
             self.FundingTextEdit.clear()
             self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
@@ -692,6 +733,7 @@ class Ui_AviateNEducate(object):
     def costs(self, text):
 
         if text == "고려 대학교":
+<<<<<<< HEAD
                 self.HCostRadioButton.toggled.connect(self.highdub)
                 self.LCostRadioButton.toggled.connect(self.lowdub)
         elif text == "한국의 대학":
@@ -701,6 +743,16 @@ class Ui_AviateNEducate(object):
                 self.HCostRadioButton.toggled.connect(self.highdub)
                 self.LCostRadioButton.toggled.connect(self.lowdub)
         
+=======
+            self.HCostRadioButton.toggled.connect(self.highdub)
+            self.LCostRadioButton.toggled.connect(self.lowdub)
+        elif text == "한국의 대학":
+            self.HCostRadioButton.toggled.connect(self.highdub)
+            self.LCostRadioButton.toggled.connect(self.lowdub)
+        elif text == "대학교":
+            self.HCostRadioButton.toggled.connect(self.highdub)
+            self.LCostRadioButton.toggled.connect(self.lowdub)
+>>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
 
     def lowmar(self):
         self.AccomTextEdit.clear()
@@ -747,7 +799,6 @@ class Ui_AviateNEducate(object):
         self.LCostRadioButton.setChecked(False)
         self.AccomTextEdit.insertPlainText("Das Brot, 20k per night")
 
-
     def lowber(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
@@ -778,7 +829,7 @@ class Ui_AviateNEducate(object):
 
         self.countryComboBox.activated[str].connect(self.loadmodules)
         self.UniComboBox.activated[str].connect(self.loaduni)
-        #self.countryComboBox.activated[str].connect(self.loadpictures)
+        # self.countryComboBox.activated[str].connect(self.loadpictures)
         self.ColourComboBox.activated[str].connect(self.loadcolours)
         self.UniComboBox.activated[str].connect(self.dispmodule)
         self.Zoom.stateChanged.connect(self.zoomie)
@@ -787,7 +838,7 @@ class Ui_AviateNEducate(object):
         self.countryComboBox.activated[str].connect(self.country)
         self.UniComboBox.activated[str].connect(self.funding)
 
-        #Link the three student life accounts
+        # Link the three student life accounts
         self.countryComboBox.activated[str].connect(self.stud1)
         self.countryComboBox.activated[str].connect(self.stud2)
         self.countryComboBox.activated[str].connect(self.stud3)
