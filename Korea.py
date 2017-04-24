@@ -351,13 +351,9 @@ class Ui_AviateNEducate(object):
     def dispmodule(self, text):
         self.uniSelected.setText(text)
 
-<<<<<<< HEAD
     #Information and pictures for each university
     def loaduni(self,text):
-=======
-    # Information and pictures for each university
-    def loaduni(self, text):
->>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
+
         if text == "고려 대학교":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
@@ -369,11 +365,7 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setObjectName(_fromUtf8("p2"))
             self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p3"))
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
         if text == "한국의 대학":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DCU.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DCU"))
@@ -397,19 +389,6 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setObjectName(_fromUtf8("p8"))
             self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p9"))
-<<<<<<< HEAD
-    
-            #Pictures for each differnt language
-    #def loadpictures(self, text):
-=======
-
-            # Pictures for each differnt language
-            # def loadpictures(self, text):
->>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
-
-            # if text == "English":
-            # if text == "German":
-            # if text == "French":
 
     # Uni drop down insertions
     def loadmodules(self, text):
@@ -447,13 +426,8 @@ class Ui_AviateNEducate(object):
             self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Universität wählen:", None))
             self.LCostRadioButton.setText(_translate("AviateNEducate", "Kostengünstig", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "Hohe Kosten", None))
-<<<<<<< HEAD
-          
-          elif text == "French":
-=======
 
         elif text == "French":
->>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
             self.UniComboBox.addItem("--------Corée--------")
             self.UniComboBox.addItem("고려 대학교")
             self.UniComboBox.addItem("한국의 대학")
@@ -684,7 +658,6 @@ class Ui_AviateNEducate(object):
             self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
 
 
-<<<<<<< HEAD
 #This section displays the different university options
     def accom(self,text):
         if text == "고려 대학교":
@@ -698,11 +671,7 @@ class Ui_AviateNEducate(object):
             self.UniTextEdit.insertPlainText(_(" UCD is Ireland’s largest university and leads as the university of first choice for Irish school-leavers. Undergraduate students embark on a journey of academic and personal discovery through UCD Horizons, a modular, credit-based curriculum. "))
 
 
-    # This section displays different funding available
-    def funding(self,text):
-=======
-            # This section displays the different university options
-
+    # This section displays the different university options
     def accom(self, text):
         if text == "고려 대학교":
             self.UniTextEdit.clear()
@@ -719,7 +688,6 @@ class Ui_AviateNEducate(object):
 
     # This section displays different funding available
     def funding(self, text):
->>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
         if text == "고려 대학교":
             self.FundingTextEdit.clear()
             self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
@@ -731,9 +699,7 @@ class Ui_AviateNEducate(object):
             self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
 
     def costs(self, text):
-
         if text == "고려 대학교":
-<<<<<<< HEAD
                 self.HCostRadioButton.toggled.connect(self.highdub)
                 self.LCostRadioButton.toggled.connect(self.lowdub)
         elif text == "한국의 대학":
@@ -742,17 +708,7 @@ class Ui_AviateNEducate(object):
         elif text == "대학교":
                 self.HCostRadioButton.toggled.connect(self.highdub)
                 self.LCostRadioButton.toggled.connect(self.lowdub)
-        
-=======
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
-        elif text == "한국의 대학":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
-        elif text == "대학교":
-            self.HCostRadioButton.toggled.connect(self.highdub)
-            self.LCostRadioButton.toggled.connect(self.lowdub)
->>>>>>> 6290a2dabb6a9fbbe45e8ae2dd8e78c1e1246af0
+
 
     def lowmar(self):
         self.AccomTextEdit.clear()
