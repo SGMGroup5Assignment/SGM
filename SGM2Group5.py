@@ -361,7 +361,7 @@ class Ui_AviateNEducate(object):
         self.uniSelected.setText(text)
 
     #Information and pictures for each university
-    def loaduni(self,image):
+    def loaduni(self,text):
         if text == "Dublin Institute of Technology":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
@@ -404,8 +404,8 @@ class Ui_AviateNEducate(object):
         
         self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
         self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
-        #self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-        #self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
+        self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+        self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
         self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
         self.Student1PicLabel.setObjectName(_fromUtf8("DIT"))
         self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
