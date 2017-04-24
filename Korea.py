@@ -31,7 +31,7 @@ except AttributeError:
 class Ui_AviateNEducate(object):
     def setupUi(self, AviateNEducate):
         AviateNEducate.setObjectName(_fromUtf8("AviateNEducate"))
-        AviateNEducate.resize(1129, 1207)
+        AviateNEducate.resize(1129, 1000)
         self.centralwidget = QtGui.QWidget(AviateNEducate)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.verticalLayoutWidget = QtGui.QWidget(self.centralwidget)
@@ -219,6 +219,7 @@ class Ui_AviateNEducate(object):
         self.verticalLayoutWidget_10.setObjectName(_fromUtf8("verticalLayoutWidget_10"))
         self.CountryInfoLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget_10)
         self.CountryInfoLayout.setObjectName(_fromUtf8("CountryInfoLayout"))
+
         self.CountryTextEdit = QtGui.QPlainTextEdit(self.verticalLayoutWidget_10)
         self.CountryTextEdit.setObjectName(_fromUtf8("CountryTextEdit"))
         self.CountryInfoLayout.addWidget(self.CountryTextEdit)
@@ -712,17 +713,64 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
+#This section is about student life 1,2 and 3
+    def stud1(self, text):
+        if text == "French":
+            self.Student1TextEdit.clear()
+            self.Student1TextEdit.insertPlainText(_("Welcome to France!"))
+        elif text == "German":
+            self.Student1TextEdit.clear()
+            self.Student1TextEdit.insertPlainText(_("Welcome to Germany!"))
+        elif text == "English":
+            self.Student1TextEdit.clear()
+            self.Student1TextEdit.insertPlainText(_("Welcome to Ireland!"))
+
+    def stud2(self, text):
+        if text == "French":
+            self.Student2TextEdit.clear()
+            self.Student2TextEdit.insertPlainText(_("Welcome to France!"))
+        elif text == "German":
+            self.Student2TextEdit.clear()
+            self.Student2TextEdit.insertPlainText(_("Welcome to Germany!"))
+        elif text == "English":
+            self.Student2TextEdit.clear()
+            self.Student2TextEdit.insertPlainText(_("Welcome to Ireland!"))
+
+    def stud3(self, text):
+        if text == "French":
+            self.Student3TextEdit.clear()
+            self.Student3TextEdit.insertPlainText(_("Welcome to France!"))
+        elif text == "German":
+            self.Student3TextEdit.clear()
+            self.Student3TextEdit.insertPlainText(_("Welcome to Germany!"))
+        elif text == "English":
+            self.Student3TextEdit.clear()
+            self.Student3TextEdit.insertPlainText(_("Welcome to Ireland!"))
+
+#This section displays different country welcomes
+    def country(self, text):
+        if text == "French":
+            self.CountryTextEdit.clear()
+            self.CountryTextEdit.insertPlainText(_("Welcome to France!"))
+        elif text == "German":
+            self.CountryTextEdit.clear()
+            self.CountryTextEdit.insertPlainText(_("Welcome to Germany!"))
+        elif text == "English":
+            self.CountryTextEdit.clear()
+            self.CountryTextEdit.insertPlainText(_("Welcome to Ireland!"))
+
+
 #This section displays the different university options
     def accom(self,text):
         if text == "Dublin Institute of Technology":
             self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("The Dublin Institute of Technology is class"))
+            self.UniTextEdit.insertPlainText(_("DIT has a distinctive approach to teaching and learning and graduates are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation. "))
         elif text == "Dublin City University":
             self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("The Dublin City University YAS"))
+            self.UniTextEdit.insertPlainText(_(" Ireland Dublin City University is a young university, situated on an 85 acre campus three miles north of the River Liffey in the city centre and just a 15-minute drive from Dublin airport. With the city just a 10-minute bus drive away, students of DCU have the best of both worlds; the social and cultural benefits of city life, but with the security and vibrancy of a university campus built very much for today."))
         elif text == "University College Dublin":
             self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("The University College Dublin HMMM"))
+            self.UniTextEdit.insertPlainText(_(" UCD is Ireland’s largest university and leads as the university of first choice for Irish school-leavers. Undergraduate students embark on a journey of academic and personal discovery through UCD Horizons, a modular, credit-based curriculum. "))
         elif text == "Hochschule Darmstadt":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_("Hochschule Darmstadt GERMAYN"))
@@ -741,6 +789,37 @@ class Ui_AviateNEducate(object):
         elif text == "University of Marseille":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_("University of Marseille"))
+
+    # This section displays different funding available
+    def funding(self,text):
+        if text == "Dublin Institute of Technology":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("DIT IS PRICEY"))
+        elif text == "Dublin City University":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("The Dublin City University has lots of options"))
+        elif text == "University College Dublin":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("The University College Dublin has lots of options"))
+        elif text == "Hochschule Darmstadt":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("Hochschule Darmstadt has lots of options"))
+        elif text == "Freie Universität Berlin":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("Freie Universität Berlin has lots of options"))
+        elif text == "Universität zu KölnNetworking":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("Universität zu KölnNetworking has lots of options"))
+        elif text == "University of Paris":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("University of Paris has lots of options"))
+        elif text == "University of Lyon":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("University of Lyon has lots of options"))
+        elif text == "University of Marseille":
+            self.FundingTextEdit.clear()
+            self.FundingTextEdit.insertPlainText(_("University of Marseille has lots of options"))
+
 
     def costs(self, text):
 
@@ -856,6 +935,13 @@ class Ui_AviateNEducate(object):
         self.Zoom.stateChanged.connect(self.zoomie)
         self.UniComboBox.activated[str].connect(self.costs)
         self.UniComboBox.activated[str].connect(self.accom)
+        self.countryComboBox.activated[str].connect(self.country)
+        self.UniComboBox.activated[str].connect(self.funding)
+
+        #Link the three student life accounts
+        self.countryComboBox.activated[str].connect(self.stud1)
+        self.countryComboBox.activated[str].connect(self.stud2)
+        self.countryComboBox.activated[str].connect(self.stud3)
 
 
 if __name__ == "__main__":
