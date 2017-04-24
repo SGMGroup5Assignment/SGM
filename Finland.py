@@ -666,11 +666,11 @@ class Ui_AviateNEducate(object):
             self.UniTextEdit.insertPlainText(_("Yliopisto has a distinctive approach to teaching and learning and graduates are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation."))
         elif text == "Suomen yliopisto":
             self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("Suomen yliopisto The Freie Universität Berlin is a research university located in Berlin and one of the most prominent universities in Germany. It is internationally known for its research in the humanities and social sciences, as well as in the field of natural and life sciences. "))
+            self.UniTextEdit.insertPlainText(_("Suomen yliopisto is one of the most prominent universities in Finland. It is internationally known for its research in the humanities and social sciences, as well as in the field of natural and life sciences. "))
         elif text == "Suomen korkeakoulu":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_(
-                " Suomen korkeakoulu is Ireland’s largest university and leads as the university of first choice for Irish school-leavers. Undergraduate students embark on a journey of academic and personal discovery through UCD Horizons, a modular, credit-based curriculum. "))
+                " Suomen korkeakoulu is Finland’s largest university and leads as the university of first choice for  school-leavers. Undergraduate students embark on a journey of academic and personal discovery through Suomen korkeakoulu Horizons, a modular, credit-based curriculum. "))
 
     # This section displays different funding available
     def funding(self, text):
