@@ -1,0 +1,8 @@
+Welcome to AviteNEducate, a portal designed for students by students to make
+the challenge of studying abroad more simple and achievable.
+
+Select your country of choice above to be connected to our portal, here you will find information
+on accommodation, funding and the universities in that country with relevant courses to 
+facilitate your study.
+
+If you need any help with our features, please select “Help” button.
