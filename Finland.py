@@ -346,39 +346,39 @@ class Ui_AviateNEducate(object):
     # Information and pictures for each university
     def loaduni(self, text):
         if text == "Yliopisto":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
+            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\DIT.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
+            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandMain.jpg")))
+            self.CountryPicLabel.setObjectName(_fromUtf8("Finland"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandS1.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p1"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manone.jpg")))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandS2.jpg")))
             self.Student2PicLabel.setObjectName(_fromUtf8("p2"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandS3.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p3"))
 
         if text == "Suomen yliopisto":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DCU.jpg")))
+            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\DCU.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DCU"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("mantwo.jpg")))
+            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandMain.jpg")))
+            self.CountryPicLabel.setObjectName(_fromUtf8("Finland"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandS2.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p4"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanthree.jpg")))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandS3.jpg")))
             self.Student2PicLabel.setObjectName(_fromUtf8("p5"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manthree.jpg")))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandS1.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p6"))
 
         if text == "Suomen korkeakoulu":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("UCD.jpg")))
+            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\Paris.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("UCD"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanfour.jpg")))
+            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandMain.jpg")))
+            self.CountryPicLabel.setObjectName(_fromUtf8("Finland"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandS3.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p7"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manfour.jpg")))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandS1.jpg")))
             self.Student2PicLabel.setObjectName(_fromUtf8("p8"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FinlandImage\FinlandS2.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p9"))
 
 
@@ -418,6 +418,30 @@ class Ui_AviateNEducate(object):
             self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Universität wählen:", None))
             self.LCostRadioButton.setText(_translate("AviateNEducate", "Kostengünstig", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "Hohe Kosten", None))
+            font.setFamily(_fromUtf8("Iskoola Pota"))
+            font.setPointSize(25)
+            self.AviateNEducate_Title.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(10)
+            self.centralwidget.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(12)
+            self.AccomInfo.setFont(font)
+            self.CountryLabel.setFont(font)
+            self.ColourSelectLabel.setFont(font)
+            self.Zoom.setFont(font)
+            self.UniInfo.setFont(font)
+            self.Funding.setFont(font)
+            self.ColourSelectLabel_2.setFont(font)
+            self.UniversityPicLabel.setFont(font)
+            font.setPointSize(19)
+            self.LCostRadioButton.setFont(font)
+            self.HCostRadioButton.setFont(font)
+            font.setPointSize(12)
+            self.Student2PicLabel.setFont(font)
+            self.Student3PicLabel.setFont(font)
 
         elif text == "French":
             self.UniComboBox.addItem("--------Finlande--------")
@@ -601,41 +625,6 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
-            # This section is about student life 1,2 and 3
-
-    def stud1(self, text):
-        if text == "French":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to Ireland!"))
-
-    def stud2(self, text):
-        if text == "French":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to Ireland!"))
-
-    def stud3(self, text):
-        if text == "French":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to Ireland!"))
-
             # This section displays different country welcomes
     def country(self, text):
         if text == "French":
@@ -672,14 +661,27 @@ class Ui_AviateNEducate(object):
     # This section displays different funding available
     def funding(self, text):
         if text == "Yliopisto":
-            self.FundingTextEdit.clear()
-            self.FundingTextEdit.insertPlainText(_("Researchers can apply for funding for their research from different sources and funding programs depending on their experience and career development. The scientist in charge of an externally funded project is usually a postdoctoral researcher. For example, in research projects funded by the Academy of Finland, scientists in charge are professors or researchers with docentships. Below you can find a list of funding opportunities according to the career development phase. For more information on different funding opportunities, see the links below or the material related to funding organisation on our website."))
-        elif text == "Suomen yliopisto":
+            self.FundingTextEdit.insertPlainText(_(
+                  "Les chercheurs peuvent demander un financement pour leur recherche de différentes sources et programmes de financement en fonction de leur expérience et de leur développement professionnel. Le chercheur responsable d'un projet financé par l'extérieur est habituellement un chercheur postdoctoral. Par exemple, dans les projets de recherche financés par l'Académie de Finlande, les scientifiques en charge sont des professeurs ou des chercheurs avec des documents. Vous trouverez ci-dessous une liste des opportunités de financement selon la phase de développement de carrière. Pour plus d'informations sur les différentes possibilités de financement, consultez les liens ci-dessous ou le matériel relatif à l'organisation de financement sur notre site Web. "))
+        if text == "Suomen yliopisto":
             self.FundingTextEdit.clear()
             self.FundingTextEdit.insertPlainText(_("Partner universities do not guarantee the funding possibilities for the students’ studies and mobility. Thus, students have to seek for the external funding possibilities. To assist students, the programme developed the document containing finding options in each of the partner countries. Students also can refer to the partners universities to get an additional information in this regard."))
         elif text == "Suomen korkeakoulu":
             self.FundingTextEdit.clear()
             self.FundingTextEdit.insertPlainText(_("The University finances doctoral training with grants and doctoral student positions. ‘Doctoral student position’ refers to a fixed-term employment relationship with the University, in which the doctoral student is paid a monthly salary in accordance with the national salary system of Finnish universities (YPJ system). The grant is a scholarship paid to the student’s bank account, and it is often taxable income. The University’s doctoral student positions and grants are awarded only to students who have pursued doctoral studies for less than four years on a full-time basis. Furthermore, the University cannot award a grant to a doctoral student who has previously been employed at the University. The faculties provide a yearly application period for these positions – usually in the autumn. For further information, please follow the announcements of your department and/or faculty."))
+
+    #def fry(self):
+        #value = self.countryComboBox.currentText()
+
+        #if value == "French" :
+            #self.FundingTextEdit.insertPlainText(_(
+            #    "Les chercheurs peuvent demander un financement pour leur recherche de différentes sources et programmes de financement en fonction de leur expérience et de leur développement professionnel. Le chercheur responsable d'un projet financé par l'extérieur est habituellement un chercheur postdoctoral. Par exemple, dans les projets de recherche financés par l'Académie de Finlande, les scientifiques en charge sont des professeurs ou des chercheurs avec des documents. Vous trouverez ci-dessous une liste des opportunités de financement selon la phase de développement de carrière. Pour plus d'informations sur les différentes possibilités de financement, consultez les liens ci-dessous ou le matériel relatif à l'organisation de financement sur notre site Web. "))
+        #if value == "German":
+            #self.FundingTextEdit.insertPlainText(_(
+           #     "Die Forscher können sich für die Forschung aus verschiedenen Quellen und Förderprogrammen bewerben, je nach ihrer Erfahrung und Karriereentwicklung. Der Wissenschaftler, der für ein extern finanziertes Projekt verantwortlich ist, ist in der Regel ein Postdoktorand. Zum Beispiel in Forschungsprojekten, die von der Akademie von Finnland finanziert werden, sind die verantwortlichen Wissenschaftler Professoren oder Forscher mit Dozenten. Im Folgenden finden Sie eine Liste der Fördermöglichkeiten nach der Karriereentwicklung. Für weitere Informationen über verschiedene Finanzierungsmöglichkeiten, siehe die Links unten oder das Material im Zusammenhang mit Finanzierung Organisation auf unserer Website. "))
+        #else:
+         #   self.FundingTextEdit.insertPlainText(_(
+          #      "Researchers can apply for funding for their research from different sources and funding programs depending on their experience and career development. The scientist in charge of an externally funded project is usually a postdoctoral researcher. For example, in research projects funded by the Academy of Finland, scientists in charge are professors or researchers with docentships. Below you can find a list of funding opportunities according to the career development phase. For more information on different funding opportunities, see the links below or the material related to funding organisation on our website."))
 
     def costs(self, text):
 
@@ -780,10 +782,8 @@ class Ui_AviateNEducate(object):
         self.countryComboBox.activated[str].connect(self.country)
         self.UniComboBox.activated[str].connect(self.funding)
 
-        # Link the three student life accounts
-        self.countryComboBox.activated[str].connect(self.stud1)
-        self.countryComboBox.activated[str].connect(self.stud2)
-        self.countryComboBox.activated[str].connect(self.stud3)
+        #self.countryComboBox.activated[str].connect(self.fry)
+
 
 
 if __name__ == "__main__":

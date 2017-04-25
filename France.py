@@ -346,39 +346,39 @@ class Ui_AviateNEducate(object):
     # Information and pictures for each university
     def loaduni(self, text):
         if text == "University of Paris":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DIT.jpg")))
-            self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
+            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\Paris.jpg")))
+            self.UniversityPicLabel.setObjectName(_fromUtf8("Paris"))
+            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceMain.jpg")))
+            self.CountryPicLabel.setObjectName(_fromUtf8("France"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS1.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p1"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manone.jpg")))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS2.jpg")))
             self.Student2PicLabel.setObjectName(_fromUtf8("p2"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womantwo.jpg")))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS3.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p3"))
 
         if text == "University of Lyon":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("DCU.jpg")))
-            self.UniversityPicLabel.setObjectName(_fromUtf8("DCU"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("mantwo.jpg")))
+            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\Lyon.jpg")))
+            self.UniversityPicLabel.setObjectName(_fromUtf8("Lyon"))
+            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceMain.jpg")))
+            self.CountryPicLabel.setObjectName(_fromUtf8("France"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS3.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p4"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanthree.jpg")))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS1.jpg")))
             self.Student2PicLabel.setObjectName(_fromUtf8("p5"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manthree.jpg")))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS2.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p6"))
 
         if text == "University of Marseille":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("UCD.jpg")))
-            self.UniversityPicLabel.setObjectName(_fromUtf8("UCD"))
-            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Ireland.jpg")))
-            self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanfour.jpg")))
+            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\Marseille.jpg")))
+            self.UniversityPicLabel.setObjectName(_fromUtf8("Marseille"))
+            self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceMain.jpg")))
+            self.CountryPicLabel.setObjectName(_fromUtf8("France"))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImages\FranceS2.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p7"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("manfour.jpg")))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImages\FranceS3.jpg")))
             self.Student2PicLabel.setObjectName(_fromUtf8("p8"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("womanone.jpg")))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImages\FranceS1.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p9"))
 
             # Pictures for each differnt language
@@ -607,41 +607,6 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
-            # This section is about student life 1,2 and 3
-
-    def stud1(self, text):
-        if text == "French":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to Ireland!"))
-
-    def stud2(self, text):
-        if text == "French":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to Ireland!"))
-
-    def stud3(self, text):
-        if text == "French":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to Ireland!"))
-
             # This section displays different country welcomes
 
     def country(self, text):
@@ -653,7 +618,31 @@ class Ui_AviateNEducate(object):
             self.CountryTextEdit.clear()
             self.CountryTextEdit.insertPlainText(_(
                     "Willkommen in Frankreich!Frankreich, Westeuropa, umfasst mittelalterliche Städte, Bergdörfer und die Strände des Mittelmeers. Paris, die Hauptstadt, ist bekannt für seine Modehäuser, traditionelle Kunst Museen, darunter das Louvre und Sehenswürdigkeiten wie der Eiffelturm. Das Land ist auch bekannt für seine Weine und feine Küche. Die alten Zeichnungen von Lascaux, Lyon römisches Theater und das große Schloss von Versailles zu seiner reichen Geschichte zeugen."))
-        elif text == "English":
+            font.setFamily(_fromUtf8("Iskoola Pota"))
+            font.setPointSize(25)
+            self.AviateNEducate_Title.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(10)
+            self.centralwidget.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(12)
+            self.AccomInfo.setFont(font)
+            self.CountryLabel.setFont(font)
+            self.ColourSelectLabel.setFont(font)
+            self.Zoom.setFont(font)
+            self.UniInfo.setFont(font)
+            self.Funding.setFont(font)
+            self.ColourSelectLabel_2.setFont(font)
+            self.UniversityPicLabel.setFont(font)
+            font.setPointSize(19)
+            self.LCostRadioButton.setFont(font)
+            self.HCostRadioButton.setFont(font)
+            font.setPointSize(12)
+            self.Student2PicLabel.setFont(font)
+            self.Student3PicLabel.setFont(font)
+        else:
             self.CountryTextEdit.clear()
             self.CountryTextEdit.insertPlainText(_(
                         "Welcome to France!France, in Western Europe, encompasses medieval towns, alpine villages and Mediterranean beaches. Paris, its capital, is famous for its fashion houses, classical art museums, including the Louvre and monuments such as the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. The old drawings of Lascaux caves, the Roman theater in Lyon and the vast palace of Versailles testify to its rich history."))
