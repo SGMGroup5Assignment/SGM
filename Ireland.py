@@ -366,7 +366,7 @@ class Ui_AviateNEducate(object):
             self.Student3PicLabel.setObjectName(_fromUtf8("p6"))
 
         if text == "University College Dublin":
-            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\UCD.jpg")))
+            self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\Koln.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("UCD"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\IrelandImage\IrelandMain.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("Ireland"))
