@@ -301,32 +301,16 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_11.setGeometry(QtCore.QRect(60, 920, 321, 191))
         self.horizontalLayoutWidget_11.setObjectName(_fromUtf8("horizontalLayoutWidget_11"))
 
-        #REMOVING STUDENT1 LIFE TEXT
-        #self.Student1ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_11)
-        #self.Student1ExpLayoutText.setObjectName(_fromUtf8("Student1ExpLayoutText"))
-        #self.Student1TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_11)
-        #self.Student1TextEdit.setObjectName(_fromUtf8("Student1TextEdit"))
-        #self.Student1ExpLayoutText.addWidget(self.Student1TextEdit)
 
         self.horizontalLayoutWidget_12 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_12.setGeometry(QtCore.QRect(410, 920, 301, 191))
         self.horizontalLayoutWidget_12.setObjectName(_fromUtf8("horizontalLayoutWidget_12"))
 
-        #self.Student2ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_12)
-        #self.Student2ExpLayoutText.setObjectName(_fromUtf8("Student2ExpLayoutText"))
-        #self.Student2TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_12)
-        #self.Student2TextEdit.setObjectName(_fromUtf8("Student2TextEdit"))
-        #self.Student2ExpLayoutText.addWidget(self.Student2TextEdit)
 
         self.horizontalLayoutWidget_13 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_13.setGeometry(QtCore.QRect(740, 920, 311, 191))
         self.horizontalLayoutWidget_13.setObjectName(_fromUtf8("horizontalLayoutWidget_13"))
 
-        #self.Student3ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_13)
-        #self.Student3ExpLayoutText.setObjectName(_fromUtf8("Student3ExpLayoutText"))
-        #self.Student3TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_13)
-        #self.Student3TextEdit.setObjectName(_fromUtf8("Student3TextEdit"))
-        #self.Student3ExpLayoutText.addWidget(self.Student3TextEdit)
 
         AviateNEducate.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(AviateNEducate)
@@ -335,6 +319,10 @@ class Ui_AviateNEducate(object):
 
         self.retranslateUi(AviateNEducate)
         QtCore.QMetaObject.connectSlotsByName(AviateNEducate)
+
+        # This lets the User know what page they are in
+        QtGui.QToolTip.setFont(QtGui.QFont('SansSerif', 10))  # Set properties of the tooltip
+        AviateNEducate.setToolTip('Welcome to the Korean Page!')  # set the tooltip for the window
 
     def retranslateUi(self, AviateNEducate):
         AviateNEducate.setWindowTitle(_translate("AviateNEducate", "AviateNEducate", None))
