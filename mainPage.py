@@ -23,7 +23,8 @@ except AttributeError:
         return QtGui.QApplication.translate(context, text, disambig)
 
 class Ui_MainWindow(object):
-
+    
+        #this section holds logo in top left corner
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
         MainWindow.resize(900, 800)
@@ -41,16 +42,18 @@ class Ui_MainWindow(object):
         self.logoPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("logo_SGM2.png")))
         self.logoLayout.addWidget(self.logoPicLabel)
 
+        #this section contains all the buttons of countries and help
         self.horizontalLayoutWidget = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget.setGeometry(QtCore.QRect(10, 130, 781, 101))
         self.horizontalLayoutWidget.setObjectName(_fromUtf8("horizontalLayoutWidget"))
         self.buttonLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget)
         self.buttonLayout.setObjectName(_fromUtf8("buttonLayout"))
-        #self.createBtns() # Call method to create buttons
+        
         self.irelandBtn = QtGui.QPushButton(self.horizontalLayoutWidget)
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
         font.setPointSize(10)
+        self.irelandBtn.setStyleSheet("background-color: #00bfff")
         self.irelandBtn.setFont(font)
         self.irelandBtn.setObjectName(_fromUtf8("irelandBtn"))
         self.buttonLayout.addWidget(self.irelandBtn)
@@ -59,6 +62,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
         font.setPointSize(10)
+        self.franceBtn.setStyleSheet("background-color: #00bfff")
         self.franceBtn.setFont(font)
         self.franceBtn.setObjectName(_fromUtf8("franceBtn"))
         self.buttonLayout.addWidget(self.franceBtn)
@@ -67,6 +71,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
         font.setPointSize(10)
+        self.germanyBtn.setStyleSheet("background-color: #00bfff")
         self.germanyBtn.setFont(font)
         self.germanyBtn.setObjectName(_fromUtf8("germanyBtn"))
         self.buttonLayout.addWidget(self.germanyBtn)
@@ -75,6 +80,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
         font.setPointSize(10)
+        self.finlandBtn.setStyleSheet("background-color: #00bfff")
         self.finlandBtn.setFont(font)
         self.finlandBtn.setObjectName(_fromUtf8("finlandBtn"))
         self.buttonLayout.addWidget(self.finlandBtn)
@@ -83,10 +89,21 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
         font.setPointSize(10)
+        self.koreaBtn.setStyleSheet("background-color: #00bfff")
         self.koreaBtn.setFont(font)
         self.koreaBtn.setObjectName(_fromUtf8("koreaBtn"))
         self.buttonLayout.addWidget(self.koreaBtn)
-
+        
+        self.helpBtn = QtGui.QPushButton(self.horizontalLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily(_fromUtf8("Verdana"))
+        font.setPointSize(10)
+        self.helpBtn.setStyleSheet("background-color: yellow")
+        self.helpBtn.setFont(font)
+        self.helpBtn.setObjectName(_fromUtf8("helpBtn"))
+        self.buttonLayout.addWidget(self.helpBtn)
+        
+        #this layout holds the text title of portal
         self.verticalLayoutWidget_2 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(250, 20, 541, 91))
         self.verticalLayoutWidget_2.setObjectName(_fromUtf8("verticalLayoutWidget_2"))
@@ -98,9 +115,12 @@ class Ui_MainWindow(object):
         font.setPointSize(44)
         font.setBold(True)
         font.setWeight(75)
+        self.mainTitle.setStyleSheet("background-color: grey") #remove from here if any issues occur
         self.mainTitle.setFont(font)
         self.mainTitle.setObjectName(_fromUtf8("mainTitle"))
         self.titleLayout.addWidget(self.mainTitle)
+        
+        #this layout holds the image of students on left hand side
         self.verticalLayoutWidget_3 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(410, 250, 381, 361))
         self.verticalLayoutWidget_3.setObjectName(_fromUtf8("verticalLayoutWidget_3"))
@@ -136,14 +156,7 @@ class Ui_MainWindow(object):
         self.germanyBtn.setText(_translate("AviateNEducate", "Germany", None))
         self.finlandBtn.setText(_translate("AviateNEducate", "Finland", None))
         self.koreaBtn.setText(_translate("AviateNEducate", "Korea", None))
-        #****ADDITIONS ADDED HERE ***
-        #self.createBtns()  # Call method to create buttons
-        #self.NewWindow = QtGui.QWidget()  # Second screen which will be changed on button click
-        #self.MainWindow.show()
-
-
-
-
+        self.helpBtn.setText(_translate("AviateNEducate", "Help", None))
 
 
 if __name__ == "__main__":
