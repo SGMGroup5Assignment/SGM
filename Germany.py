@@ -33,7 +33,8 @@ except AttributeError:
 class Ui_AviateNEducate(object):
     def setupUi(self, AviateNEducate):
         AviateNEducate.setObjectName(_fromUtf8("AviateNEducate"))
-        AviateNEducate.resize(1129, 1000)
+        AviateNEducate.resize(1129, 965)  # Width Height
+        AviateNEducate.move(400, 5)
         self.centralwidget = QtGui.QWidget(AviateNEducate)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.verticalLayoutWidget = QtGui.QWidget(self.centralwidget)
@@ -115,11 +116,13 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_7 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_7.setGeometry(QtCore.QRect(60, 710, 321, 191))
         self.horizontalLayoutWidget_7.setObjectName(_fromUtf8("horizontalLayoutWidget_7"))
+
         self.Student1ExpLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_7)
         self.Student1ExpLayout.setObjectName(_fromUtf8("Student1ExpLayout"))
         self.Student1PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_7)
         self.Student1PicLabel.setObjectName(_fromUtf8("Student1PicLabel"))
         self.Student1ExpLayout.addWidget(self.Student1PicLabel)
+
         self.verticalLayoutWidget_5 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_5.setGeometry(QtCore.QRect(20, 110, 531, 80))
         self.verticalLayoutWidget_5.setObjectName(_fromUtf8("verticalLayoutWidget_5"))
@@ -282,43 +285,35 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_9 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_9.setGeometry(QtCore.QRect(410, 710, 301, 191))
         self.horizontalLayoutWidget_9.setObjectName(_fromUtf8("horizontalLayoutWidget_9"))
+
         self.Student2ExpLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_9)
         self.Student2ExpLayout.setObjectName(_fromUtf8("Student2ExpLayout"))
         self.Student2PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_9)
         self.Student2PicLabel.setObjectName(_fromUtf8("Student2PicLabel"))
         self.Student2ExpLayout.addWidget(self.Student2PicLabel)
+
         self.horizontalLayoutWidget_10 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_10.setGeometry(QtCore.QRect(740, 710, 311, 191))
         self.horizontalLayoutWidget_10.setObjectName(_fromUtf8("horizontalLayoutWidget_10"))
+
         self.Student3ExpLayout = QtGui.QHBoxLayout(self.horizontalLayoutWidget_10)
         self.Student3ExpLayout.setObjectName(_fromUtf8("Student3ExpLayout"))
         self.Student3PicLabel = QtGui.QLabel(self.horizontalLayoutWidget_10)
         self.Student3PicLabel.setObjectName(_fromUtf8("Student3PicLabel"))
         self.Student3ExpLayout.addWidget(self.Student3PicLabel)
+
         self.horizontalLayoutWidget_11 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_11.setGeometry(QtCore.QRect(60, 920, 321, 191))
         self.horizontalLayoutWidget_11.setObjectName(_fromUtf8("horizontalLayoutWidget_11"))
-        self.Student1ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_11)
-        self.Student1ExpLayoutText.setObjectName(_fromUtf8("Student1ExpLayoutText"))
-        self.Student1TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_11)
-        self.Student1TextEdit.setObjectName(_fromUtf8("Student1TextEdit"))
-        self.Student1ExpLayoutText.addWidget(self.Student1TextEdit)
+
         self.horizontalLayoutWidget_12 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_12.setGeometry(QtCore.QRect(410, 920, 301, 191))
         self.horizontalLayoutWidget_12.setObjectName(_fromUtf8("horizontalLayoutWidget_12"))
         self.Student2ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_12)
-        self.Student2ExpLayoutText.setObjectName(_fromUtf8("Student2ExpLayoutText"))
-        self.Student2TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_12)
-        self.Student2TextEdit.setObjectName(_fromUtf8("Student2TextEdit"))
-        self.Student2ExpLayoutText.addWidget(self.Student2TextEdit)
+
         self.horizontalLayoutWidget_13 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_13.setGeometry(QtCore.QRect(740, 920, 311, 191))
         self.horizontalLayoutWidget_13.setObjectName(_fromUtf8("horizontalLayoutWidget_13"))
-        self.Student3ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_13)
-        self.Student3ExpLayoutText.setObjectName(_fromUtf8("Student3ExpLayoutText"))
-        self.Student3TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_13)
-        self.Student3TextEdit.setObjectName(_fromUtf8("Student3TextEdit"))
-        self.Student3ExpLayoutText.addWidget(self.Student3TextEdit)
 
         AviateNEducate.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(AviateNEducate)

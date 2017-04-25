@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'SGM2Group5.ui'
 #
@@ -33,7 +33,8 @@ except AttributeError:
 class Ui_AviateNEducate(object):
     def setupUi(self, AviateNEducate):
         AviateNEducate.setObjectName(_fromUtf8("AviateNEducate"))
-        AviateNEducate.resize(1129, 1000)
+        AviateNEducate.resize(1129, 965)  # Width Height
+        AviateNEducate.move(400, 5)
         self.centralwidget = QtGui.QWidget(AviateNEducate)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.verticalLayoutWidget = QtGui.QWidget(self.centralwidget)
@@ -298,27 +299,14 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_11 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_11.setGeometry(QtCore.QRect(60, 920, 321, 191))
         self.horizontalLayoutWidget_11.setObjectName(_fromUtf8("horizontalLayoutWidget_11"))
-        self.Student1ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_11)
-        self.Student1ExpLayoutText.setObjectName(_fromUtf8("Student1ExpLayoutText"))
-        self.Student1TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_11)
-        self.Student1TextEdit.setObjectName(_fromUtf8("Student1TextEdit"))
-        self.Student1ExpLayoutText.addWidget(self.Student1TextEdit)
+
         self.horizontalLayoutWidget_12 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_12.setGeometry(QtCore.QRect(410, 920, 301, 191))
         self.horizontalLayoutWidget_12.setObjectName(_fromUtf8("horizontalLayoutWidget_12"))
-        self.Student2ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_12)
-        self.Student2ExpLayoutText.setObjectName(_fromUtf8("Student2ExpLayoutText"))
-        self.Student2TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_12)
-        self.Student2TextEdit.setObjectName(_fromUtf8("Student2TextEdit"))
-        self.Student2ExpLayoutText.addWidget(self.Student2TextEdit)
+
         self.horizontalLayoutWidget_13 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_13.setGeometry(QtCore.QRect(740, 920, 311, 191))
         self.horizontalLayoutWidget_13.setObjectName(_fromUtf8("horizontalLayoutWidget_13"))
-        self.Student3ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_13)
-        self.Student3ExpLayoutText.setObjectName(_fromUtf8("Student3ExpLayoutText"))
-        self.Student3TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_13)
-        self.Student3TextEdit.setObjectName(_fromUtf8("Student3TextEdit"))
-        self.Student3ExpLayoutText.addWidget(self.Student3TextEdit)
 
         AviateNEducate.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(AviateNEducate)
@@ -654,16 +642,17 @@ class Ui_AviateNEducate(object):
                     # This section displays the different university options
 
     def accom(self, text):
-        if text == "Yliopisto":
+        if (text == "French") and (text == "Yliopisto" ):
+            #if text == "Yliopisto":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_("Yliopisto has a distinctive approach to teaching and learning and graduates are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation."))
         elif text == "Suomen yliopisto":
             self.UniTextEdit.clear()
-            self.UniTextEdit.insertPlainText(_("Suomen yliopisto The Freie Universität Berlin is a research university located in Berlin and one of the most prominent universities in Germany. It is internationally known for its research in the humanities and social sciences, as well as in the field of natural and life sciences. "))
+            self.UniTextEdit.insertPlainText(_("Suomen yliopisto is one of the most prominent universities in Finland. It is internationally known for its research in the humanities and social sciences, as well as in the field of natural and life sciences. "))
         elif text == "Suomen korkeakoulu":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_(
-                " Suomen korkeakoulu is Ireland’s largest university and leads as the university of first choice for Irish school-leavers. Undergraduate students embark on a journey of academic and personal discovery through UCD Horizons, a modular, credit-based curriculum. "))
+                    " Suomen korkeakoulu is Finland’s largest university and leads as the university of first choice for  school-leavers. Undergraduate students embark on a journey of academic and personal discovery through Suomen korkeakoulu Horizons, a modular, credit-based curriculum. "))
 
     # This section displays different funding available
     def funding(self, text):
@@ -782,7 +771,10 @@ class Ui_AviateNEducate(object):
         self.UniComboBox.activated[str].connect(self.dispmodule)
         self.Zoom.stateChanged.connect(self.zoomie)
         self.UniComboBox.activated[str].connect(self.costs)
+
         self.UniComboBox.activated[str].connect(self.accom)
+        self.countryComboBox.activated[str].connect(self.accom)
+
         self.countryComboBox.activated[str].connect(self.country)
         self.UniComboBox.activated[str].connect(self.funding)
 
