@@ -39,7 +39,7 @@ class Ui_MainWindow(object):
         self.logoPicLabel.setText(_fromUtf8(""))
         self.logoPicLabel.setObjectName(_fromUtf8("logoPicLabel"))
         self.logoPicLabel.setObjectName(_fromUtf8("Logo"))
-        self.logoPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("logo_SGM2.png")))
+        self.logoPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("images\MainPage\logo_SGM2.png")))
         self.logoLayout.addWidget(self.logoPicLabel)
 
         #this section contains all the buttons of countries and help
@@ -94,6 +94,15 @@ class Ui_MainWindow(object):
         self.koreaBtn.setObjectName(_fromUtf8("koreaBtn"))
         self.buttonLayout.addWidget(self.koreaBtn)
         
+        self.aboutBtn = QtGui.QPushButton(self.horizontalLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily(_fromUtf8("Verdana"))
+        font.setPointSize(10)
+        self.aboutBtn.setStyleSheet("background-color: yellow")
+        self.aboutBtn.setFont(font)
+        self.aboutBtn.setObjectName(_fromUtf8("aboutBtn"))
+        self.buttonLayout.addWidget(self.aboutBtn)
+
         self.helpBtn = QtGui.QPushButton(self.horizontalLayoutWidget)
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Verdana"))
@@ -102,7 +111,7 @@ class Ui_MainWindow(object):
         self.helpBtn.setFont(font)
         self.helpBtn.setObjectName(_fromUtf8("helpBtn"))
         self.buttonLayout.addWidget(self.helpBtn)
-        
+
         #this layout holds the text title of portal
         self.verticalLayoutWidget_2 = QtGui.QWidget(self.centralwidget)
         self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(250, 20, 541, 91))
@@ -139,7 +148,7 @@ class Ui_MainWindow(object):
         self.aboutPicLabel.setObjectName(_fromUtf8("aboutPicLabel"))
         self.picAboutLayout.addWidget(self.aboutPicLabel)
         self.aboutPicLabel.setObjectName(_fromUtf8("AboutImage"))
-        self.aboutPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("study_abroad.jpg")))
+        self.aboutPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("images\MainPage\study_abroad.jpg")))
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(MainWindow)
         self.statusbar.setObjectName(_fromUtf8("statusbar"))
@@ -156,8 +165,8 @@ class Ui_MainWindow(object):
         self.germanyBtn.setText(_translate("AviateNEducate", "Germany", None))
         self.finlandBtn.setText(_translate("AviateNEducate", "Finland", None))
         self.koreaBtn.setText(_translate("AviateNEducate", "Korea", None))
+        self.aboutBtn.setText(_translate("AviateNEducate", "About", None))
         self.helpBtn.setText(_translate("AviateNEducate", "Help", None))
-
 
 if __name__ == "__main__":
     import sys

@@ -603,41 +603,6 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
-            # This section is about student life 1,2 and 3
-
-    def stud1(self, text):
-        if text == "French":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to Ireland!"))
-
-    def stud2(self, text):
-        if text == "French":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to Ireland!"))
-
-    def stud3(self, text):
-        if text == "French":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to Ireland!"))
-
             # This section displays different country welcomes
 
     def country(self, text):
@@ -649,7 +614,31 @@ class Ui_AviateNEducate(object):
             self.CountryTextEdit.clear()
             self.CountryTextEdit.insertPlainText(_(
                     "Willkommen in Frankreich!Frankreich, Westeuropa, umfasst mittelalterliche Städte, Bergdörfer und die Strände des Mittelmeers. Paris, die Hauptstadt, ist bekannt für seine Modehäuser, traditionelle Kunst Museen, darunter das Louvre und Sehenswürdigkeiten wie der Eiffelturm. Das Land ist auch bekannt für seine Weine und feine Küche. Die alten Zeichnungen von Lascaux, Lyon römisches Theater und das große Schloss von Versailles zu seiner reichen Geschichte zeugen."))
-        elif text == "English":
+            font.setFamily(_fromUtf8("Iskoola Pota"))
+            font.setPointSize(25)
+            self.AviateNEducate_Title.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(10)
+            self.centralwidget.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(12)
+            self.AccomInfo.setFont(font)
+            self.CountryLabel.setFont(font)
+            self.ColourSelectLabel.setFont(font)
+            self.Zoom.setFont(font)
+            self.UniInfo.setFont(font)
+            self.Funding.setFont(font)
+            self.ColourSelectLabel_2.setFont(font)
+            self.UniversityPicLabel.setFont(font)
+            font.setPointSize(19)
+            self.LCostRadioButton.setFont(font)
+            self.HCostRadioButton.setFont(font)
+            font.setPointSize(12)
+            self.Student2PicLabel.setFont(font)
+            self.Student3PicLabel.setFont(font)
+        else:
             self.CountryTextEdit.clear()
             self.CountryTextEdit.insertPlainText(_(
                         "Welcome to France!France, in Western Europe, encompasses medieval towns, alpine villages and Mediterranean beaches. Paris, its capital, is famous for its fashion houses, classical art museums, including the Louvre and monuments such as the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. The old drawings of Lascaux caves, the Roman theater in Lyon and the vast palace of Versailles testify to its rich history."))
