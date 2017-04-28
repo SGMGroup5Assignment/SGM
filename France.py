@@ -1,10 +1,6 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'SGM2Group5.ui'
-#
-# Created by: PyQt4 UI code generator 4.11.4
-#
-# WARNING! All changes made in this file will be lost!
+#Mostly combo boxes were added to the portal as France is feminine and this is more appealing to that dimension
+#France is also high uncertainity avoidance, so the portal is simple to navigate and has minimal menu option to prevent the user getting lost
+#Some pictures were also added that fit the criteria of the dimensions
 
 from PyQt4 import QtCore, QtGui
 import random
@@ -316,6 +312,8 @@ class Ui_AviateNEducate(object):
         self.retranslateUi(AviateNEducate)
         QtCore.QMetaObject.connectSlotsByName(AviateNEducate)
 
+    #This will tranlaste the main labels on the page
+
     def retranslateUi(self, AviateNEducate):
         AviateNEducate.setWindowTitle(_translate("AviateNEducate", "AviateNEducate", None))
         self.AviateNEducate_Title.setText(_translate("AviateNEducate", "AviateNEducate", None))
@@ -340,51 +338,50 @@ class Ui_AviateNEducate(object):
         self.uniSelected.setText(text)
 
     # Information and pictures for each university
+    #This is a visual indicator that the user has selected the correct university as they can which helps uncertainty avoidance
+    #There are several pictures, a few of which contain a group of people studying together which fits in with femininty
+    #There are also a person graduating which shows a personal achievement which appals to Frances high indx of individuality
+
     def loaduni(self, text):
         if text == "University of Paris":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\Paris.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("Paris"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceMain.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("France"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS1.jpg")))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\study.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p1"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS2.jpg")))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\prof.jpg")))
             self.Student2PicLabel.setObjectName(_fromUtf8("p2"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS3.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("p3"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\grad.jpg")))
 
-        if text == "University of Lyon":
+
+        elif text == "University of Lyon":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\Lyon.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("Lyon"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceMain.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("France"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS3.jpg")))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\prof.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p4"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS1.jpg")))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\grad.jpg")))
             self.Student2PicLabel.setObjectName(_fromUtf8("p5"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceS2.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("p6"))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\study.jpg")))
 
-        if text == "University of Marseille":
+        else:
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\Marseille.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("Marseille"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImage\FranceMain.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("France"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImages\FranceS2.jpg")))
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImages\grad.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p7"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImages\FranceS3.jpg")))
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImages\study.jpg")))
             self.Student2PicLabel.setObjectName(_fromUtf8("p8"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImages\FranceS1.jpg")))
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\FranceImages\prof.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p9"))
 
-            # Pictures for each differnt language
-            # def loadpictures(self, text):
-
-            # if text == "English":
-            # if text == "German":
-            # if text == "French":
 
     # Uni drop down insertions
+    #This code will display the translated colleges depending on which lannguage is chosen
+    #It will also decrease the text size if german is chosen as the language contains longer words and will increase when a different language
     def loadmodules(self, text):
         self.UniComboBox.clear()
         if text == "English":
@@ -518,6 +515,8 @@ class Ui_AviateNEducate(object):
         else:
             self.UniComboBox.clear()
 
+    #This code will check which colour has been selected change the portal to become that colour
+
     def loadcolours(self, text):
         if text == "Green":
             self.ColourComboBox.setStyleSheet("background-color:white")
@@ -621,8 +620,7 @@ class Ui_AviateNEducate(object):
         else:
             self.ColourComboBox.clear()
 
-            # Zoom Code
-
+    #This code will enlarge the text for any users with a visual impairment
     def zoomie(self, state):
         if state == QtCore.Qt.Checked:
             # self.setGeometry(10, 20, 2000, 2000)
@@ -679,8 +677,8 @@ class Ui_AviateNEducate(object):
             font.setPointSize(15)
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
-            # This section displays different country welcomes
 
+    # This section displays different country welcomes
     def country(self, text):
         if text == "French":
             self.CountryTextEdit.clear()
@@ -690,6 +688,7 @@ class Ui_AviateNEducate(object):
             self.CountryTextEdit.clear()
             self.CountryTextEdit.insertPlainText(_(
                     "Willkommen in Frankreich!Frankreich, Westeuropa, umfasst mittelalterliche Städte, Bergdörfer und die Strände des Mittelmeers. Paris, die Hauptstadt, ist bekannt für seine Modehäuser, traditionelle Kunst Museen, darunter das Louvre und Sehenswürdigkeiten wie der Eiffelturm. Das Land ist auch bekannt für seine Weine und feine Küche. Die alten Zeichnungen von Lascaux, Lyon römisches Theater und das große Schloss von Versailles zu seiner reichen Geschichte zeugen."))
+            font = QtGui.QFont()
             font.setFamily(_fromUtf8("Iskoola Pota"))
             font.setPointSize(25)
             self.AviateNEducate_Title.setFont(font)
@@ -720,8 +719,7 @@ class Ui_AviateNEducate(object):
                         "Welcome to France!France, in Western Europe, encompasses medieval towns, alpine villages and Mediterranean beaches. Paris, its capital, is famous for its fashion houses, classical art museums, including the Louvre and monuments such as the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. The old drawings of Lascaux caves, the Roman theater in Lyon and the vast palace of Versailles testify to its rich history."))
 
 
-            # This section displays the different university options
-
+    # This section displays the different university options
     def accom(self, text):
         if text == "University of Paris":
             self.UniTextEdit.clear()
@@ -760,6 +758,7 @@ class Ui_AviateNEducate(object):
             self.HCostRadioButton.toggled.connect(self.highmar)
             self.LCostRadioButton.toggled.connect(self.lowmar)
 
+
     def lowmar(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
@@ -790,47 +789,6 @@ class Ui_AviateNEducate(object):
         self.LCostRadioButton.setChecked(False)
         self.AccomTextEdit.insertPlainText("Les Miserables, 50,00")
 
-    def highkol(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Auto, 25k per night")
-
-    def lowbkol(self):
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Hund, like 5 euro")
-
-    def highber(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Brot, 20k per night")
-
-    def lowber(self):
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Marmelade, like 5 euro")
-
-    def highhoch(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Geld, 15k per night")
-
-    def lowhoch(self):
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Kase, like 5 euro")
-
-    def highdub(self):
-        self.AccomTextEdit.clear()
-        self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
-
-    def lowdub(self):
-
-        self.AccomTextEdit.clear()
-        self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Super cheap hotel, like 5 euro")
-
     def home(self):
 
         self.countryComboBox.activated[str].connect(self.loadmodules)
@@ -843,12 +801,6 @@ class Ui_AviateNEducate(object):
         self.UniComboBox.activated[str].connect(self.accom)
         self.countryComboBox.activated[str].connect(self.country)
         self.UniComboBox.activated[str].connect(self.funding)
-
-        # Link the three student life accounts
-        #self.countryComboBox.activated[str].connect(self.stud1)
-        #self.countryComboBox.activated[str].connect(self.stud2)
-        #self.countryComboBox.activated[str].connect(self.stud3)
-
 
 if __name__ == "__main__":
     import sys
