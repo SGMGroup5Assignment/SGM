@@ -6,6 +6,18 @@
 #
 # WARNING! All changes made in this file will be lost!
 
+# Name : Ashley Fitzgerald
+# Student Number: C15406208
+# The two Hofstede dimensions that I included in my project is : Femininity and Collectivism
+# Korea has 17% individualism and so this dimension had to be included in my website
+# Korea is considered a feminine society and thus my webpage had to address femininity
+# A feminine culture is where the values are based on caring for others and a quality of life
+# my images show groups of people together, hands touching a globe, people united and a girl looking up to the sun, these demonstate a feminine culture
+# The images show a sense of togetherness and security of working together which are prominant in a feminine society
+# My images also show the second demension I included which is Collectivism.
+# Collectivism supports the believe that larger success's and goals matter more
+#Hence I have a picture showing a group of stuedents throwing their hats in the air to indicate a large success of graduating from college
+
 from PyQt4 import QtCore, QtGui
 import random
 import gettext
@@ -300,33 +312,17 @@ class Ui_AviateNEducate(object):
         self.horizontalLayoutWidget_11 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_11.setGeometry(QtCore.QRect(60, 920, 321, 191))
         self.horizontalLayoutWidget_11.setObjectName(_fromUtf8("horizontalLayoutWidget_11"))
-
-        #REMOVING STUDENT1 LIFE TEXT
-        #self.Student1ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_11)
-        #self.Student1ExpLayoutText.setObjectName(_fromUtf8("Student1ExpLayoutText"))
-        #self.Student1TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_11)
-        #self.Student1TextEdit.setObjectName(_fromUtf8("Student1TextEdit"))
-        #self.Student1ExpLayoutText.addWidget(self.Student1TextEdit)
-
+        
         self.horizontalLayoutWidget_12 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_12.setGeometry(QtCore.QRect(410, 920, 301, 191))
         self.horizontalLayoutWidget_12.setObjectName(_fromUtf8("horizontalLayoutWidget_12"))
 
-        #self.Student2ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_12)
-        #self.Student2ExpLayoutText.setObjectName(_fromUtf8("Student2ExpLayoutText"))
-        #self.Student2TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_12)
-        #self.Student2TextEdit.setObjectName(_fromUtf8("Student2TextEdit"))
-        #self.Student2ExpLayoutText.addWidget(self.Student2TextEdit)
-
+ 
         self.horizontalLayoutWidget_13 = QtGui.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_13.setGeometry(QtCore.QRect(740, 920, 311, 191))
         self.horizontalLayoutWidget_13.setObjectName(_fromUtf8("horizontalLayoutWidget_13"))
 
-        #self.Student3ExpLayoutText = QtGui.QHBoxLayout(self.horizontalLayoutWidget_13)
-        #self.Student3ExpLayoutText.setObjectName(_fromUtf8("Student3ExpLayoutText"))
-        #self.Student3TextEdit = QtGui.QPlainTextEdit(self.horizontalLayoutWidget_13)
-        #self.Student3TextEdit.setObjectName(_fromUtf8("Student3TextEdit"))
-        #self.Student3ExpLayoutText.addWidget(self.Student3TextEdit)
+
 
         AviateNEducate.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(AviateNEducate)
@@ -367,23 +363,35 @@ class Ui_AviateNEducate(object):
             self.UniversityPicLabel.setObjectName(_fromUtf8("DIT"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaMain.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("Korea"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS1.jpg")))
+           
+            # Femininity and collectivism is demonstrated here: group of students around a table. Working together all trying to succeed together.
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS11.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p1"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS2.jpg")))
-            self.Student2PicLabel.setObjectName(_fromUtf8("p2"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS3.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("p3"))
 
+            # Collectivism is demonstrated here: Students have just succedded by graduating. Success is important to them. It demonstrates a society that believes in the value of success
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS17.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("p2"))
+
+            # Femininity is demonstrated here: People helping eachtoher working together.
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS6.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("p3"))
+            
         if text == "한국의 대학":
             self.UniversityPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\Colleges\DCU.jpg")))
             self.UniversityPicLabel.setObjectName(_fromUtf8("DCU"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaMain.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("Korea"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS2.jpg")))
+            
+            # Femininity and collectivism is demonstrated here: Demonstrates quality of life (femininity), Shows they girl in the picture has ambition, wants to succeed (collectivism)
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS12.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p4"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS3.jpg")))
+
+            # Collectivism is demonstrated here: This shows graduate, this again demonstrates the importance of success
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS14.jpg")))
             self.Student2PicLabel.setObjectName(_fromUtf8("p5"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS1.jpg")))
+
+            # Femininity is demonstrated here: This picture of a globe no.1 shows a sense of community and caring for eachother. Qualities in a feminine society
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS13.jpg")))
             self.Student3PicLabel.setObjectName(_fromUtf8("p6"))
 
         if text == "대학교":
@@ -391,13 +399,20 @@ class Ui_AviateNEducate(object):
             self.UniversityPicLabel.setObjectName(_fromUtf8("UCD"))
             self.CountryPicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaMain.jpg")))
             self.CountryPicLabel.setObjectName(_fromUtf8("Korea"))
-            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS3.jpg")))
+            
+            # Femininity is demonstrated here : This pictu gives the user a positive feeling about life, it shows the sun shining on the field which is pure and demonsrates a good quality of life.
+            # Collectivism is also demonstrated here: In the background of the picture there are rich, nice tall glass buildings to indicate a society of success. Success is the most important.
+            self.Student1PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS15.jpg")))
             self.Student1PicLabel.setObjectName(_fromUtf8("p7"))
-            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS1.jpg")))
-            self.Student2PicLabel.setObjectName(_fromUtf8("p8"))
-            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS2.jpg")))
-            self.Student3PicLabel.setObjectName(_fromUtf8("p9"))
 
+            #Femininity is demonstrated here: This shows a grup of authentic Korean dancers, and gives the impression te society is a society of working together
+            self.Student2PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS2.jpg")))
+            self.Student2PicLabel.setObjectName(_fromUtf8("p8"))
+
+            # Femininity and collectivism is demonstrated here: group of students around a table. Working together all trying to succeed together.
+            self.Student3PicLabel.setPixmap(QtGui.QPixmap(_fromUtf8("Images\KoreaImage\KoreaS11.jpg")))
+            self.Student3PicLabel.setObjectName(_fromUtf8("p9"))
+            
     # Uni drop down insertions
     def loadmodules(self, text):
         self.UniComboBox.clear()
