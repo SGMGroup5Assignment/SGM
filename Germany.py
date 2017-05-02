@@ -414,6 +414,32 @@ class Ui_AviateNEducate(object):
             self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Select University:", None))
             self.LCostRadioButton.setText(_translate("AviateNEducate", "Low Cost", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "High Cost", None))
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Rockwell"))
+            font.setPointSize(28)
+            self.AviateNEducate_Title.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(10)
+            self.centralwidget.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(13)
+            self.AccomInfo.setFont(font)
+            self.CountryLabel.setFont(font)
+            self.ColourSelectLabel.setFont(font)
+            font.setPointSize(11)
+            self.Zoom.setFont(font)
+            self.UniInfo.setFont(font)
+            self.Funding.setFont(font)
+            self.ColourSelectLabel_2.setFont(font)
+            self.UniversityPicLabel.setFont(font)
+            font.setPointSize(10)
+            self.LCostRadioButton.setFont(font)
+            self.HCostRadioButton.setFont(font)
+            font.setPointSize(10)
+            self.Student2PicLabel.setFont(font)
+            self.Student3PicLabel.setFont(font)
 
         elif text == "German":
             self.UniComboBox.addItem("--------Deutschland--------")
@@ -435,12 +461,16 @@ class Ui_AviateNEducate(object):
             font.setPointSize(25)
             self.AviateNEducate_Title.setFont(font)
             font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Iskoola Pota"))
+            font.setPointSize(22)
+            self.AviateNEducate_Title.setFont(font)
+            font = QtGui.QFont()
             font.setFamily(_fromUtf8("Verdana"))
-            font.setPointSize(10)
+            font.setPointSize(9)
             self.centralwidget.setFont(font)
             font = QtGui.QFont()
             font.setFamily(_fromUtf8("Verdana"))
-            font.setPointSize(12)
+            font.setPointSize(10)
             self.AccomInfo.setFont(font)
             self.CountryLabel.setFont(font)
             self.ColourSelectLabel.setFont(font)
@@ -449,10 +479,10 @@ class Ui_AviateNEducate(object):
             self.Funding.setFont(font)
             self.ColourSelectLabel_2.setFont(font)
             self.UniversityPicLabel.setFont(font)
-            font.setPointSize(19)
+            font.setPointSize(7)
             self.LCostRadioButton.setFont(font)
             self.HCostRadioButton.setFont(font)
-            font.setPointSize(12)
+            font.setPointSize(10)
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
@@ -472,6 +502,32 @@ class Ui_AviateNEducate(object):
             self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Sélectionnez Université:", None))
             self.LCostRadioButton.setText(_translate("AviateNEducate", "À bas prix", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "Coût élevé", None))
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Rockwell"))
+            font.setPointSize(28)
+            self.AviateNEducate_Title.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(10)
+            self.centralwidget.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(13)
+            self.AccomInfo.setFont(font)
+            self.CountryLabel.setFont(font)
+            self.ColourSelectLabel.setFont(font)
+            font.setPointSize(11)
+            self.Zoom.setFont(font)
+            self.UniInfo.setFont(font)
+            self.Funding.setFont(font)
+            self.ColourSelectLabel_2.setFont(font)
+            self.UniversityPicLabel.setFont(font)
+            font.setPointSize(10)
+            self.LCostRadioButton.setFont(font)
+            self.HCostRadioButton.setFont(font)
+            font.setPointSize(10)
+            self.Student2PicLabel.setFont(font)
+            self.Student3PicLabel.setFont(font)
 
         else:
             self.UniComboBox.clear()
@@ -621,7 +677,7 @@ class Ui_AviateNEducate(object):
             self.centralwidget.setFont(font)
             font = QtGui.QFont()
             font.setFamily(_fromUtf8("Verdana"))
-            font.setPointSize(15)
+            font.setPointSize(13)
             self.AccomInfo.setFont(font)
             self.CountryLabel.setFont(font)
             self.ColourSelectLabel.setFont(font)
@@ -638,40 +694,6 @@ class Ui_AviateNEducate(object):
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
-            # This section is about student life 1,2 and 3
-
-    def stud1(self, text):
-        if text == "French":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student1TextEdit.clear()
-            self.Student1TextEdit.insertPlainText(_("Welcome to Ireland!"))
-
-    def stud2(self, text):
-        if text == "French":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student2TextEdit.clear()
-            self.Student2TextEdit.insertPlainText(_("Welcome to Ireland!"))
-
-    def stud3(self, text):
-        if text == "French":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to France!"))
-        elif text == "German":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to Germany!"))
-        elif text == "English":
-            self.Student3TextEdit.clear()
-            self.Student3TextEdit.insertPlainText(_("Welcome to Ireland!"))
 
             # This section displays different country welcomes
 
@@ -813,9 +835,9 @@ class Ui_AviateNEducate(object):
         self.UniComboBox.activated[str].connect(self.funding)
 
         # Link the three student life accounts
-        self.countryComboBox.activated[str].connect(self.stud1)
-        self.countryComboBox.activated[str].connect(self.stud2)
-        self.countryComboBox.activated[str].connect(self.stud3)
+        #self.countryComboBox.activated[str].connect(self.stud1)
+        #self.countryComboBox.activated[str].connect(self.stud2)
+        #self.countryComboBox.activated[str].connect(self.stud3)
 
 
 if __name__ == "__main__":

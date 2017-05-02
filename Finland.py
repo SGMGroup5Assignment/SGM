@@ -401,7 +401,32 @@ class Ui_AviateNEducate(object):
             self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Select University:", None))
             self.LCostRadioButton.setText(_translate("AviateNEducate", "Low Cost", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "High Cost", None))
-
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Rockwell"))
+            font.setPointSize(28)
+            self.AviateNEducate_Title.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(10)
+            self.centralwidget.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(13)
+            self.AccomInfo.setFont(font)
+            self.CountryLabel.setFont(font)
+            self.ColourSelectLabel.setFont(font)
+            font.setPointSize(11)
+            self.Zoom.setFont(font)
+            self.UniInfo.setFont(font)
+            self.Funding.setFont(font)
+            self.ColourSelectLabel_2.setFont(font)
+            self.UniversityPicLabel.setFont(font)
+            font.setPointSize(10)
+            self.LCostRadioButton.setFont(font)
+            self.HCostRadioButton.setFont(font)
+            font.setPointSize(10)
+            self.Student2PicLabel.setFont(font)
+            self.Student3PicLabel.setFont(font)
         elif text == "German":
             self.UniComboBox.addItem("--------Finnland--------")
             self.UniComboBox.addItem("Yliopisto")
@@ -418,16 +443,17 @@ class Ui_AviateNEducate(object):
             self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Universität wählen:", None))
             self.LCostRadioButton.setText(_translate("AviateNEducate", "Kostengünstig", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "Hohe Kosten", None))
+            font = QtGui.QFont()
             font.setFamily(_fromUtf8("Iskoola Pota"))
-            font.setPointSize(25)
+            font.setPointSize(22)
             self.AviateNEducate_Title.setFont(font)
             font = QtGui.QFont()
             font.setFamily(_fromUtf8("Verdana"))
-            font.setPointSize(10)
+            font.setPointSize(9)
             self.centralwidget.setFont(font)
             font = QtGui.QFont()
             font.setFamily(_fromUtf8("Verdana"))
-            font.setPointSize(12)
+            font.setPointSize(10)
             self.AccomInfo.setFont(font)
             self.CountryLabel.setFont(font)
             self.ColourSelectLabel.setFont(font)
@@ -436,10 +462,10 @@ class Ui_AviateNEducate(object):
             self.Funding.setFont(font)
             self.ColourSelectLabel_2.setFont(font)
             self.UniversityPicLabel.setFont(font)
-            font.setPointSize(19)
+            font.setPointSize(7)
             self.LCostRadioButton.setFont(font)
             self.HCostRadioButton.setFont(font)
-            font.setPointSize(12)
+            font.setPointSize(10)
             self.Student2PicLabel.setFont(font)
             self.Student3PicLabel.setFont(font)
 
@@ -459,6 +485,32 @@ class Ui_AviateNEducate(object):
             self.ColourSelectLabel_2.setText(_translate("AviateNEducate", "Sélectionnez Université:", None))
             self.LCostRadioButton.setText(_translate("AviateNEducate", "À bas prix", None))
             self.HCostRadioButton.setText(_translate("AviateNEducate", "Coût élevé", None))
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Rockwell"))
+            font.setPointSize(28)
+            self.AviateNEducate_Title.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(10)
+            self.centralwidget.setFont(font)
+            font = QtGui.QFont()
+            font.setFamily(_fromUtf8("Verdana"))
+            font.setPointSize(13)
+            self.AccomInfo.setFont(font)
+            self.CountryLabel.setFont(font)
+            self.ColourSelectLabel.setFont(font)
+            font.setPointSize(11)
+            self.Zoom.setFont(font)
+            self.UniInfo.setFont(font)
+            self.Funding.setFont(font)
+            self.ColourSelectLabel_2.setFont(font)
+            self.UniversityPicLabel.setFont(font)
+            font.setPointSize(10)
+            self.LCostRadioButton.setFont(font)
+            self.HCostRadioButton.setFont(font)
+            font.setPointSize(10)
+            self.Student2PicLabel.setFont(font)
+            self.Student3PicLabel.setFont(font)
 
         else:
             self.UniComboBox.clear()
@@ -608,7 +660,7 @@ class Ui_AviateNEducate(object):
             self.centralwidget.setFont(font)
             font = QtGui.QFont()
             font.setFamily(_fromUtf8("Verdana"))
-            font.setPointSize(15)
+            font.setPointSize(13)
             self.AccomInfo.setFont(font)
             self.CountryLabel.setFont(font)
             self.ColourSelectLabel.setFont(font)
@@ -640,13 +692,10 @@ class Ui_AviateNEducate(object):
                 self.CountryTextEdit.insertPlainText(_(
                     "Welcome to Finland! Finland is a Northern European nation bordering Sweden, Norway and Russia. Its capital, Helsinki, occupies a peninsula and surrounding islands in the Baltic Sea. Helsinki is home to the 18th-century sea fortress Suomenlinna, the fashionable Design District and diverse museums. The Northern Lights can be seen from the country's Arctic Lapland province, a vast wilderness with national parks and ski resorts"))
 
-
-
-
                     # This section displays the different university options
 
     def accom(self, text):
-        if (text == "French") and (text == "Yliopisto" ):
+        if text == "French" :
             #if text == "Yliopisto":
             self.UniTextEdit.clear()
             self.UniTextEdit.insertPlainText(_("Yliopisto has a distinctive approach to teaching and learning and graduates are prepared for global citizenship, capable of adapting to a changing international environment.   It incorporates practice-based learning, research using real-life issues, internship in the community or industry, volunteerism, study abroad opportunities, and promotes inter-disciplinarity through modularisation."))
@@ -758,13 +807,13 @@ class Ui_AviateNEducate(object):
     def highdub(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Shelbourne, 15k per night")
+        self.AccomTextEdit.insertPlainText("Hotel helka   £3000")
 
     def lowdub(self):
 
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Super cheap hotel, like 5 euro")
+        self.AccomTextEdit.insertPlainText("Student accomadation,  £20")
 
     def home(self):
 
