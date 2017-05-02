@@ -833,73 +833,73 @@ class Ui_AviateNEducate(object):
     def lowmar(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Le petit prince,45 per night")
+        self.AccomTextEdit.insertPlainText("Le petit prince,€45 per night")
 
     def highmar(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La Rein, 10 per night")
+        self.AccomTextEdit.insertPlainText("La Rein, €10 per night")
 
     def lowly(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("L'hotel de Lafyette, 25 per night")
+        self.AccomTextEdit.insertPlainText("L'hotel de Lafyette, €25 per night")
 
     def highly(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La poisson, 10k per night")
+        self.AccomTextEdit.insertPlainText("La poisson, €10k per night")
 
     def lowpar(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La Croissant, 25k per night")
+        self.AccomTextEdit.insertPlainText("La Croissant, €25k per night")
 
     def highpar(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Les Miserables, 10 per night")
+        self.AccomTextEdit.insertPlainText("Les Miserables, €10 per night")
 
     def highkol(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Auto, 25k per night")
+        self.AccomTextEdit.insertPlainText("Das Auto, €25k per night")
 
     def lowbkol(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Hund, like 5 euro")
+        self.AccomTextEdit.insertPlainText("Das Hund, €5 euro")
 
     def highber(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Brot, 20k per night")
+        self.AccomTextEdit.insertPlainText("Das Brot, €20k per night")
 
     def lowber(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Marmelade, like 5 euro")
+        self.AccomTextEdit.insertPlainText("Das Marmelade, €5 euro")
 
     def highhoch(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Geld, 15k per night")
+        self.AccomTextEdit.insertPlainText("Das Geld, €15k per night")
 
     def lowhoch(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Das Kase, like 5 euro")
+        self.AccomTextEdit.insertPlainText("Das Kase, €5 euro")
 
     def highdub(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Lotte,  £10,000")
+        self.AccomTextEdit.insertPlainText("Lotte,  €10,000")
 
     def lowdub(self):
 
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Student accomadation,  £300")
+        self.AccomTextEdit.insertPlainText("Student accomadation,  €300")
 
     def home(self):
 
