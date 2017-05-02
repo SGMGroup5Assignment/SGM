@@ -768,32 +768,32 @@ class Ui_AviateNEducate(object):
     def lowmar(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Le petit prince,    45")
+        self.AccomTextEdit.insertPlainText("Le petit prince, €45")
 
     def highmar(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La Rein, 10,000")
+        self.AccomTextEdit.insertPlainText("La Rein, €10,000")
 
     def lowly(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("L'hotel de Lafyette, 25")
+        self.AccomTextEdit.insertPlainText("L'hotel de Lafyette, €25")
 
     def highly(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La poisson, 15,000")
+        self.AccomTextEdit.insertPlainText("La poisson, €15,000")
 
     def lowpar(self):
         self.AccomTextEdit.clear()
         self.HCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("La Croissant, 25")
+        self.AccomTextEdit.insertPlainText("La Croissant, €25")
 
     def highpar(self):
         self.AccomTextEdit.clear()
         self.LCostRadioButton.setChecked(False)
-        self.AccomTextEdit.insertPlainText("Les Miserables, 50,00")
+        self.AccomTextEdit.insertPlainText("Les Miserables, €50,00")
 
     def home(self):
 
