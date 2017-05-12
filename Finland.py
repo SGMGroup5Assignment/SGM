@@ -316,6 +316,10 @@ class Ui_AviateNEducate(object):
         self.retranslateUi(AviateNEducate)
         QtCore.QMetaObject.connectSlotsByName(AviateNEducate)
 
+        # This lets the User know what page they are in
+        QtGui.QToolTip.setFont(QtGui.QFont('SansSerif', 10))  # Set properties of the tooltip
+        AviateNEducate.setToolTip('Welcome to the Finland Page!')  # set the tooltip for the window
+
     def retranslateUi(self, AviateNEducate):
         AviateNEducate.setWindowTitle(_translate("AviateNEducate", "AviateNEducate", None))
         self.AviateNEducate_Title.setText(_translate("AviateNEducate", "AviateNEducate", None))
